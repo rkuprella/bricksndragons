@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Bangers';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Bangers-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/Roboto-Bold.ttf');
+}

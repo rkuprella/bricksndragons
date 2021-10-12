@@ -1,0 +1,16 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+10053,6002763,10053.dat,"Minifigure, Weapon Sword, Small (Sting)",95,179,Flat Silver,Pearl Colors,1,0.16
+3020,4211065,3020.dat,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3022,4211094,3022.dat,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3022,4216695,3022.dat,Plate 2 x 2,88,70,Reddish Brown,Solid Colors,1,0.64
+3024,4211399,3024.dat,Plate 1 x 1,86,71,Light Bluish Gray,Solid Colors,1,0.2
+3069b,4211052,3069b.dat,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+47905,4213567,47905.dat,"Brick, Modified 1 x 1 with Studs on 2 Sides, Opposite",86,71,Light Bluish Gray,Solid Colors,1,0.45
+49307,6262085,49307.dat,"Slope, Curved 1 x 1 Double",86,71,Light Bluish Gray,Solid Colors,1,0
+49668,6213644,49668.dat,"Plate, Modified 1 x 1 with Tooth Horizontal",86,71,Light Bluish Gray,Solid Colors,2,0.253
+4085d,6296894,60897.dat,"Plate, Modified 1 x 1 with Open O Clip Thick (Vertical Grip)",86,71,Light Bluish Gray,Solid Colors,1,0.29
+4073,4211525,6141.dat,"Plate, Round 1 x 1",86,71,Light Bluish Gray,Solid Colors,2,0.12
+87580,4565394,87580.dat,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",88,70,Reddish Brown,Solid Colors,1,0.5
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+15,5.346,,,,,,,,

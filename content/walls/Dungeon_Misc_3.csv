@@ -1,0 +1,17 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15573,6092572,15573.dat,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,4,0.3
+2780,6279875,2780.dat,"Technic, Pin with Friction Ridges Lengthwise, Staggered, with or without Center Slots",11,0,Black,Solid Colors,1,0.16
+30044,6143849,30044.dat,Window 1 x 2 x 2 2/3 with Rounded Top,85,72,Dark Bluish Gray,Solid Colors,1,0.95
+3022,4211094,3022.dat,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3023,4211398,3023.dat,Plate 1 x 2,86,71,Light Bluish Gray,Solid Colors,1,0.36
+3068b,4211413,3068b.dat,Tile 2 x 2 with Groove,86,71,Light Bluish Gray,Solid Colors,1,0.48
+3659,4211435,3659.dat,Arch 1 x 4,86,71,Light Bluish Gray,Solid Colors,1,1.25
+3700,4211440,3700.dat,"Technic, Brick 1 x 2 with Hole",86,71,Light Bluish Gray,Solid Colors,4,0.82
+3795,4211002,3795.dat,Plate 2 x 6,85,72,Dark Bluish Gray,Solid Colors,1,1.74
+4274,4211483,4274.dat,"Technic, Pin 1/2",86,71,Light Bluish Gray,Solid Colors,3,0.095
+6541,4211535,6541.dat,"Technic, Brick 1 x 1 with Hole",86,71,Light Bluish Gray,Solid Colors,4,0.38
+93273,4622803,93273.dat,"Slope, Curved 4 x 1 Double",86,71,Light Bluish Gray,Solid Colors,1,0.6
+94161,4624507,94161.dat,Shutter for Window 1 x 2 x 2 2/3 with Rounded Top,88,70,Reddish Brown,Solid Colors,1,0.4
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+24,12.865,,,,,,,,
