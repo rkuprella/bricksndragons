@@ -8,7 +8,8 @@ export const state = () => ({
   showMonsters: true,
   showWantedList: false,
   showXML: false,
-  moduleSearch: ""
+  moduleSearch: "",
+  showMenu: false
 });
 
 export const getters = {
@@ -156,6 +157,9 @@ export const mutations = {
   },
   SET_MODULE_SEARCH(state, payload) {
     state.moduleSearch = payload;
+  },
+  SET_MENU(state, payload) {
+    state.showMenu = payload;
   }
 };
 
@@ -195,5 +199,8 @@ export const actions = {
   },
   setModuleSearch({ commit }, payload) {
     commit("SET_MODULE_SEARCH", payload);
+  },
+  setMenu({ commit }, payload) {
+    commit("SET_MENU", payload);
   }
 };

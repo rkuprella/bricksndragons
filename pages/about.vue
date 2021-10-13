@@ -1,130 +1,125 @@
 <template>
-  <div class="relative flex flex-wrap items-start gap-8 py-8">
-    <main class="flex-1 py-12">
-      <article class="container mx-auto prose max-w-prose">
-        <h1>About Bricks &amp; Dragons</h1>
-        <p>
-          This web app, <em>which is currently in beta</em>, provides custom
-          built brick modules for a modular micro-scale LEGO® dungeon system.
-          Each module can be added to a wanted list in XML format. All LEGO®
-          parts can then be ordered on
-          <a
-            target="_blank"
-            href="https://www.bricklink.com/v2/wanted/upload.page?utm_content=subnav"
-            >bricklink</a
-          >
-          by pasting the XML data into the form field provided (requires a
-          registration on bricklink).
-        </p>
-        <p>
-          I maintain this project as a hobby. The provided service is free of
-          charge. Please note that I cannot guarantee the validity of the
-          generated wanted list. Please check carefully before buying parts on
-          bricklink!
-        </p>
-        <nuxt-picture
-          loading="lazy"
-          width="1600"
-          height="1200"
-          quality="80"
-          src="/images/themes-overview.png"
-          alt="Bricks &amp; Dragons themes"
-          sizes="xs:100vw lg:1200"
-        />
-        <p>
-          Lots of modules and themes will be added in the future. Feel free to
-          join the
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/yKXbs82T"
-            >Bricks &amp; Dragons Discord</a
-          >
-          to discuss the project or to provide some feedback.
-        </p>
+  <main class="flex-1 py-12">
+    <article class="container mx-auto prose max-w-prose">
+      <h1>About Bricks &amp; Dragons</h1>
+      <p>
+        This web app, <em>which is currently in beta</em>, provides custom built
+        brick modules for a modular micro-scale LEGO® dungeon system. Each
+        module can be added to a wanted list in XML format. All LEGO® parts can
+        then be ordered on
+        <a
+          target="_blank"
+          href="https://www.bricklink.com/v2/wanted/upload.page?utm_content=subnav"
+          >bricklink</a
+        >
+        by pasting the XML data into the form field provided (requires a
+        registration on bricklink).
+      </p>
+      <p>
+        I maintain this project as a hobby. The provided service is free of
+        charge. Please note that I cannot guarantee the validity of the
+        generated wanted list. Please check carefully before buying parts on
+        bricklink!
+      </p>
+      <nuxt-picture
+        loading="lazy"
+        width="1600"
+        height="1200"
+        quality="80"
+        src="/images/themes-overview.png"
+        alt="Bricks &amp; Dragons themes"
+        sizes="xs:100vw lg:1200"
+      />
+      <p>
+        Lots of modules and themes will be added in the future. Feel free to
+        join the
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://discord.gg/yKXbs82T"
+          >Bricks &amp; Dragons Discord</a
+        >
+        to discuss the project or to provide some feedback.
+      </p>
 
-        <h2>Disclaimer</h2>
-        <p>
-          Bricks &amp; Dragons is not affiliated with The LEGO Group. LEGO® is a
-          trademark of The LEGO Group of companies which does not in anyway
-          sponsor, authorize, or endorse this content. All other original logos
-          and/or brands used are property of their respective owners.
-          <br /><br />
-          <strong>Content</strong>: The author reserves the right not to be
-          responsible for the topicality, correctness, completeness or quality
-          of the information provided. Liability claims regarding damage caused
-          by the use of any information provided, including any kind of
-          information which is incomplete or incorrect,will therefore be
-          rejected. All offers are not-binding and without obligation. Parts of
-          the pages or the complete publication including all offers and
-          information might be extended, changed or partly or completely deleted
-          by the author without separate announcement. <br /><br />
-          <strong>Referrals and links</strong>: The author is not responsible
-          for any contents linked or referred to from his pages - unless he has
-          full knowledge of illegal contents and would be able to prevent the
-          visitors of his site fromviewing those pages. If any damage occurs by
-          the use of information presented there, only the author of the
-          respective pages might be liable, not the one who has linked to these
-          pages. Furthermore the author is not liable for any postings or
-          messages published by users of discussion boards, guestbooks or
-          mailinglists provided on his page. <br /><br />
-          <strong>Copyright</strong>: The author intended not to use any
-          copyrighted material for the publication or, if not possible, to
-          indicate the copyright of the respective object. The copyright for any
-          material created by the author is reserved. Any duplication or use of
-          objects such as images, diagrams, sounds or texts in other electronic
-          or printed publications is not permitted without the author's
-          agreement. <br /><br />
-          <strong>Privacy</strong>: This website uses Google Analytics, a web
-          analytics service provided by Google, Inc. ("Google"). Google
-          Analytics uses "cookies", which are text files placed on your
-          computer, to help the website analyze how users use the site. The
-          information generated by the cookie about your use of the website
-          (including your IP address) will be transmitted to and stored by
-          Google on servers in the United States . Google will use this
-          information for the purpose of evaluating your use of the website,
-          compiling reports on website activity for website operators and
-          providing other services relating to website activity and internet
-          usage. Google may also transfer this information to third parties
-          where required to do so by law, or where such third parties process
-          the information on Google's behalf. Google will not associate your IP
-          address with any other data held by Google. You may refuse the use of
-          cookies by selecting the appropriate settings on your browser, however
-          please note that if you do this you may not be able to use the full
-          functionality of this website. By using this website, you consent to
-          the processing of data about you by Google in the manner and for the
-          purposes set out above. <br /><br />
-          <strong>Privacy policy</strong>: If the opportunity for the input of
-          personal or business data (email addresses, name, addresses) is given,
-          the input of these data takes place voluntarily. The use and payment
-          of all offered services are permitted - if and so far technically
-          possible and reasonable - without specification of any personal data
-          or under specification of anonymized data or an alias. The use of
-          published postal addresses, telephone or fax numbers and email
-          addresses for marketing purposes is prohibited, offenders sending
-          unwanted spam messages will be punished. <br /><br />
-          <strong>Legal validity of this disclaimer</strong>: This disclaimer is
-          to be regarded as part of the internet publication which you were
-          referred from. If sections or individual terms of this statement are
-          not legal or correct, the content or validity of the other parts
-          remain uninfluenced by this fact.
-        </p>
-        <h2>Legal Notice</h2>
-        <ul class="mb-8">
-          <li>Robin C. Kuprella</li>
-          <li>Hövenerwiese 7</li>
-          <li>45149 Essen</li>
-          <li>Germany</li>
-          <li>
-            Mail:
-            <a href="mailto:bricksndragons@gmail.com"
-              >bricksndragons@gmail.com</a
-            >
-          </li>
-        </ul>
-      </article>
-    </main>
-  </div>
+      <h2>Disclaimer</h2>
+      <p>
+        Bricks &amp; Dragons is not affiliated with The LEGO Group. LEGO® is a
+        trademark of The LEGO Group of companies which does not in anyway
+        sponsor, authorize, or endorse this content. All other original logos
+        and/or brands used are property of their respective owners.
+        <br /><br />
+        <strong>Content</strong>: The author reserves the right not to be
+        responsible for the topicality, correctness, completeness or quality of
+        the information provided. Liability claims regarding damage caused by
+        the use of any information provided, including any kind of information
+        which is incomplete or incorrect,will therefore be rejected. All offers
+        are not-binding and without obligation. Parts of the pages or the
+        complete publication including all offers and information might be
+        extended, changed or partly or completely deleted by the author without
+        separate announcement. <br /><br />
+        <strong>Referrals and links</strong>: The author is not responsible for
+        any contents linked or referred to from his pages - unless he has full
+        knowledge of illegal contents and would be able to prevent the visitors
+        of his site fromviewing those pages. If any damage occurs by the use of
+        information presented there, only the author of the respective pages
+        might be liable, not the one who has linked to these pages. Furthermore
+        the author is not liable for any postings or messages published by users
+        of discussion boards, guestbooks or mailinglists provided on his page.
+        <br /><br />
+        <strong>Copyright</strong>: The author intended not to use any
+        copyrighted material for the publication or, if not possible, to
+        indicate the copyright of the respective object. The copyright for any
+        material created by the author is reserved. Any duplication or use of
+        objects such as images, diagrams, sounds or texts in other electronic or
+        printed publications is not permitted without the author's agreement.
+        <br /><br />
+        <strong>Privacy</strong>: This website uses Google Analytics, a web
+        analytics service provided by Google, Inc. ("Google"). Google Analytics
+        uses "cookies", which are text files placed on your computer, to help
+        the website analyze how users use the site. The information generated by
+        the cookie about your use of the website (including your IP address)
+        will be transmitted to and stored by Google on servers in the United
+        States . Google will use this information for the purpose of evaluating
+        your use of the website, compiling reports on website activity for
+        website operators and providing other services relating to website
+        activity and internet usage. Google may also transfer this information
+        to third parties where required to do so by law, or where such third
+        parties process the information on Google's behalf. Google will not
+        associate your IP address with any other data held by Google. You may
+        refuse the use of cookies by selecting the appropriate settings on your
+        browser, however please note that if you do this you may not be able to
+        use the full functionality of this website. By using this website, you
+        consent to the processing of data about you by Google in the manner and
+        for the purposes set out above. <br /><br />
+        <strong>Privacy policy</strong>: If the opportunity for the input of
+        personal or business data (email addresses, name, addresses) is given,
+        the input of these data takes place voluntarily. The use and payment of
+        all offered services are permitted - if and so far technically possible
+        and reasonable - without specification of any personal data or under
+        specification of anonymized data or an alias. The use of published
+        postal addresses, telephone or fax numbers and email addresses for
+        marketing purposes is prohibited, offenders sending unwanted spam
+        messages will be punished. <br /><br />
+        <strong>Legal validity of this disclaimer</strong>: This disclaimer is
+        to be regarded as part of the internet publication which you were
+        referred from. If sections or individual terms of this statement are not
+        legal or correct, the content or validity of the other parts remain
+        uninfluenced by this fact.
+      </p>
+      <h2>Legal Notice</h2>
+      <ul class="mb-8">
+        <li>Robin C. Kuprella</li>
+        <li>Hövenerwiese 7</li>
+        <li>45149 Essen</li>
+        <li>Germany</li>
+        <li>
+          Mail:
+          <a href="mailto:bricksndragons@gmail.com">bricksndragons@gmail.com</a>
+        </li>
+      </ul>
+    </article>
+  </main>
 </template>
 
 <script>

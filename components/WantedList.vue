@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="fixed bottom-0 z-20 px-4 py-1 bg-gray-700 shadow-lg inset-x-4 lg:py-6 lg:sticky rounded-xl lg:w-1/3 xl:w-1/4 lg:bottom-auto lg:top-8 lg:inset-x-auto"
+    class="fixed bottom-0 z-40 px-4 py-1 bg-gray-700 shadow-lg inset-x-4 lg:py-6 lg:sticky rounded-xl lg:w-1/3 xl:w-1/4 lg:bottom-auto lg:top-8 lg:inset-x-auto"
     :class="
       showWantedList
         ? 'top-32 lg:top-8 h-full pb-20 overflow-y-auto lg:overflow-y-visible'

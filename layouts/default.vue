@@ -1,6 +1,43 @@
 <template>
   <div class="flex flex-col min-h-screen text-gray-200 bg-gray-900">
-    <header class="relative text-primary-50 bg-primary-600">
+    <header class="relative overflow-hidden text-primary-50 bg-primary-600">
+      <transition
+        enter-active-class="transition ease-out"
+        enter-class="opacity-0"
+        enter-to-class="opacity-100"
+        leave-active-class="transition ease-in"
+        leave-class="opacity-100"
+        leave-to-class="opacity-0"
+      >
+        <div
+          v-if="showMenu"
+          @click="setMenu(false)"
+          class="absolute inset-0 z-20 w-full h-full bg-black/50 lg:hidden"
+        ></div>
+      </transition>
+      <transition
+        enter-active-class="transition ease-out transform"
+        enter-class="translate-x-full"
+        enter-to-class="translate-x-0"
+        leave-active-class="transition ease-in transform"
+        leave-class="translate-x-0"
+        leave-to-class="translate-x-full"
+      >
+        <nav
+          v-if="showMenu"
+          class="absolute right-0 z-30 flex flex-col items-end gap-2 top-32 lg:hidden"
+        >
+          <nuxt-link
+            :to="link.to"
+            v-for="link in topNav"
+            :key="link.name"
+            @click.native="setMenu(false)"
+            class="px-6 py-3 text-lg uppercase bg-gray-900"
+            exact-active-class="border-r-8 border-primary-500 text-primary-500"
+            >{{ link.name }}</nuxt-link
+          >
+        </nav>
+      </transition>
       <div class="absolute inset-0">
         <transition
           mode="out-in"
@@ -36,12 +73,15 @@
         </transition>
       </div>
 
-      <div class="absolute inset-x-0 bottom-0 header-bricks"></div>
+      <div
+        class="absolute inset-x-0 bottom-0 z-30 pointer-events-none header-bricks"
+      ></div>
       <div class="container relative flex flex-col px-4 py-4 mx-auto md:px-8">
         <nav class="flex items-center justify-between w-full">
           <nuxt-link
             to="/"
-            class="relative transition duration-150 ease-in-out w-36"
+            @click.native="setMenu(false)"
+            class="relative z-30 transition duration-150 ease-in-out w-36"
           >
             <nuxt-picture
               fill="cover"
@@ -58,16 +98,89 @@
               >Beta</span
             >
           </nuxt-link>
-          <div class="flex items-center gap-1">
+          <div class="items-center hidden gap-1 lg:flex">
             <nuxt-link
               v-for="link in topNav"
               :key="link.name"
               :to="link.to"
-              class="relative px-2 py-3 text-lg "
+              class="relative px-2 py-3 text-lg uppercase "
               exact-active-class="after:absolute after:rounded-full hover:after:bg-white/100 after:bg-white/100 after:w-6 after:h-2 after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2"
               >{{ link.name }}</nuxt-link
             >
           </div>
+          <button
+            type="button"
+            role="button"
+            aria-label="Toggle menu"
+            class="relative z-30 w-12 h-12 text-primary-50 lg:hidden"
+            @click="setMenu(showMenu ? false : true)"
+          >
+            <div
+              class="absolute inset-x-0 -mt-1 text-sm tracking-wider uppercase top-full"
+            >
+              Menu
+            </div>
+            <div
+              class="absolute inset-0 flex flex-col items-center gap-1 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 720.000000 216.000000"
+                preserveAspectRatio="xMidYMid meet"
+                class="w-12 h-3 transition duration-75 ease-in transform"
+                :class="!showMenu && 'translate-y-2'"
+              >
+                <g
+                  transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <path
+                    d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
+0 720 -360 0 -360 0 0 360 0 360 -1080 0 -1080 0 0 -360 0 -360 -720 0 -720 0
+0 360 0 360 -1080 0 -1080 0 0 -360z"
+                  />
+                </g>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 720.000000 216.000000"
+                preserveAspectRatio="xMidYMid meet"
+                class="w-12 h-3"
+              >
+                <g
+                  transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <path
+                    d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
+0 720 -360 0 -360 0 0 360 0 360 -1080 0 -1080 0 0 -360 0 -360 -720 0 -720 0
+0 360 0 360 -1080 0 -1080 0 0 -360z"
+                  />
+                </g>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 720.000000 216.000000"
+                preserveAspectRatio="xMidYMid meet"
+                class="w-12 h-3 transition duration-75 ease-in transform"
+                :class="!showMenu && '-translate-y-2'"
+              >
+                <g
+                  transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <path
+                    d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
+0 720 -360 0 -360 0 0 360 0 360 -1080 0 -1080 0 0 -360 0 -360 -720 0 -720 0
+0 360 0 360 -1080 0 -1080 0 0 -360z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </button>
         </nav>
         <div
           class="flex flex-col items-start justify-center flex-1 py-16 lg:items-center"
@@ -118,7 +231,10 @@
         </div>
       </div>
     </header>
-    <div class="container flex-1 w-full px-4 mx-auto md:px-8">
+
+    <div
+      class="container relative flex flex-wrap items-start flex-1 w-full gap-8 px-4 py-8 mx-auto md:px-8"
+    >
       <transition
         enter-active-class="transition ease-out"
         enter-class="opacity-0"
@@ -133,7 +249,7 @@
           aria-label="Hide wanted list"
           v-show="showWantedList"
           @click="toggleWantedList"
-          class="fixed inset-0 z-10 w-full h-full bg-black/50 lg:hidden focus:outline-none"
+          class="fixed inset-0 z-30 w-full h-full bg-black/50 lg:hidden focus:outline-none"
           style="-webkit-tap-highlight-color: transparent;"
         ></button>
       </transition>
@@ -148,7 +264,9 @@
       >
         <Nuxt />
       </transition>
+      <WantedList />
     </div>
+
     <footer class="pb-12 text-gray-300 lg:pt-12 bg-gray-500/10">
       <div class="container px-4 py-8 mx-auto md:px-8">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -230,10 +348,10 @@ export default {
     };
   },
   computed: {
-    ...mapState(["showWantedList"])
+    ...mapState(["showWantedList", "showMenu"])
   },
   methods: {
-    ...mapActions(["toggleWantedList"])
+    ...mapActions(["toggleWantedList", "setMenu"])
   }
 };
 </script>

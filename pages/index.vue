@@ -1,23 +1,20 @@
 <template>
-  <div class="relative flex flex-wrap items-start gap-8 py-8">
-    <main class="flex-1">
-      <ThemeSwitcher :themes="themes" />
-      <div v-if="currentTheme === 'Creatures'" class="divide-y divide-gray-800">
-        <ModuleSection title="Microfigs" :items="filteredItems(microfigs)" />
-        <ModuleSection title="Monsters" :items="filteredItems(monsters)" />
-      </div>
-      <div class="divide-y divide-gray-800" v-else>
-        <ModuleSection
-          title="Walls and floor tiles"
-          :items="filteredItems(walls)"
-        />
-        <ModuleSection title="Item sets" :items="filteredItems(items)" />
-        <ModuleSection title="Microfigs" :items="filteredItems(microfigs)" />
-        <ModuleSection title="Monsters" :items="filteredItems(monsters)" />
-      </div>
-    </main>
-    <WantedList />
-  </div>
+  <main class="flex-1">
+    <ThemeSwitcher :themes="themes" />
+    <div v-if="currentTheme === 'Creatures'" class="divide-y divide-gray-800">
+      <ModuleSection title="Microfigs" :items="filteredItems(microfigs)" />
+      <ModuleSection title="Monsters" :items="filteredItems(monsters)" />
+    </div>
+    <div class="divide-y divide-gray-800" v-else>
+      <ModuleSection
+        title="Walls and floor tiles"
+        :items="filteredItems(walls)"
+      />
+      <ModuleSection title="Item sets" :items="filteredItems(items)" />
+      <ModuleSection title="Microfigs" :items="filteredItems(microfigs)" />
+      <ModuleSection title="Monsters" :items="filteredItems(monsters)" />
+    </div>
+  </main>
 </template>
 
 <script>
