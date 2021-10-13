@@ -35,6 +35,11 @@ export default {
         hid: "og:url",
         property: "og:url",
         content: "https://www.bricksndragons.com"
+      },
+      {
+        hid: "twitter:card",
+        property: "twitter:card",
+        content: "summary_large_image"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
