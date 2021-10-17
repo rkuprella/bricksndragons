@@ -1,6 +1,6 @@
 <template>
   <main class="flex-1 py-12">
-    <article class="container mx-auto prose max-w-prose">
+    <article class="container mx-auto prose max-w-prose dark:prose-dark">
       <h1>About Bricks &amp; Dragons</h1>
       <p>
         This web app, <em>which is currently in beta</em>, provides custom built
@@ -9,6 +9,7 @@
         then be ordered on
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.bricklink.com/v2/wanted/upload.page?utm_content=subnav"
           >bricklink</a
         >
@@ -31,15 +32,14 @@
         sizes="xs:100vw lg:1200"
       />
       <p>
-        Lots of modules and themes will be added in the future. Feel free to
-        join the
+        Lots of modules and themes will be added in the future. Join the
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://discord.gg/yKXbs82T"
-          >Bricks &amp; Dragons Discord</a
+          href="https://discord.gg/pGQundu7QT"
+          >Discord</a
         >
-        to discuss the project or to provide some feedback.
+        to not miss new releases.
       </p>
 
       <h2>Disclaimer</h2>

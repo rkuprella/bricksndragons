@@ -1,0 +1,18 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+18674,6102360,18674,"Tile, Round 2 x 2 with Open Stud",88,70,Reddish Brown,Solid Colors,3,0.35
+2431,4211194,2431,Tile 1 x 4,88,70,Reddish Brown,Solid Colors,1,0.54
+28802,,28802,Bracket 1 x 2 - 1 x 4 with Two Rounded Corners at the Bottom,2,19,Tan,Solid Colors,1,0.93
+2489,6278989,2489,"Container, Barrel 2 x 2 x 2",88,70,Reddish Brown,Solid Colors,3,1.7
+3005,4113915,3005,Brick 1 x 1,2,19,Tan,Solid Colors,2,0.44
+3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,4,0.26
+3710,4211001,3710,Plate 1 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.71
+54200,4504376,54200,Slope 30 1 x 1 x 2/3,88,70,Reddish Brown,Solid Colors,4,0.21
+6541,4179771,6541,"Technic, Brick 1 x 1 with Hole",2,19,Tan,Solid Colors,1,0.38
+87087,4579260,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",2,19,Tan,Solid Colors,1,0.45
+98283,6148262,98283,"Brick, Modified 1 x 2 with Masonry Profile",2,19,Tan,Solid Colors,1,0.77
+99207,6174925,99207,Bracket 1 x 2 - 2 x 2 Inverted,2,19,Tan,Solid Colors,1,0.8
+99780,6313611,99780,Bracket 1 x 2 - 1 x 2 Inverted,2,19,Tan,Solid Colors,1,0
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+25,15.71,,,,,,,,

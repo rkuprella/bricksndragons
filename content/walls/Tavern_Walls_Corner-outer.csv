@@ -1,0 +1,12 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+14719,6221608,14719,Tile 2 x 2 Corner,88,70,Reddish Brown,Solid Colors,1,0.43
+2357,4124455,2357,Brick 2 x 2 Corner,2,19,Tan,Solid Colors,1,1.25
+2420,4210635,2420,Plate 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,1,0.54
+3005,4113915,3005,Brick 1 x 1,2,19,Tan,Solid Colors,1,0.44
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,1,0.16
+6541,4179771,6541,"Technic, Brick 1 x 1 with Hole",2,19,Tan,Solid Colors,1,0.38
+87087,4579260,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",2,19,Tan,Solid Colors,1,0.45
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+8,4.29,,,,,,,,

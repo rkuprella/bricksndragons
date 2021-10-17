@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   mode: "jit",
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -16,6 +16,40 @@ module.exports = {
       },
       typography: theme => ({
         DEFAULT: {
+          css: {
+            color: "#333",
+            a: {
+              color: theme("colors.blue.700"),
+              "&:hover": {
+                color: theme("colors.blue.600")
+              }
+            },
+            h1: {
+              color: theme("colors.blue.700")
+            },
+            h2: {
+              color: theme("colors.blue.700")
+            },
+            h3: {
+              color: theme("colors.yellow.700"),
+              fontWeight: "400",
+              fontSize: "2rem"
+            },
+            h4: {
+              color: theme("colors.yellow.700")
+            },
+            h5: {
+              color: theme("colors.yellow.700")
+            },
+            h6: {
+              color: theme("colors.yellow.700")
+            },
+            strong: {
+              color: "#222"
+            }
+          }
+        },
+        dark: {
           css: {
             color: "#bbb",
             a: {

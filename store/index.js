@@ -1,4 +1,5 @@
 export const state = () => ({
+  darkMode: true,
   currentTheme: null,
   wantedList: [],
   userWantedList: [],
@@ -9,7 +10,8 @@ export const state = () => ({
   showWantedList: false,
   showXML: false,
   moduleSearch: "",
-  showMenu: false
+  showMenu: false,
+  currentPage: null
 });
 
 export const getters = {
@@ -160,6 +162,12 @@ export const mutations = {
   },
   SET_MENU(state, payload) {
     state.showMenu = payload;
+  },
+  SET_CURRENT_PAGE(state, payload) {
+    state.currentPage = payload;
+  },
+  TOGGLE_DARK_MODE(state) {
+    state.darkMode = !state.darkMode;
   }
 };
 
@@ -202,5 +210,11 @@ export const actions = {
   },
   setMenu({ commit }, payload) {
     commit("SET_MENU", payload);
+  },
+  setCurrentPage({ commit }, payload) {
+    commit("SET_CURRENT_PAGE", payload);
+  },
+  toggleDarkMode({ commit }) {
+    commit("TOGGLE_DARK_MODE");
   }
 };

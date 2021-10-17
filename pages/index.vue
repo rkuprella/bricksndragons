@@ -1,18 +1,34 @@
 <template>
   <main class="flex-1">
     <ThemeSwitcher :themes="themes" />
-    <div v-if="currentTheme === 'Creatures'" class="divide-y divide-gray-800">
+    <div
+      v-if="currentTheme === 'Creatures'"
+      class="divide-y divide-gray-800/20 dark:divide-gray-800"
+    >
       <ModuleSection title="Microfigs" :items="filteredItems(microfigs)" />
-      <ModuleSection title="Monsters" :items="filteredItems(monsters)" />
+      <ModuleSection
+        title="Monsters"
+        to="monsters"
+        :items="filteredItems(monsters)"
+      />
     </div>
-    <div class="divide-y divide-gray-800" v-else>
+    <div class="divide-y divide-gray-400/20 dark:divide-gray-800" v-else>
       <ModuleSection
         title="Walls and floor tiles"
+        to="walls"
         :items="filteredItems(walls)"
       />
-      <ModuleSection title="Item sets" :items="filteredItems(items)" />
+      <ModuleSection
+        title="Item sets"
+        to="items"
+        :items="filteredItems(items)"
+      />
       <ModuleSection title="Microfigs" :items="filteredItems(microfigs)" />
-      <ModuleSection title="Monsters" :items="filteredItems(monsters)" />
+      <ModuleSection
+        title="Monsters"
+        to="monsters"
+        :items="filteredItems(monsters)"
+      />
     </div>
   </main>
 </template>
@@ -42,9 +58,9 @@ export default {
       return {
         id: wall.slug,
         type: "wall",
-        theme: wall.slug.split("_", 3)[0],
+        theme: wall.slug.split("_", 3)[0].replace(/-/g, " "),
         element: wall.slug.split("_", 3)[1].replace(/-/g, " "),
-        number: wall.slug.split("_", 3)[2],
+        name: wall.slug.split("_", 3)[2].replace(/-/g, " "),
         imagePath: wall.slug + ".png",
         parts: wall.body.splice(0, wall.body.length - 3)
       };
@@ -54,9 +70,9 @@ export default {
       return {
         id: item.slug,
         type: "item",
-        theme: item.slug.split("_", 3)[0],
+        theme: item.slug.split("_", 3)[0].replace(/-/g, " "),
         element: item.slug.split("_", 3)[1].replace(/-/g, " "),
-        number: item.slug.split("_", 3)[2],
+        name: item.slug.split("_", 3)[2].replace(/-/g, " "),
         imagePath: item.slug + ".png",
         parts: item.body.splice(0, item.body.length - 3)
       };
@@ -66,9 +82,9 @@ export default {
       return {
         id: monster.slug,
         type: "monster",
-        theme: monster.slug.split("_", 3)[0],
+        theme: monster.slug.split("_", 3)[0].replace(/-/g, " "),
         element: monster.slug.split("_", 3)[1].replace(/-/g, " "),
-        number: monster.slug.split("_", 3)[2],
+        name: monster.slug.split("_", 3)[2].replace(/-/g, " "),
         imagePath: monster.slug + ".png",
         parts: monster.body.splice(0, monster.body.length - 3)
       };
@@ -102,40 +118,6 @@ export default {
       microfigs
     };
   },
-  // head() {
-  //   return {
-  //     title: "Bricks & Dragons - A Modular LEGO® Dungeon System",
-  //     meta: [
-  //       {
-  //         hid: "description",
-  //         name: "description",
-  //         content:
-  //           "Explore modular micro-scale dungeons built with LEGO® bricks, fully customizable, compatible with LEGO® heroica and standard RPG miniatures"
-  //       },
-  //       {
-  //         hid: "og:title",
-  //         name: "og:title",
-  //         content: "Bricks & Dragons - A Modular LEGO® Dungeon System"
-  //       },
-  //       {
-  //         hid: "og:image",
-  //         property: "og:image",
-  //         content: "/images/header-microfigs.png"
-  //       },
-  //       {
-  //         hid: "og:description",
-  //         property: "og:description",
-  //         content:
-  //           "Explore modular micro-scale dungeons built with LEGO® bricks, fully customizable, compatible with LEGO® heroica and standard RPG miniatures"
-  //       },
-  //       {
-  //         hid: "og:url",
-  //         property: "og:url",
-  //         content: "https://www.bricksanddragons.com"
-  //       }
-  //     ]
-  //   };
-  // },
   computed: {
     ...mapState([
       "currentTheme",
@@ -152,14 +134,20 @@ export default {
           if (this.moduleSearch.length > 0 && this.currentTheme) {
             return (
               item.theme === this.currentTheme &&
-              item.element
+              (item.element
                 .toLowerCase()
-                .includes(this.moduleSearch.toLowerCase())
+                .includes(this.moduleSearch.toLowerCase()) ||
+                item.name
+                  .toLowerCase()
+                  .includes(this.moduleSearch.toLowerCase()))
             );
           } else if (this.moduleSearch.length > 0) {
-            return item.element
-              .toLowerCase()
-              .includes(this.moduleSearch.toLowerCase());
+            return (
+              item.element
+                .toLowerCase()
+                .includes(this.moduleSearch.toLowerCase()) ||
+              item.name.toLowerCase().includes(this.moduleSearch.toLowerCase())
+            );
           } else if (this.currentTheme) {
             return item.theme === this.currentTheme;
           } else {

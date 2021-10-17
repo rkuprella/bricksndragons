@@ -1,9 +1,9 @@
 <template>
-  <div class="flex items-center justify-end w-40 space-x-3">
+  <div class="flex items-center justify-end gap-3">
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href="https://discord.gg/yKXbs82T"
+      href="https://discord.gg/pGQundu7QT"
       class="p-1 transition duration-150 ease-in-out opacity-80 hover:opacity-100"
     >
       <svg

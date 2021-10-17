@@ -8,11 +8,11 @@
       :class="
         theme === currentTheme
           ? theme === 'Creatures'
-            ? 'bg-red-900 text-red-100'
-            : 'bg-primary-500 text-gray-900'
+            ? 'theme__creatures--active'
+            : 'bg-primary-800/90 text-primary-50 dark:bg-primary-500 dark:text-gray-900'
           : theme === 'Creatures'
-          ? 'bg-gray-700 bg-opacity-30 hover:bg-opacity-50 text-red-400'
-          : 'bg-gray-700 bg-opacity-30 hover:bg-opacity-50 text-primary-500'
+          ? 'theme__creatures'
+          : 'bg-primary-800/10 hover:bg-primary-600/10 text-primary-800 dark:bg-gray-700 dark:bg-opacity-30 dark:hover:bg-opacity-50 dark:text-primary-500'
       "
     >
       <span>{{ theme }}</span>
@@ -21,8 +21,8 @@
         enter-class="rotate-0 opacity-0"
         enter-to-class="rotate-180 opacity-100"
         leave-active-class="transition ease-in transform"
-        leave-class="rotate-180 opacity-100"
-        leave-to-class="rotate-0 opacity-0"
+        leave-class="rotate-0 opacity-100"
+        leave-to-class="-rotate-180 opacity-0"
       >
         <svg
           v-if="theme === currentTheme"
@@ -39,13 +39,13 @@
         </svg>
       </transition>
     </button>
-    <div class="relative w-48 overflow-hidden bg-gray-800 rounded-full">
+    <div class="relative w-48 overflow-hidden rounded-full dark:bg-gray-800">
       <input
         type="text"
         aria-label="Search"
         placeholder="Search"
         v-model="updateModuleSearch"
-        class="w-full py-2 pl-4 pr-12 text-gray-200 transition bg-gray-200/20 focus:outline-none focus:bg-gray-200/30"
+        class="w-full py-2 pl-4 pr-12 transition placeholder-gray-800/40 dark:placeholder-gray-400 bg-primary-800/20 focus:bg-primary-800/10 text-primary-800/80 dark:text-gray-200 dark:bg-gray-200/20 dark:focus:bg-gray-200/30"
       />
       <transition
         mode="out-in"
@@ -71,7 +71,7 @@
         </svg>
         <button
           @click="setModuleSearch('')"
-          class="absolute right-0 flex items-center justify-center w-12 py-2 transition transform -translate-y-1/2 opacity-25 hover:opacity-50 focus:outline-none top-1/2"
+          class="absolute right-0 flex items-center justify-center w-12 py-2 transition transform -translate-y-1/2 opacity-25 hover:opacity-50 top-1/2"
           style="-webkit-tap-highlight-color: transparent;"
           v-else
         >

@@ -1,0 +1,14 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,2,1.2
+3020,4211395,3020,Plate 2 x 4,86,71,Light Bluish Gray,Solid Colors,2,1.2
+3021,4211396,3021,Plate 2 x 3,86,71,Light Bluish Gray,Solid Colors,2,0.93
+3022,4211397,3022,Plate 2 x 2,86,71,Light Bluish Gray,Solid Colors,4,0.64
+3023,4211398,3023,Plate 1 x 2,86,71,Light Bluish Gray,Solid Colors,2,0.36
+3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
+3069b,4211414,3069b,Tile 1 x 2 with Groove,86,71,Light Bluish Gray,Solid Colors,8,0.26
+3710,4211445,3710,Plate 1 x 4,86,71,Light Bluish Gray,Solid Colors,1,0.71
+6541,4211535,6541,"Technic, Brick 1 x 1 with Hole",86,71,Light Bluish Gray,Solid Colors,2,0.38
+87087,4558953,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",86,71,Light Bluish Gray,Solid Colors,2,0.45
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+26,16.61,,,,,,,,

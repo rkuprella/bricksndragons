@@ -1,0 +1,15 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+30044,6143849,30044,Window 1 x 2 x 2 2/3 with Rounded Top,85,72,Dark Bluish Gray,Solid Colors,1,0.95
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3023,4113917,3023,Plate 1 x 2,2,19,Tan,Solid Colors,1,0.36
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,2,0.2
+3024,4159553,3024,Plate 1 x 1,2,19,Tan,Solid Colors,4,0.2
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+3659,4550323,3659,Arch 1 x 4,2,19,Tan,Solid Colors,1,1.25
+6541,4179771,6541,"Technic, Brick 1 x 1 with Hole",2,19,Tan,Solid Colors,1,0.38
+87087,4579260,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",2,19,Tan,Solid Colors,1,0.45
+93273,4666611,93273,"Slope, Curved 4 x 1 Double",2,19,Tan,Solid Colors,1,0.6
+94161,4624507,94161,Shutter for Window 1 x 2 x 2 2/3 with Rounded Top,88,70,Reddish Brown,Solid Colors,1,0.4
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+16,7.31,,,,,,,,

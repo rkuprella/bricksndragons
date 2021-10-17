@@ -1,22 +1,22 @@
 <template>
   <aside
-    class="fixed bottom-0 z-40 px-4 py-1 bg-gray-700 shadow-lg inset-x-4 lg:py-6 lg:sticky rounded-xl lg:w-1/3 xl:w-1/4 lg:bottom-auto lg:top-8 lg:inset-x-auto"
+    class="fixed inset-x-0 bottom-0 z-40 px-4 py-1 shadow-lg bg-primary-50 dark:bg-gray-700 lg:py-6 lg:sticky rounded-3xl lg:w-1/3 xl:w-1/4 lg:bottom-auto lg:top-8 lg:inset-x-auto"
     :class="
       showWantedList
-        ? 'top-32 lg:top-8 h-full pb-20 overflow-y-auto lg:overflow-y-visible'
+        ? 'top-64 lg:top-8 h-full pb-52 overflow-y-auto lg:overflow-y-visible'
         : ''
     "
   >
     <div
-      class="fixed inset-x-0 bottom-0 z-30 flex items-center justify-between px-4 py-1 bg-gray-800 border-t border-gray-600 lg:border-t-0 lg:px-0 lg:py-0 lg:bg-transparent lg:inset-x-auto lg:static lg:bottom-auto"
+      class="fixed inset-x-0 bottom-0 z-30 flex items-center justify-between px-4 py-1 border-t border-primary-200 dark:border-gray-600 bg-primary-50 dark:bg-gray-800 lg:border-t-0 lg:py-0 lg:bg-transparent dark:lg:bg-transparent lg:inset-x-auto lg:static lg:bottom-auto"
     >
-      <h2 class="text-gray-400">
-        <span class="font-bold text-gray-100">Wanted list</span> (<span
-          class="font-bold text-gray-100"
+      <h2 class="dark:text-gray-400">
+        <span class="font-bold dark:text-gray-100">Wanted list</span> (<span
+          class="font-bold dark:text-gray-100"
           >{{ getTotalModulesInWantedList }}</span
         >
         modules,
-        <span class="font-bold text-gray-100">{{
+        <span class="font-bold dark:text-gray-100">{{
           getTotalPartsInWantedList
         }}</span>
         parts)
@@ -46,6 +46,7 @@
         </svg>
       </button>
     </div>
+
     <div :class="showWantedList ? '' : 'hidden lg:block'">
       <div
         class="flex items-center justify-between my-2 lg:my-6"
@@ -57,24 +58,51 @@
           class="flex items-center gap-1 py-2 pl-2 pr-4 transition ease-in-out"
           :class="
             isWantedListBookmarked
-              ? 'text-green-400 hover:text-green-300'
-              : 'text-gray-300 hover:text-gray-200'
+              ? 'text-green-800 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300'
+              : 'text-gray-800 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-200'
           "
         >
-          <svg
-            class="w-6 h-6"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+          <transition
+            mode="out-in"
+            enter-active-class="transition ease-out transform"
+            enter-class="scale-50 -translate-y-6 opacity-0"
+            enter-to-class="scale-100 opacity-100"
+            leave-active-class="transition ease-in transform"
+            leave-class="scale-100 opacity-100"
+            leave-to-class="scale-50 translate-y-6 opacity-0"
           >
-            <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path>
-          </svg>
+            <svg
+              v-if="isWantedListBookmarked"
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path>
+            </svg>
+            <div class="w-6 h-6" v-else>
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+                ></path>
+              </svg>
+            </div>
+          </transition>
           <span>Bookmark</span>
         </button>
         <button
           title="Reset"
           @click="resetWantedList"
-          class="flex items-center gap-1 py-2 pl-2 pr-4 text-gray-300 transition ease-in-out hover:text-gray-200"
+          class="flex items-center gap-1 py-2 pl-2 pr-4 text-gray-800 transition ease-in-out hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-200"
         >
           <svg
             class="w-6 h-6"
@@ -94,7 +122,7 @@
       <transition-group
         tag="ul"
         move-class="transition-transform duration-300"
-        enter-active-class="transition duration-100 ease-out transform"
+        enter-active-class="transition ease-out transform"
         enter-class="scale-50 opacity-0"
         enter-to-class="scale-100 opacity-100"
         leave-active-class="absolute inset-0 w-1/2 transition ease-in transform sm:w-1/4 md:w-1/5 lg:w-1/3 duration-50"
@@ -111,8 +139,8 @@
             v-if="item.type != 'microfig'"
             title="Instructions"
             @click.native="closeWantedList"
-            :to="`/${item.type}/${item.id}`"
-            class="transition duration-100 ease-in-out hover:opacity-80"
+            :to="`/${item.type}s/${item.id}`"
+            class="transition ease-in-out hover:opacity-80"
           >
             <nuxt-picture
               loading="lazy"
@@ -121,7 +149,7 @@
               height="480"
               quality="70"
               :src="`/images/modules/${item.imagePath}`"
-              :alt="`${item.theme} ${item.element} ${item.number}`"
+              :alt="`${item.theme} ${item.element} ${item.name}`"
               sizes="xs:100vw sm:300px"
               class="w-full"
             />
@@ -134,7 +162,7 @@
               height="480"
               quality="70"
               :src="`/images/modules/${item.imagePath}`"
-              :alt="`${item.theme} ${item.element} ${item.number}`"
+              :alt="`${item.theme} ${item.element} ${item.name}`"
               sizes="xs:100vw sm:300px"
               class="w-full"
             />

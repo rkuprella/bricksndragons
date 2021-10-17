@@ -1,0 +1,23 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,4,0.3
+15573,6092590,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",88,70,Reddish Brown,Solid Colors,3,0.3
+3005,4211242,3005,Brick 1 x 1,88,70,Reddish Brown,Solid Colors,2,0.44
+30153,6247798,30153,Rock 1 x 1 Jewel 24 Facet,12,47,Trans-Clear,Transparent Colors,2,0.22
+3023,4211150,3023,Plate 1 x 2,88,70,Reddish Brown,Solid Colors,2,0.36
+3024,4221744,3024,Plate 1 x 1,88,70,Reddish Brown,Solid Colors,2,0.2
+3034,4210997,3034,Plate 2 x 8,85,72,Dark Bluish Gray,Solid Colors,1,2.27
+3062b,6223655,3062b,"Brick, Round 1 x 1 Open Stud",12,47,Trans-Clear,Transparent Colors,2,0.28
+3070b,4211288,3070b,Tile 1 x 1 with Groove (3070),88,70,Reddish Brown,Solid Colors,1,0.16
+34103,6251470,34103,"Plate, Modified 1 x 3 with 2 Studs (Double Jumper)",88,70,Reddish Brown,Solid Colors,1,0.43
+3623,4211152,3623,Plate 1 x 3,88,70,Reddish Brown,Solid Colors,2,0.53
+3710,4211190,3710,Plate 1 x 4,88,70,Reddish Brown,Solid Colors,2,0.71
+49307,6262085,49307,"Slope, Curved 1 x 1 Double",86,71,Light Bluish Gray,Solid Colors,1,0
+54200,4504376,54200,Slope 30 1 x 1 x 2/3,88,70,Reddish Brown,Solid Colors,2,0.21
+4589b,4529247,4589b,Cone 1 x 1 with Top Groove,115,297,Pearl Gold,Pearl Colors,1,0.25
+4589b,4567333,4589b,Cone 1 x 1 with Top Groove,20,34,Trans-Green,Transparent Colors,1,0.25
+4589b,6337639,4589b,Cone 1 x 1 with Top Groove,15,43,Trans-Light Blue,Transparent Colors,1,0.25
+87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,2,0.5
+98138,4649422,98138,"Tile, Round 1 x 1",115,297,Pearl Gold,Pearl Colors,2,0.11
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+34,12.83,,,,,,,,

@@ -1,0 +1,18 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+25269,6199549,25269,"Tile, Round 1 x 1 Quarter",85,72,Dark Bluish Gray,Solid Colors,2,0.1
+3005,4113915,3005,Brick 1 x 1,2,19,Tan,Solid Colors,2,0.44
+3034,4210997,3034,Plate 2 x 8,85,72,Dark Bluish Gray,Solid Colors,1,2.27
+3062b,4211183,3062b,"Brick, Round 1 x 1 Open Stud",88,70,Reddish Brown,Solid Colors,4,0.28
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,4,0.16
+32028,4543086,32028,"Plate, Modified 1 x 2 with Door Rail",85,72,Dark Bluish Gray,Solid Colors,1,0.44
+33291,6170302,33291,"Plate, Round 1 x 1 with Flower Edge (4 Knobs / Petals)",88,70,Reddish Brown,Solid Colors,1,0.11
+3623,4211133,3623,Plate 1 x 3,85,72,Dark Bluish Gray,Solid Colors,2,0.53
+37775,6357747,37775,Wave Rounded Small with Pin (Candle Flame),98,1009009,Glow in Dark Orange,Milky Colors,1,0.1
+4162,4585337,4162,Tile 1 x 8,88,70,Reddish Brown,Solid Colors,1,1.06
+6541,4179771,6541,"Technic, Brick 1 x 1 with Hole",2,19,Tan,Solid Colors,1,0.38
+87087,4579260,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",2,19,Tan,Solid Colors,5,0.45
+87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,1,0.5
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+28,11.53,,,,,,,,

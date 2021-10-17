@@ -1,9 +1,0 @@
-BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
-15535,6055313,15535.dat,"Tile, Round 2 x 2 with Hole",85,72,Dark Bluish Gray,Solid Colors,1,0.32
-3020,4211065,3020.dat,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
-3022,4211094,3022.dat,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
-3069b,4211052,3069b.dat,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
-4032,4211042,4032a.dat,"Plate, Round 2 x 2 with Axle Hole",85,72,Dark Bluish Gray,Solid Colors,2,0.37
-,,,,,,,,,
-Total qty,Total Weight,,,,,,,,
-7,3.42,,,,,,,,

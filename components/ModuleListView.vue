@@ -2,7 +2,7 @@
   <main class="flex-1">
     <div class="flex flex-wrap items-center justify-start gap-3">
       <nuxt-link
-        to="/"
+        to="/modules"
         class="flex items-center py-2 space-x-1 text-gray-400 transition rounded-full hover:text-gray-300"
       >
         <svg
@@ -33,7 +33,7 @@
         <li v-for="item in items" :key="item.id" class="max-h-40">
           <nuxt-link
             title="Instructions"
-            :to="`/${item.type}/${item.id}`"
+            :to="`/${item.type}s/${item.id}`"
             class="transition duration-100 ease-in-out bg-red-200 hover:opacity-80"
           >
             <nuxt-picture
@@ -42,7 +42,7 @@
               height="480"
               quality="90"
               :src="`/images/modules/${item.imagePath}`"
-              :alt="`${item.theme} ${item.element} ${item.number}`"
+              :alt="`${item.theme} ${item.element} ${item.name}`"
               sizes="xs:512px"
               class="w-full"
             />

@@ -1,6 +1,14 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  router: {
+    scrollBehavior: function(to, from, savedPosition) {
+      if (savedPosition) {
+        return { ...savedPosition, behavior: "smooth" };
+      }
+      return { x: 0, y: 0, behavior: "smooth" };
+    }
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -49,7 +57,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/click-outside.js"],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

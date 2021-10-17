@@ -1,0 +1,18 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3005,4211098,3005,Brick 1 x 1,85,72,Dark Bluish Gray,Solid Colors,1,0.44
+30136,4211180,30136,"Brick, Modified 1 x 2 Log",88,70,Reddish Brown,Solid Colors,4,0.69
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3023,4211063,3023,Plate 1 x 2,85,72,Dark Bluish Gray,Solid Colors,2,0.36
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,3,0.2
+3034,4210997,3034,Plate 2 x 8,85,72,Dark Bluish Gray,Solid Colors,1,2.27
+3040,4211135,3040,Slope 45 2 x 1,85,72,Dark Bluish Gray,Solid Colors,1,0.69
+3678b,4234534,3678b,Slope 65 2 x 2 x 2 with Bottom Tube,85,72,Dark Bluish Gray,Solid Colors,1,2.09
+54200,4504376,54200,Slope 30 1 x 1 x 2/3,88,70,Reddish Brown,Solid Colors,2,0.21
+60481,6013658,60481,Slope 65 2 x 1 x 2,85,72,Dark Bluish Gray,Solid Colors,2,1.16
+6541,4210639,6541,"Technic, Brick 1 x 1 with Hole",85,72,Dark Bluish Gray,Solid Colors,1,0.38
+85984,4567887,85984,Slope 30 1 x 2 x 2/3,85,72,Dark Bluish Gray,Solid Colors,4,0.34
+87087,4558955,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",85,72,Dark Bluish Gray,Solid Colors,1,0.45
+92946,6069164,92946,Slope 45 2 x 1 with 2/3 Cutout,85,72,Dark Bluish Gray,Solid Colors,1,0.42
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+25,16.12,,,,,,,,

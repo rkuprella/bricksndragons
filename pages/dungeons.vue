@@ -31,9 +31,9 @@ export default {
       return {
         id: wall.slug,
         type: "wall",
-        theme: wall.slug.split("_", 3)[0],
+        theme: wall.slug.split("_", 3)[0].replace(/-/g, " "),
         element: wall.slug.split("_", 3)[1].replace(/-/g, " "),
-        number: wall.slug.split("_", 3)[2],
+        name: wall.slug.split("_", 3)[2].replace(/-/g, " "),
         imagePath: wall.slug + ".png",
         parts: wall.body.splice(0, wall.body.length - 3)
       };
@@ -43,9 +43,9 @@ export default {
       return {
         id: item.slug,
         type: "item",
-        theme: item.slug.split("_", 3)[0],
+        theme: item.slug.split("_", 3)[0].replace(/-/g, " "),
         element: item.slug.split("_", 3)[1].replace(/-/g, " "),
-        number: item.slug.split("_", 3)[2],
+        name: item.slug.split("_", 3)[2].replace(/-/g, " "),
         imagePath: item.slug + ".png",
         parts: item.body.splice(0, item.body.length - 3)
       };
@@ -55,9 +55,9 @@ export default {
       return {
         id: monster.slug,
         type: "monster",
-        theme: monster.slug.split("_", 3)[0],
+        theme: monster.slug.split("_", 3)[0].replace(/-/g, " "),
         element: monster.slug.split("_", 3)[1].replace(/-/g, " "),
-        number: monster.slug.split("_", 3)[2],
+        name: monster.slug.split("_", 3)[2].replace(/-/g, " "),
         imagePath: monster.slug + ".png",
         parts: monster.body.splice(0, monster.body.length - 3)
       };
@@ -84,9 +84,9 @@ export default {
       return {
         id: dungeon.slug,
         type: "dungeon",
-        theme: dungeon.slug.split("_", 3)[0],
+        theme: dungeon.slug.split("_", 3)[0].replace(/-/g, " "),
         element: dungeon.slug.split("_", 3)[1].replace(/-/g, " "),
-        number: dungeon.slug.split("_", 3)[2],
+        name: dungeon.slug.split("_", 3)[2].replace(/-/g, " "),
         imagePath: dungeon.slug + ".png",
         modules: dungeon.modules.map(itm => {
           return {

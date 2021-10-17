@@ -1,0 +1,19 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+22885,6123809,22885,"Brick, Modified 1 x 2 x 1 2/3 with Studs on 1 Side",86,71,Light Bluish Gray,Solid Colors,1,1.25
+2431,4211356,2431,Tile 1 x 4,86,71,Light Bluish Gray,Solid Colors,1,0.54
+3005,4211389,3005,Brick 1 x 1,86,71,Light Bluish Gray,Solid Colors,2,0.44
+30136,4211180,30136,"Brick, Modified 1 x 2 Log",88,70,Reddish Brown,Solid Colors,2,0.69
+3023,4211398,3023,Plate 1 x 2,86,71,Light Bluish Gray,Solid Colors,1,0.36
+3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
+3062b,4211183,3062b,"Brick, Round 1 x 1 Open Stud",88,70,Reddish Brown,Solid Colors,1,0.28
+3068b,4211055,3068b,Tile 2 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.48
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+3623,4211152,3623,Plate 1 x 3,88,70,Reddish Brown,Solid Colors,1,0.53
+3710,4211001,3710,Plate 1 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.71
+4073,4216581,4073,"Plate, Round 1 x 1",88,70,Reddish Brown,Solid Colors,1,0.12
+6541,4211535,6541,"Technic, Brick 1 x 1 with Hole",86,71,Light Bluish Gray,Solid Colors,1,0.38
+87087,4558953,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",86,71,Light Bluish Gray,Solid Colors,1,0.45
+98138pb042,6285623,98138pb042,"Tile, Round 1 x 1 with Tree Stump / Wood Grain Pattern",88,70,Reddish Brown,Solid Colors,5,0.11
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+23,11.13,,,,,,,,

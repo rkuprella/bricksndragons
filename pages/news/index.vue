@@ -1,16 +1,15 @@
 <template>
-  <div class="relative flex flex-wrap items-start gap-8 py-8">
-    <main class="flex-1 py-12">
-      <article class="container mx-auto prose max-w-prose">
-        <h1>News &amp; updates</h1>
-        <p>No content yet.</p>
-      </article>
-    </main>
-  </div>
+  <main class="flex-1 py-12">
+    <article class="container mx-auto prose max-w-prose">
+      <h1>News &amp; updates</h1>
+      <p>No content yet.</p>
+    </article>
+  </main>
 </template>
 
 <script>
 export default {
+  scrollToTop: true,
   head() {
     return {
       title: "News - Bricks & Dragons",

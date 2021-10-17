@@ -1,0 +1,12 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3020,4211186,3020,Plate 2 x 4,88,70,Reddish Brown,Solid Colors,1,1.2
+3023,4211063,3023,Plate 1 x 2,85,72,Dark Bluish Gray,Solid Colors,2,0.36
+3068b,4211055,3068b,Tile 2 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,1,0.48
+3068b,4271949,3068b,Tile 2 x 2 with Groove,88,70,Reddish Brown,Solid Colors,1,0.48
+4073,4216581,4073,"Plate, Round 1 x 1",88,70,Reddish Brown,Solid Colors,4,0.12
+87580,4565394,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",88,70,Reddish Brown,Solid Colors,1,0.5
+98138,6274738,98138,"Tile, Round 1 x 1",12,47,Trans-Clear,Transparent Colors,1,0.11
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+12,5.17,,,,,,,,

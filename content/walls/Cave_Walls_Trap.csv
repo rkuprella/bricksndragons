@@ -1,0 +1,16 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3004,4211088,3004,Brick 1 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.8
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3023,4211063,3023,Plate 1 x 2,85,72,Dark Bluish Gray,Solid Colors,2,0.36
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,2,0.2
+30294c01,,30294c01,"Rock Boulder, Top with Same Color Rock Boulder, Bottom (30293 / 30294)",85,72,Dark Bluish Gray,Solid Colors,1,5
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,1,0.26
+3710,4211001,3710,Plate 1 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.71
+6541,4210639,6541,"Technic, Brick 1 x 1 with Hole",85,72,Dark Bluish Gray,Solid Colors,1,0.38
+85984,4567887,85984,Slope 30 1 x 2 x 2/3,85,72,Dark Bluish Gray,Solid Colors,2,0.34
+87087,4558955,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",85,72,Dark Bluish Gray,Solid Colors,1,0.45
+92946,6069164,92946,Slope 45 2 x 1 with 2/3 Cutout,85,72,Dark Bluish Gray,Solid Colors,2,0.42
+99207,6308045,99207,Bracket 1 x 2 - 2 x 2 Inverted,85,72,Dark Bluish Gray,Solid Colors,1,0
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+16,11.44,,,,,,,,

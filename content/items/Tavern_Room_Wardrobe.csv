@@ -1,0 +1,10 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,4,0.3
+26603,6311441,26603,Tile 2 x 3,88,70,Reddish Brown,Solid Colors,1,0
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+4536,6126118,4536,"Container, Cupboard 2 x 3 Drawer",150,84,Medium Nougat,Solid Colors,2,0.45
+4073,4216581,4073,"Plate, Round 1 x 1",88,70,Reddish Brown,Solid Colors,4,0.12
+4532,6132732,4532,"Container, Cupboard 2 x 3 x 2",88,70,Reddish Brown,Solid Colors,1,2.5
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+13,6.28,,,,,,,,

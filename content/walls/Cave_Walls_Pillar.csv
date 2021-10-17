@@ -1,0 +1,10 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+28192,6168776,28192,Slope 45 2 x 1 with Cutout without Stud,85,72,Dark Bluish Gray,Solid Colors,1,0.41
+3004,4211088,3004,Brick 1 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.8
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,2,0.64
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,1,0.2
+3040,4211135,3040,Slope 45 2 x 1,85,72,Dark Bluish Gray,Solid Colors,1,0.69
+92946,6069164,92946,Slope 45 2 x 1 with 2/3 Cutout,85,72,Dark Bluish Gray,Solid Colors,1,0.42
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+7,3.8,,,,,,,,

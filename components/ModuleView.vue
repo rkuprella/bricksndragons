@@ -2,7 +2,7 @@
   <main class="flex-1">
     <div class="flex flex-wrap items-center justify-start gap-3">
       <nuxt-link
-        to="/"
+        to="/modules"
         class="flex items-center py-2 space-x-1 text-gray-400 transition rounded-full hover:text-gray-300"
       >
         <svg
@@ -20,7 +20,7 @@
         <span>Modules</span>
       </nuxt-link>
       <nuxt-link
-        :to="`/${item.type}`"
+        :to="`/${item.type}s`"
         class="flex items-center py-2 space-x-1 text-gray-400 transition rounded-full hover:text-gray-300"
       >
         <svg
@@ -43,18 +43,18 @@
         }}</span>
       </nuxt-link>
       <h1 class="py-2 italic text-primary-500">
-        {{ item.element }} {{ item.number }} ({{ item.theme }})
+        {{ item.element }} - {{ item.name }} ({{ item.theme }})
       </h1>
     </div>
     <div class="flex flex-col items-center py-8">
       <section class="flex flex-col items-center gap-4">
         <nuxt-picture
           loading="lazy"
-          width="640"
-          height="480"
+          width="800"
+          height="600"
           quality="90"
           :src="`/images/modules/${item.imagePath}`"
-          :alt="`${item.theme} ${item.element} ${item.number}`"
+          :alt="`${item.theme} ${item.element} ${item.name}`"
           sizes="xs:640px"
         />
 
@@ -78,6 +78,17 @@
           </svg>
           <span>Add this module to wanted list</span>
         </button>
+      </section>
+      <section class="flex flex-col items-center gap-4">
+        <nuxt-picture
+          loading="lazy"
+          width="1684"
+          height="1192"
+          quality="90"
+          :src="`/images/instructions/${item.imagePath}`"
+          :alt="`${item.theme} ${item.element} ${item.name}`"
+          sizes="xs:640px xl:1200px"
+        />
       </section>
     </div>
   </main>

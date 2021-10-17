@@ -1,0 +1,13 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+11610,6121354,11610,Cone 1 x 1 Inverted with Bar,95,179,Flat Silver,Pearl Colors,1,0.26
+15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,1,0.3
+28598,6168613,28598,Cone 2 x 2 x 3 Jagged - Step Drill,95,179,Flat Silver,Pearl Colors,1,2.11
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,1,0.2
+3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,1,0.16
+4589b,6121350,4589b,Cone 1 x 1 with Top Groove,95,179,Flat Silver,Pearl Colors,2,0.25
+89522,6214214,89522,Horn (Unicorn),95,179,Flat Silver,Pearl Colors,1,0.1
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+10,5.469999,,,,,,,,

@@ -1,18 +1,22 @@
 <template>
-  <section class="py-8" v-if="items.length > 0">
+  <section class="py-4" v-if="items.length > 0">
     <div class="flex items-center justify-between w-full">
-      <h2 class="text-sm text-gray-400">
-        {{ title }}
-        (<span class="font-bold text-gray-200">{{ items.length }}</span
-        >)
-      </h2>
+      <nuxt-link :to="`/${to}`" :disabled="to === '/'" class="px-1 py-3 group">
+        <h2 class="text-sm text-gray-600 dark:text-gray-400">
+          <span class="group-hover:underline">{{ title }}</span>
+          (<span class="font-bold text-gray-600 dark:text-gray-200">{{
+            items.length
+          }}</span
+          >)
+        </h2>
+      </nuxt-link>
       <button
         type="button"
         role="button"
         :title="`Hide/Show ${title}`"
         :aria-label="`Hide/Show ${title}`"
         @click="toggleModuleSection(title)"
-        class="p-3 text-gray-400 transition duration-150 hover:text-gray-300"
+        class="p-3 text-gray-700 transition duration-150 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
       >
         <svg
           class="w-5 h-5 transition-transform duration-100 transform"
@@ -37,6 +41,7 @@
     >
       <li v-for="item in items" :key="item.id" class="relative max-h-40'">
         <button
+          :title="`${item.element} - ${item.name}`"
           @click="addModule(item)"
           class="transition-transform duration-100 ease-in-out transform scale-95 hover:scale-100 active:scale-110"
         >
@@ -47,7 +52,7 @@
             height="480"
             quality="70"
             :src="`/images/modules/${item.imagePath}`"
-            :alt="`${item.theme} ${item.element} ${item.number}`"
+            :alt="`${item.theme} ${item.element} ${item.name}`"
             sizes="xs:100vw sm:300px"
             class="w-full"
           />
@@ -65,6 +70,10 @@ export default {
     title: {
       type: String,
       required: true
+    },
+    to: {
+      type: String,
+      default: ""
     },
     items: {
       type: Array,

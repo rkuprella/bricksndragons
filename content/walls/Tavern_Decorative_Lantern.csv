@@ -1,0 +1,17 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3005,4113915,3005,Brick 1 x 1,2,19,Tan,Solid Colors,4,0.44
+3023,4113917,3023,Plate 1 x 2,2,19,Tan,Solid Colors,2,0.36
+3034,4210997,3034,Plate 2 x 8,85,72,Dark Bluish Gray,Solid Colors,1,2.27
+3062b,4211183,3062b,"Brick, Round 1 x 1 Open Stud",88,70,Reddish Brown,Solid Colors,4,0.28
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,4,0.26
+3460,4210998,3460,Plate 1 x 8,85,72,Dark Bluish Gray,Solid Colors,1,1.36
+4162,4585337,4162,Tile 1 x 8,88,70,Reddish Brown,Solid Colors,1,1.06
+6541,4179771,6541,"Technic, Brick 1 x 1 with Hole",2,19,Tan,Solid Colors,1,0.38
+85861,6174023,85861,"Plate, Round 1 x 1 with Open Stud",98,1009009,Glow in Dark Orange,Milky Colors,1,0.1
+87087,4579260,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",2,19,Tan,Solid Colors,1,0.45
+4623b,6261358,4623b,"Plate, Modified 1 x 2 with Bar Arm Up (Horizontal Arm 5mm)",2,19,Tan,Solid Colors,1,0
+98138,6284586,98138,"Tile, Round 1 x 1",88,70,Reddish Brown,Solid Colors,1,0.11
+98283,6148262,98283,"Brick, Modified 1 x 2 with Masonry Profile",2,19,Tan,Solid Colors,2,0.77
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+24,11.91,,,,,,,,

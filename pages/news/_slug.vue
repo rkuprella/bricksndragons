@@ -1,11 +1,9 @@
 <template>
-  <div class="relative flex flex-wrap items-start gap-8 py-8">
-    <main class="flex-1">
-      <article class="p-8 bg-primary-100">
-        <nuxt-content :document="article" class="prose" />
-      </article>
-    </main>
-  </div>
+  <main class="flex-1">
+    <article class="p-8 bg-primary-100">
+      <nuxt-content :document="article" class="prose" />
+    </article>
+  </main>
 </template>
 
 <script>

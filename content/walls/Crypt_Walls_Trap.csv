@@ -1,0 +1,20 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15209,6248940,15209,"Tile, Modified 1 x 2 with 2 Teeth Vertical",88,70,Reddish Brown,Solid Colors,2,0.46
+2420,4210635,2420,Plate 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,1,0.54
+3005,4211098,3005,Brick 1 x 1,85,72,Dark Bluish Gray,Solid Colors,1,0.44
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3021,4211043,3021,Plate 2 x 3,85,72,Dark Bluish Gray,Solid Colors,1,0.93
+3023,4211063,3023,Plate 1 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.36
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,2,0.2
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,1,0.26
+3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,1,0.16
+32952,6228923,32952,"Brick, Modified 1 x 1 x 1 2/3 with Studs on 1 Side",85,72,Dark Bluish Gray,Solid Colors,2,0.7
+44300,4210882,44300,Hinge Tile 1 x 3 Locking with 1 Finger on Top,85,72,Dark Bluish Gray,Solid Colors,2,0.58
+44302b,4210884 	,44302b,Hinge Plate 1 x 2 Locking with 2 Fingers on End and 9 Teeth without Bottom Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.5
+6541,4210639,6541,"Technic, Brick 1 x 1 with Hole",85,72,Dark Bluish Gray,Solid Colors,1,0.38
+87079,4560184,87079,Tile 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.9
+87087,4558955,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",85,72,Dark Bluish Gray,Solid Colors,1,0.45
+98283,6000311,98283,"Brick, Modified 1 x 2 with Masonry Profile",85,72,Dark Bluish Gray,Solid Colors,1,0.77
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+21,11.27,,,,,,,,
