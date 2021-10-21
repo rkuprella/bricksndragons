@@ -1,20 +1,44 @@
 export const state = () => ({
   darkMode: true,
-  currentTheme: null,
+  themeModules: "Dungeon",
+  themeDungeons: "Dungeon",
+  themeCreatures: "Microfigure",
   wantedList: [],
   userWantedList: [],
   showWalls: true,
   showSets: true,
   showMicrofigs: true,
   showMonsters: true,
+  showRelatedItems: true,
   showWantedList: false,
   showXML: false,
   moduleSearch: "",
   showMenu: false,
-  currentPage: null
+  currentPage: null,
+  showPremiumPopup: null,
+  expensive: [
+    "Cave_Subterranean_Mushrooms-1",
+    "Cave_Subterranean_Mushrooms-2",
+    "Pyramids_Decorative_Scarab-puzzle"
+  ],
+  premium: [
+    "Castle",
+    "Mansion",
+    "Crypt",
+    "Dragon Lair",
+    "Mage Tower",
+    "Sewers",
+    "Pyramids"
+  ]
 });
 
 export const getters = {
+  isExpensive: state => id => {
+    return state.expensive.find(item => item === id);
+  },
+  isPremium: state => id => {
+    return state.premium.find(item => item === id);
+  },
   getTotalModulesInWantedList(state) {
     let total = 0;
     state.wantedList.map(list => {
@@ -74,19 +98,25 @@ export const getters = {
 
 export const mutations = {
   SET_THEME(state, payload) {
-    if (state.currentTheme === payload) {
-      state.currentTheme = null;
-    } else {
-      state.currentTheme = payload;
+    if (payload.type === "modules") {
+      state.themeModules = payload.theme;
+    } else if (payload.type === "dungeons") {
+      state.themeDungeons = payload.theme;
+    } else if (payload.type === "creatures") {
+      state.themeCreatures = payload.theme;
     }
   },
   ADD_MODULE(state, payload) {
-    let moduleExists = state.wantedList.find(item => item.id === payload.id);
-
-    if (moduleExists) {
-      state.wantedList.find(item => item.id === payload.id).total++;
+    if (state.premium.some(item => item === payload.theme)) {
+      state.showPremiumPopup = payload.id;
     } else {
-      state.wantedList.push({ ...payload, total: 1 });
+      let moduleExists = state.wantedList.find(item => item.id === payload.id);
+
+      if (moduleExists) {
+        state.wantedList.find(item => item.id === payload.id).total++;
+      } else {
+        state.wantedList.push({ ...payload, total: 1 });
+      }
     }
   },
   REMOVE_MODULE(state, payload) {
@@ -144,6 +174,8 @@ export const mutations = {
       state.showSets = !state.showSets;
     } else if (payload === "Microfigs") {
       state.showMicrofigs = !state.showMicrofigs;
+    } else if (payload === "Related items") {
+      state.showRelatedItems = !state.showRelatedItems;
     } else {
       state.showMonsters = !state.showMonsters;
     }
@@ -168,6 +200,9 @@ export const mutations = {
   },
   TOGGLE_DARK_MODE(state) {
     state.darkMode = !state.darkMode;
+  },
+  CLOSE_PREMIUM_POPUP(state) {
+    state.showPremiumPopup = false;
   }
 };
 
@@ -216,5 +251,8 @@ export const actions = {
   },
   toggleDarkMode({ commit }) {
     commit("TOGGLE_DARK_MODE");
+  },
+  closePremiumPopup({ commit }) {
+    commit("CLOSE_PREMIUM_POPUP");
   }
 };

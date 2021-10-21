@@ -1,0 +1,18 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,2,0.3
+2431,4211053,2431,Tile 1 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.54
+25269,6251591,25269,"Tile, Round 1 x 1 Quarter",65,82,Metallic Gold,Metallic Colors,2,0
+27925,6191630,27925,"Tile, Round Corner 2 x 2 Macaroni",11,0,Black,Solid Colors,2,0.3
+3005,4211098,3005,Brick 1 x 1,85,72,Dark Bluish Gray,Solid Colors,2,0.44
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3021,302126,3021,Plate 2 x 3,11,0,Black,Solid Colors,1,0.93
+3069b,306926,3069b,Tile 1 x 2 with Groove,11,0,Black,Solid Colors,1,0.26
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+3070b,307026,3070b,Tile 1 x 1 with Groove (3070),11,0,Black,Solid Colors,2,0.16
+38583,6292417,38583,Arch 1 x 2 Jumper,85,72,Dark Bluish Gray,Solid Colors,2,0
+49668,4273590,49668,"Plate, Modified 1 x 1 with Tooth Horizontal",11,0,Black,Solid Colors,2,0.253
+54200,4504382,54200,Slope 30 1 x 1 x 2/3,11,0,Black,Solid Colors,2,0.21
+99207,6308045,99207,Bracket 1 x 2 - 2 x 2 Inverted,85,72,Dark Bluish Gray,Solid Colors,2,0
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+24,6.776,,,,,,,,

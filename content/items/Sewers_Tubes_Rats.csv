@@ -1,0 +1,12 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+14719,6247784,14719,Tile 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,1,0.43
+15712,6344022,15712,"Tile, Modified 1 x 1 with Open O Clip",85,72,Dark Bluish Gray,Solid Colors,1,0.2
+3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
+3068b,4211055,3068b,Tile 2 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,1,0.48
+40234,4512743,40234,Rat,86,71,Light Bluish Gray,Solid Colors,1,0.6
+50687,4237196,50687,"Rat, Standing (HP Scabbers)",86,71,Light Bluish Gray,Solid Colors,1,0.87
+87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,2,0.5
+93160,4600294,93160,"Bone, Short",1,15,White,Solid Colors,1,0.17
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+9,5.97,,,,,,,,

@@ -1,0 +1,19 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15573,6092587,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",2,19,Tan,Solid Colors,1,0.3
+15573,6092591,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",69,28,Dark Tan,Solid Colors,4,0.3
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,2,0.64
+3023,4211150,3023,Plate 1 x 2,88,70,Reddish Brown,Solid Colors,8,0.36
+3024,4549436,3024,Plate 1 x 1,69,28,Dark Tan,Solid Colors,1,0.2
+3048c,4211251,3048c,Slope 45 2 x 1 Triple with Inside Bar,88,70,Reddish Brown,Solid Colors,2,0.34
+3069b,4539090,3069b,Tile 1 x 2 with Groove,59,320,Dark Red,Solid Colors,1,0.26
+3069b,4528488,3069b,Tile 1 x 2 with Groove,63,272,Dark Blue,Solid Colors,1,0.26
+3069b,4114026,3069b,Tile 1 x 2 with Groove,2,19,Tan,Solid Colors,1,0.26
+3069b,4496699,3069b,Tile 1 x 2 with Groove,69,28,Dark Tan,Solid Colors,1,0.26
+3070b,6055172,3070b,Tile 1 x 1 with Groove (3070),69,28,Dark Tan,Solid Colors,1,0.16
+3070b,6055171,3070b,Tile 1 x 1 with Groove (3070),80,288,Dark Green,Solid Colors,1,0.16
+41740,6257604,41740,"Plate, Modified 1 x 4 with 2 Studs with Groove",88,70,Reddish Brown,Solid Colors,6,0
+99780,6174856,99780,Bracket 1 x 2 - 1 x 2 Inverted,88,70,Reddish Brown,Solid Colors,6,0.55
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+37,12.4,,,,,,,,

@@ -1,0 +1,12 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,2,0.3
+15573,6092590,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",88,70,Reddish Brown,Solid Colors,1,0.3
+20482,6186681,20482,"Tile, Round 1 x 1 with Bar and Pin Holder",1,15,White,Solid Colors,1,0.16
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3023,4211150,3023,Plate 1 x 2,88,70,Reddish Brown,Solid Colors,1,0.36
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+32028,4645103,32028,"Plate, Modified 1 x 2 with Door Rail",88,70,Reddish Brown,Solid Colors,1,0.44
+37775,6357747,37775,Wave Rounded Small with Pin (Candle Flame),98,1009009,Glow in Dark Orange,Milky Colors,1,0.1
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+10,3.68,,,,,,,,

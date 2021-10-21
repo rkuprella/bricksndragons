@@ -1,0 +1,10 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+30169,4557385,30169,Scorpion,115,297,Pearl Gold,Pearl Colors,1,0.85
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3024,4159553,3024,Plate 1 x 1,2,19,Tan,Solid Colors,1,0.2
+3070b,4125253,3070b,Tile 1 x 1 with Groove (3070),2,19,Tan,Solid Colors,2,0.16
+3623,4121921,3623,Plate 1 x 3,2,19,Tan,Solid Colors,1,0.53
+87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,2,0.5
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+8,4.1,,,,,,,,

@@ -1,0 +1,19 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3005,4211389,3005,Brick 1 x 1,86,71,Light Bluish Gray,Solid Colors,2,0.44
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,2,0.2
+3034,4210997,3034,Plate 2 x 8,85,72,Dark Bluish Gray,Solid Colors,1,2.27
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+3069b,4211414,3069b,Tile 1 x 2 with Groove,86,71,Light Bluish Gray,Solid Colors,2,0.26
+3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,2,0.16
+3460,4210998,3460,Plate 1 x 8,85,72,Dark Bluish Gray,Solid Colors,1,1.36
+38320,6234994,38320,Pane for Window 1 x 2 x 2 Lattice Diamond,11,0,Black,Solid Colors,1,0.2
+4073,6315780,4073,"Plate, Round 1 x 1",120,308,Dark Brown,Solid Colors,2,0
+64644,4538950,64644,"Minifigure, Utensil Telescope",120,308,Dark Brown,Solid Colors,2,0.22
+6541,4211535,6541,"Technic, Brick 1 x 1 with Hole",86,71,Light Bluish Gray,Solid Colors,1,0.38
+6636,4211549,6636,Tile 1 x 6,86,71,Light Bluish Gray,Solid Colors,1,0.83
+87087,4558953,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",86,71,Light Bluish Gray,Solid Colors,1,0.45
+90195,4642934,90195,Window 1 x 2 x 2 Castle,86,71,Light Bluish Gray,Solid Colors,1,0.74
+98283,6000066,98283,"Brick, Modified 1 x 2 with Masonry Profile",86,71,Light Bluish Gray,Solid Colors,4,0.77
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+25,12.39,,,,,,,,

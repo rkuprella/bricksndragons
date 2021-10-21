@@ -1,0 +1,10 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+30374,6147169,30374,Bar   4L (Lightsaber Blade / Wand),115,297,Pearl Gold,Pearl Colors,2,0.3
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+35480,6221607,35480,"Plate, Round 1 x 2 with Two Open Studs",85,72,Dark Bluish Gray,Solid Colors,2,0.26
+35480,6212758,35480,"Plate, Round 1 x 2 with Two Open Studs",2,19,Tan,Solid Colors,4,0.26
+87994,6093529,87994,Bar   3L (Bar Arrow),115,297,Pearl Gold,Pearl Colors,2,0.2
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+13,4.28,,,,,,,,

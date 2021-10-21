@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto"],
+        sans: ["Poppins"],
         display: ["Bangers"]
       },
       colors: {
@@ -28,15 +28,19 @@ module.exports = {
               color: theme("colors.blue.700")
             },
             h2: {
-              color: theme("colors.blue.700")
+              color: theme("colors.blue.700"),
+              fontSize: "2.5rem"
             },
             h3: {
-              color: theme("colors.yellow.700"),
+              color: theme("colors.blue.700"),
               fontWeight: "400",
               fontSize: "2rem"
             },
             h4: {
-              color: theme("colors.yellow.700")
+              color: theme("colors.yellow.700"),
+              fontWeight: "400",
+              fontFamily: "Bangers",
+              fontSize: "2rem"
             },
             h5: {
               color: theme("colors.yellow.700")
@@ -59,13 +63,13 @@ module.exports = {
               }
             },
             h1: {
-              color: theme("colors.blue.500")
+              color: theme("colors.blue.400")
             },
             h2: {
               color: theme("colors.blue.400")
             },
             h3: {
-              color: theme("colors.yellow.500"),
+              color: theme("colors.blue.400"),
               fontWeight: "400",
               fontSize: "2rem"
             },

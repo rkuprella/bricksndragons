@@ -1,0 +1,11 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+24246,6250600,24246,"Tile, Round 1 x 1 Half Circle Extended (Stadium)",6,2,Green,Solid Colors,1,0.1
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+32607,6182261,32607,"Plant Plate, Round 1 x 1 with 3 Leaves",36,10,Bright Green,Solid Colors,2,0.23
+33492,6254404,33492,Cone 1 1/2 x 1 1/2 x 2/3 Truncated,86,71,Light Bluish Gray,Solid Colors,1,0.2
+36840,6238874,36840,Bracket 1 x 1 - 1 x 1 Inverted,88,70,Reddish Brown,Solid Colors,1,0.29
+37695,6235080,37695,Plant Stem with 3 Leaves and Bottom Pin,36,10,Bright Green,Solid Colors,1,0.17
+87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,2,0.5
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+9,3.42,,,,,,,,

@@ -1,0 +1,9 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,2,1.2
+3023,4113917,3023,Plate 1 x 2,2,19,Tan,Solid Colors,1,0.36
+3024,4159553,3024,Plate 1 x 1,2,19,Tan,Solid Colors,2,0.2
+54200,4516055,54200,Slope 30 1 x 1 x 2/3,2,19,Tan,Solid Colors,4,0.21
+85863,4585486,85863,Body Microfigure Plain Complete,2,19,Tan,Solid Colors,4,0.63
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+13,6.52,,,,,,,,

@@ -1,0 +1,9 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+14719,6247784,14719,Tile 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,4,0.43
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
+x8,6269048,x8,Plant Flower Stem 1 x 1 x 2/3 with 3 Large Leaves,36,10,Bright Green,Solid Colors,1,1.17
+98100,6028324,98100,Cone 2 x 2 Truncated,86,71,Light Bluish Gray,Solid Colors,1,0.87
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+8,6.62,,,,,,,,

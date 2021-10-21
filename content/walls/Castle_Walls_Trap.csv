@@ -1,0 +1,17 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+11211,6015344,11211,"Brick, Modified 1 x 2 with Studs on 1 Side",86,71,Light Bluish Gray,Solid Colors,2,0.86
+14719,6065824,14719,Tile 2 x 2 Corner,86,71,Light Bluish Gray,Solid Colors,2,0.43
+3005,4211389,3005,Brick 1 x 1,86,71,Light Bluish Gray,Solid Colors,2,0.44
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,2,0.2
+3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,2,0.16
+3710,4211001,3710,Plate 1 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.71
+37775,6357747,37775,Wave Rounded Small with Pin (Candle Flame),98,1009009,Glow in Dark Orange,Milky Colors,2,0.1
+6126b,6167741,6126b,"Wave Rounded with Base Rim (Castle Dragon Flame, Seaweed, Water)",98,1009009,Glow in Dark Orange,Milky Colors,2,0.23
+4073,6315780,4073,"Plate, Round 1 x 1",120,308,Dark Brown,Solid Colors,2,0
+64644,4538950,64644,"Minifigure, Utensil Telescope",120,308,Dark Brown,Solid Colors,2,0.22
+6541,4211535,6541,"Technic, Brick 1 x 1 with Hole",86,71,Light Bluish Gray,Solid Colors,1,0.38
+87087,4558953,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",86,71,Light Bluish Gray,Solid Colors,1,0.45
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+22,8.02,,,,,,,,

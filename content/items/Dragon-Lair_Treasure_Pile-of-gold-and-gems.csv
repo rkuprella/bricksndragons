@@ -1,0 +1,15 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+14719,6247784,14719,Tile 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,1,0.43
+2420,4210635,2420,Plate 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,3,0.54
+3003,4645051,3003,Brick 2 x 2,110,191,Bright Light Orange,Solid Colors,1,0
+30153,6247785,30153,Rock 1 x 1 Jewel 24 Facet,17,36,Trans-Red,Transparent Colors,1,0.22
+30153,6247800,30153,Rock 1 x 1 Jewel 24 Facet,108,35,Trans-Bright Green,Transparent Colors,1,0.22
+30153,6247795,30153,Rock 1 x 1 Jewel 24 Facet,19,46,Trans-Yellow,Transparent Colors,1,0.22
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
+85861,6190252,85861,"Plate, Round 1 x 1 with Open Stud",115,297,Pearl Gold,Pearl Colors,17,0.1
+99563,6207933,99563,"Minifigure, Utensil Ingot / Bar",115,297,Pearl Gold,Pearl Colors,1,0.22
+98138,4649422,98138,"Tile, Round 1 x 1",115,297,Pearl Gold,Pearl Colors,8,0.11
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+36,8.37,,,,,,,,

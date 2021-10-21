@@ -1,6 +1,10 @@
 <template>
   <main class="flex-1">
-    <ThemeSwitcher :themes="themes" />
+    <ThemeSwitcher
+      :themes="themes"
+      :searchResults="searchResults"
+      type="dungeons"
+    />
     <div class="py-8">
       <ul class="grid grid-cols-1 mt-8 2xl:grid-cols-2">
         <li
@@ -36,7 +40,7 @@
           </div>
           <button
             @click="addMap(dungeon)"
-            class="flex items-center p-3 space-x-1 text-gray-900 transition rounded bg-primary-500 lg:py-1 lg:px-2 bg-opacity-90 hover:bg-opacity-100"
+            class="flex items-center p-3 space-x-1 text-gray-900 transition transform rounded bg-primary-500 lg:py-1 lg:px-2 bg-opacity-90 hover:bg-opacity-100 active:scale-95"
           >
             <svg
               class="w-4 h-4"
@@ -74,6 +78,10 @@ export default {
     },
     themes: {
       type: Array,
+      required: true
+    },
+    searchResults: {
+      type: Set,
       required: true
     }
   },

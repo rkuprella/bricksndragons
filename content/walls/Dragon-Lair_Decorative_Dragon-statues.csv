@@ -1,0 +1,22 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,3,0.3
+3005,300526,3005,Brick 1 x 1,11,0,Black,Solid Colors,2,0.44
+3005,4211098,3005,Brick 1 x 1,85,72,Dark Bluish Gray,Solid Colors,1,0.44
+3023,4211063,3023,Plate 1 x 2,85,72,Dark Bluish Gray,Solid Colors,2,0.36
+3023,302326,3023,Plate 1 x 2,11,0,Black,Solid Colors,4,0.36
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,4,0.2
+3034,4210997,3034,Plate 2 x 8,85,72,Dark Bluish Gray,Solid Colors,1,2.27
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,2,0.16
+3460,4210998,3460,Plate 1 x 8,85,72,Dark Bluish Gray,Solid Colors,1,1.36
+36017,6224825,36017,"Minifigure, Weapon Sword Hilt with Dragon Head",115,297,Pearl Gold,Pearl Colors,2,0.3
+38583,6292417,38583,Arch 1 x 2 Jumper,85,72,Dark Bluish Gray,Solid Colors,3,0
+4162,4211008,4162,Tile 1 x 8,85,72,Dark Bluish Gray,Solid Colors,1,1.06
+4085d,6296892,4085d,"Plate, Modified 1 x 1 with Open O Clip Thick (Vertical Grip)",85,72,Dark Bluish Gray,Solid Colors,2,0.29
+6541,654126,6541,"Technic, Brick 1 x 1 with Hole",11,0,Black,Solid Colors,1,0.38
+87087,4558954,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",11,0,Black,Solid Colors,1,0.45
+92946,6069000,92946,Slope 45 2 x 1 with 2/3 Cutout,11,0,Black,Solid Colors,2,0.42
+98138,4649422,98138,"Tile, Round 1 x 1",115,297,Pearl Gold,Pearl Colors,2,0.11
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+36,13.78,,,,,,,,

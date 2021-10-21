@@ -1,14 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
-  router: {
-    scrollBehavior: function(to, from, savedPosition) {
-      if (savedPosition) {
-        return { ...savedPosition, behavior: "smooth" };
-      }
-      return { x: 0, y: 0, behavior: "smooth" };
-    }
-  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -105,8 +97,8 @@ export default {
   },
 
   gtm: {
-    id: "GTM-5NS2SQL",
-    autoInit: false
+    id: "GTM-5NS2SQL"
+    // autoInit: false
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

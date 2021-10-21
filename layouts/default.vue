@@ -1,11 +1,9 @@
 <template>
-  <div :class="darkMode && 'dark'">
+  <div class="text-sm sm:text-base" :class="darkMode && 'dark'">
     <div
-      class="flex flex-col min-h-screen antialiased text-gray-800 bg-primary-100 dark:text-gray-200 dark:bg-gray-900"
+      class="flex flex-col min-h-screen antialiased text-gray-800 bg-primary-50 dark:text-gray-200 dark:bg-gray-900"
     >
-      <header
-        class="relative text-primary-50 bg-primary-600 min-h-[480px] lg:h-[480px]"
-      >
+      <header class="relative text-primary-50 bg-primary-600 h-[420px]">
         <transition
           enter-active-class="transition ease-out"
           enter-class="opacity-0"
@@ -23,7 +21,7 @@
         <transition-group
           tag="nav"
           :style="{ '--total': topNav.length }"
-          class="absolute right-0 z-40 flex flex-col items-end gap-4 overflow-hidden text-primary-900/80 top-32 lg:hidden dark:text-gray-400"
+          class="absolute right-0 z-40 flex flex-col items-end gap-4 pl-8 overflow-hidden text-primary-900/80 top-32 lg:hidden dark:text-gray-400"
           enter-active-class="transition transform duration-300 ease-[cubic-bezier(0.2,0.5,0.1,1)] delay-[calc(0.12s*var(--i))]"
           enter-class="-translate-x-8 opacity-0"
           enter-to-class="translate-x-0"
@@ -66,7 +64,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
             height="100%"
-            class="w-full h-[31px] text-primary-100 dark:text-gray-900"
+            class="w-full h-[31px] text-primary-50 dark:text-gray-900"
           >
             <defs>
               <pattern
@@ -110,8 +108,8 @@
                 class="w-full"
               />
               <span
-                class="absolute bottom-0 right-0 inline-block px-3 py-1 text-xs text-red-100 transform bg-red-700 rounded-full -rotate-12"
-                >Beta</span
+                class="absolute bottom-0 inline-block px-3 py-1 text-xs text-red-100 transform bg-red-700 rounded-full -right-8 -rotate-12"
+                >Under construction</span
               >
             </nuxt-link>
             <div class="items-center hidden gap-1 lg:flex">
@@ -177,7 +175,7 @@
               type="button"
               role="button"
               aria-label="Toggle menu"
-              class="relative z-30 w-12 h-12 text-primary-100 lg:hidden"
+              class="relative z-30 w-12 h-12 text-primary-50 lg:hidden"
               @click="setMenu(showMenu ? false : true)"
             >
               <div
@@ -375,9 +373,9 @@
           <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <div class="prose dark:prose-dark">
-                <h3 class="font-display">
+                <h4>
                   About
-                </h3>
+                </h4>
                 <p>
                   This web app,
                   <em>which is currently in beta</em>, provides custom built
@@ -404,9 +402,9 @@
             </div>
             <div>
               <div class="prose dark:prose-dark">
-                <h3 class="font-display">
+                <h4>
                   Disclaimer
-                </h3>
+                </h4>
                 <p>
                   Bricks &amp; Dragons is not affiliated with The LEGO Group.
                   LEGO® is a trademark of The LEGO Group of companies which does
@@ -445,17 +443,7 @@ export default {
           aliases: [],
           name: "Home",
           slogan: "A Modular LEGO® Dungeon System",
-          tags: ["micro-scale", "durable", "connectible"],
-          linkTitle: "Explore all dungeon maps",
-          linkTo: "/dungeons",
-          bgImage: "/images/header-microfigs.png",
-          bgImageAlt: "LEGO® Microfig Heads"
-        },
-        {
-          to: "/modules",
-          aliases: ["/walls", "/monsters", "/items"],
-          name: "Modules",
-          slogan: "Build any dungeon for your RPG",
+          // tags: ["micro-scale", "durable", "connectible"],
           linkTitle: "Explore all dungeon maps",
           linkTo: "/dungeons",
           bgImage: "/images/header-microfigs.png",
@@ -466,9 +454,27 @@ export default {
           aliases: [],
           name: "Dungeons",
           slogan: "Inspiration for your campaign",
-          tags: ["pre-built", "customizable"],
+          // tags: ["quickly assembled", "fully customizable"],
           bgImage: "/images/header-dungeons.png",
           bgImageAlt: "A modular LEGO® dungeon"
+        },
+        {
+          to: "/modules",
+          aliases: ["/walls", "/items"],
+          name: "Modules",
+          slogan: "Build any dungeon for your RPG",
+          // tags: ["everything is possible"],
+          bgImage: "/images/header-modules.png",
+          bgImageAlt: "Bricks & Dragons modules"
+        },
+        {
+          to: "/creatures",
+          aliases: ["/monsters", "/microfigs"],
+          name: "Creatures",
+          slogan: "Monsters & Heroes",
+          // tags: ["everything is possible"],
+          bgImage: "/images/header-microfigs.png",
+          bgImageAlt: "LEGO® Microfig Heads"
         },
         {
           to: "/about",
@@ -484,8 +490,7 @@ export default {
       bottomNav: [
         { to: "/about", name: "About" },
         { to: "/news", name: "News" }
-      ],
-      tags: ["micro-scale", "durable", "customizable"]
+      ]
     };
   },
   computed: {

@@ -1,0 +1,12 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+14719,6247784,14719,Tile 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,2,0.43
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,2,0.2
+3070b,4550169,3070b,Tile 1 x 1 with Groove (3070),59,320,Dark Red,Solid Colors,2,0.16
+6541,6267414,6541,"Technic, Brick 1 x 1 with Hole",59,320,Dark Red,Solid Colors,1,0
+87087,6212007,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",59,320,Dark Red,Solid Colors,3,0.45
+87994,6093529,87994,Bar   3L (Bar Arrow),115,297,Pearl Gold,Pearl Colors,1,0.2
+93058,4600519,93058,"Minifigure, Weapon Throwing Star (Shuriken) with Smooth Grips",115,297,Pearl Gold,Pearl Colors,2,0.13
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+14,4.59,,,,,,,,

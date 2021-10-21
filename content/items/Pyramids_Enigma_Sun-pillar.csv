@@ -1,0 +1,11 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+22388,6129416,22388,Slope 45 1 x 1 x 2/3 Quadruple Convex Pyramid,115,297,Pearl Gold,Pearl Colors,1,0.16
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3022,6162885,3022,Plate 2 x 2,115,297,Pearl Gold,Pearl Colors,1,0.64
+3022,4114084,3022,Plate 2 x 2,2,19,Tan,Solid Colors,2,0.64
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
+3688,,3688,Slope 75 2 x 2 x 2 Quadruple Convex - Blocked Open Stud or Hollow Stud,2,19,Tan,Solid Colors,1,1.32
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+9,5.76,,,,,,,,

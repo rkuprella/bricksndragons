@@ -1,0 +1,13 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3005,300526,3005,Brick 1 x 1,11,0,Black,Solid Colors,2,0.44
+3034,4210997,3034,Plate 2 x 8,85,72,Dark Bluish Gray,Solid Colors,1,2.27
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,4,0.26
+32932,6195092,32932,Fence 1 x 4 x 2 Ornamental Asian Lattice with 4 Studs,11,0,Black,Solid Colors,1,1.8
+3460,4210998,3460,Plate 1 x 8,85,72,Dark Bluish Gray,Solid Colors,1,1.36
+4162,416226,4162,Tile 1 x 8,11,0,Black,Solid Colors,1,1.06
+60481,4515373,60481,Slope 65 2 x 1 x 2,11,0,Black,Solid Colors,2,1.16
+6541,654126,6541,"Technic, Brick 1 x 1 with Hole",11,0,Black,Solid Colors,1,0.38
+87087,4558954,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",11,0,Black,Solid Colors,1,0.45
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+14,11.56,,,,,,,,

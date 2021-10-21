@@ -10,17 +10,31 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: 'Poppins';
   font-display: swap;
-  src: url('../fonts/Roboto-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/poppins-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v15-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-weight: 700;
+  font-family: 'Poppins';
   font-display: swap;
-  src: url('../fonts/Roboto-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v15-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/poppins-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v15-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v15-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
 }
 
 @layer base {
@@ -35,4 +49,7 @@
 @layer components {
   .theme__creatures { @apply text-green-800 bg-primary-800/10 hover:bg-primary-600/10 dark:bg-gray-700 dark:bg-opacity-30 dark:hover:bg-opacity-50 dark:text-green-400 }
   .theme__creatures--active { @apply bg-green-700 text-green-50 }
+  .disabled {
+    @apply cursor-default pointer-events-none !opacity-25
+  }
 }

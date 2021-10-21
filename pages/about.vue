@@ -1,7 +1,7 @@
 <template>
   <main class="flex-1 py-12">
-    <article class="container mx-auto prose max-w-prose dark:prose-dark">
-      <h1>About Bricks &amp; Dragons</h1>
+    <ContentProse>
+      <h2>About Bricks &amp; Dragons</h2>
       <p>
         This web app, <em>which is currently in beta</em>, provides custom built
         brick modules for a modular micro-scale LEGO® dungeon system. Each
@@ -17,10 +17,9 @@
         registration on bricklink).
       </p>
       <p>
-        I maintain this project as a hobby. The provided service is free of
-        charge. Please note that I cannot guarantee the validity of the
-        generated wanted list. Please check carefully before buying parts on
-        bricklink!
+        I maintain this project as a hobby. Please note that I cannot guarantee
+        the validity of the generated wanted list. Please check carefully before
+        buying parts on bricklink!
       </p>
       <nuxt-picture
         loading="lazy"
@@ -42,7 +41,7 @@
         to not miss new releases.
       </p>
 
-      <h2>Disclaimer</h2>
+      <h3>Disclaimer</h3>
       <p>
         Bricks &amp; Dragons is not affiliated with The LEGO Group. LEGO® is a
         trademark of The LEGO Group of companies which does not in anyway
@@ -107,7 +106,7 @@
         legal or correct, the content or validity of the other parts remain
         uninfluenced by this fact.
       </p>
-      <h2>Legal Notice</h2>
+      <h3>Legal Notice</h3>
       <ul class="mb-8">
         <li>Robin C. Kuprella</li>
         <li>Hövenerwiese 7</li>
@@ -118,7 +117,7 @@
           <a href="mailto:bricksndragons@gmail.com">bricksndragons@gmail.com</a>
         </li>
       </ul>
-    </article>
+    </ContentProse>
   </main>
 </template>
 

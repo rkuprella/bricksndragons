@@ -1,0 +1,15 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+25269,6199549,25269,"Tile, Round 1 x 1 Quarter",85,72,Dark Bluish Gray,Solid Colors,5,0.1
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+30374,6116604,30374,Bar   4L (Lightsaber Blade / Wand),11,0,Black,Solid Colors,1,0.3
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,1,0.26
+35480,6210270,35480,"Plate, Round 1 x 2 with Two Open Studs",11,0,Black,Solid Colors,5,0.26
+35480,6221607,35480,"Plate, Round 1 x 2 with Two Open Studs",85,72,Dark Bluish Gray,Solid Colors,1,0.26
+85861,6168646,85861,"Plate, Round 1 x 1 with Open Stud",11,0,Black,Solid Colors,4,0.1
+87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,1,0.5
+95343,4626196,95343,"Container, Bucket 1 x 1 x 1 Tapered",88,70,Reddish Brown,Solid Colors,1,0.35
+95344,6245275,95344,"Container, Bucket 1 x 1 x 1 Handle / Scooter Stand",69,28,Dark Tan,Solid Colors,1,0.13
+98138,6284070,98138,"Tile, Round 1 x 1",11,0,Black,Solid Colors,1,0.11
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+22,5.31,,,,,,,,

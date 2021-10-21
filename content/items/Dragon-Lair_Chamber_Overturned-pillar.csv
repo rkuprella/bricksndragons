@@ -1,0 +1,15 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+14769,6056296,14769,"Tile, Round 2 x 2 with Bottom Stud Holder",85,72,Dark Bluish Gray,Solid Colors,1,0.33
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3023,4211063,3023,Plate 1 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.36
+3040,4121966,3040,Slope 45 2 x 1,11,0,Black,Solid Colors,1,0.69
+3937,4211066,3937,Hinge Brick 1 x 2 Base,85,72,Dark Bluish Gray,Solid Colors,1,0.48
+3938,6176400,3938,Hinge Brick 1 x 2 Top Plate,85,72,Dark Bluish Gray,Solid Colors,1,0.34
+4032,4211042,4032,"Plate, Round 2 x 2 with Axle Hole",85,72,Dark Bluish Gray,Solid Colors,1,0.37
+54200,4504382,54200,Slope 30 1 x 1 x 2/3,11,0,Black,Solid Colors,1,0.21
+85984,4548180,85984,Slope 30 1 x 2 x 2/3,11,0,Black,Solid Colors,2,0.34
+92947,6268169,92947,"Brick, Round 2 x 2 with Flutes / Fluted and Axle Hole",85,72,Dark Bluish Gray,Solid Colors,2,0
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+13,5.3,,,,,,,,

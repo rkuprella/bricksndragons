@@ -1,0 +1,14 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+2357,4211349,2357,Brick 2 x 2 Corner,86,71,Light Bluish Gray,Solid Colors,1,1.25
+2420,4210635,2420,Plate 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,1,0.54
+3005,4211389,3005,Brick 1 x 1,86,71,Light Bluish Gray,Solid Colors,1,0.44
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,1,0.2
+3068b,4211413,3068b,Tile 2 x 2 with Groove,86,71,Light Bluish Gray,Solid Colors,1,0.48
+4073,6315780,4073,"Plate, Round 1 x 1",120,308,Dark Brown,Solid Colors,1,0
+64644,4538950,64644,"Minifigure, Utensil Telescope",120,308,Dark Brown,Solid Colors,1,0.22
+6541,4211535,6541,"Technic, Brick 1 x 1 with Hole",86,71,Light Bluish Gray,Solid Colors,1,0.38
+87087,4558953,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",86,71,Light Bluish Gray,Solid Colors,1,0.45
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+10,4.6,,,,,,,,

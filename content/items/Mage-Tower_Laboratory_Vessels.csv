@@ -1,0 +1,11 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+20482,6271752,20482,"Tile, Round 1 x 1 with Bar and Pin Holder",85,72,Dark Bluish Gray,Solid Colors,2,0
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3022,4211094,3022,Plate 2 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.64
+553b,6264987,553b,"Brick, Round 2 x 2 Dome Top - Blocked Open Stud with Bottom Axle Holder x Shape + Orientation",12,47,Trans-Clear,Transparent Colors,1,0
+3062b,6223655,3062b,"Brick, Round 1 x 1 Open Stud",12,47,Trans-Clear,Transparent Colors,1,0.28
+3941,6273152,3941,"Brick, Round 2 x 2 with Axle Hole",12,47,Trans-Clear,Transparent Colors,1,1.2
+87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,1,0.5
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+8,3.82,,,,,,,,

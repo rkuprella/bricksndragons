@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="fixed inset-x-0 bottom-0 z-40 px-4 py-1 shadow-lg bg-primary-50 dark:bg-gray-700 lg:py-6 lg:sticky rounded-3xl lg:w-1/3 xl:w-1/4 lg:bottom-auto lg:top-8 lg:inset-x-auto"
+    class="fixed inset-x-0 bottom-0 z-30 px-4 py-1 lg:bg-primary-800/20 bg-primary-50 dark:bg-gray-700 lg:py-6 lg:sticky rounded-3xl lg:w-[340px] lg:bottom-auto lg:top-8 lg:inset-x-auto"
     :class="
       showWantedList
         ? 'top-64 lg:top-8 h-full pb-52 overflow-y-auto lg:overflow-y-visible'
@@ -8,18 +8,22 @@
     "
   >
     <div
-      class="fixed inset-x-0 bottom-0 z-30 flex items-center justify-between px-4 py-1 border-t border-primary-200 dark:border-gray-600 bg-primary-50 dark:bg-gray-800 lg:border-t-0 lg:py-0 lg:bg-transparent dark:lg:bg-transparent lg:inset-x-auto lg:static lg:bottom-auto"
+      class="fixed inset-x-0 bottom-0 z-30 flex items-center justify-between px-4 py-1 border-t border-primary-200 dark:border-gray-600 bg-primary-50 dark:bg-gray-800 lg:border-t-0 lg:p-0 lg:bg-transparent lg:dark:bg-transparent lg:inset-x-auto lg:static lg:bottom-auto"
     >
       <h2 class="dark:text-gray-400">
-        <span class="font-bold dark:text-gray-100">Wanted list</span> (<span
-          class="font-bold dark:text-gray-100"
-          >{{ getTotalModulesInWantedList }}</span
+        <span class="text-lg font-bold text-primary-800 dark:text-blue-300"
+          >Wanted list</span
         >
-        modules,
-        <span class="font-bold dark:text-gray-100">{{
-          getTotalPartsInWantedList
-        }}</span>
-        parts)
+        <span v-show="getTotalModulesInWantedList"
+          >(<span class="font-bold dark:text-gray-100">{{
+            getTotalModulesInWantedList
+          }}</span>
+          {{ getTotalModulesInWantedList == 1 ? "module" : "modules" }},
+          <span class="font-bold dark:text-gray-100">{{
+            getTotalPartsInWantedList
+          }}</span>
+          {{ getTotalPartsInWantedList == 1 ? "part" : "parts" }})</span
+        >
       </h2>
       <button
         type="button"
@@ -55,7 +59,7 @@
         <button
           title="Bookmark"
           @click="saveUserWantedList"
-          class="flex items-center gap-1 py-2 pl-2 pr-4 transition ease-in-out"
+          class="flex items-center gap-1 py-2 pl-2 pr-4 transition ease-in-out group"
           :class="
             isWantedListBookmarked
               ? 'text-green-800 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300'
@@ -73,7 +77,7 @@
           >
             <svg
               v-if="isWantedListBookmarked"
-              class="w-6 h-6"
+              class="w-6 h-6 transition transform group-hover:scale-110 group-active:scale-95"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +86,7 @@
             </svg>
             <div class="w-6 h-6" v-else>
               <svg
-                class="w-6 h-6"
+                class="w-6 h-6 transition transform group-hover:scale-110 group-active:scale-95"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -102,10 +106,10 @@
         <button
           title="Reset"
           @click="resetWantedList"
-          class="flex items-center gap-1 py-2 pl-2 pr-4 text-gray-800 transition ease-in-out hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-200"
+          class="flex items-center gap-1 py-2 pl-2 pr-4 text-gray-800 transition ease-in-out hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-200 group"
         >
           <svg
-            class="w-6 h-6"
+            class="w-6 h-6 transition transform group-hover:scale-110 group-active:scale-95"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -136,11 +140,14 @@
           class="flex flex-col items-center pb-4"
         >
           <nuxt-link
-            v-if="item.type != 'microfig'"
-            title="Instructions"
+            :title="item.name"
             @click.native="closeWantedList"
-            :to="`/${item.type}s/${item.id}`"
-            class="transition ease-in-out hover:opacity-80"
+            :to="`/${getType(item.type)}/${item.type}s/${item.id}`"
+            class="transition hover:opacity-80"
+            :class="
+              $nuxt.$route.path ===
+                `/${getType(item.type)}/${item.type}s/${item.id}` && 'disabled'
+            "
           >
             <nuxt-picture
               loading="lazy"
@@ -154,23 +161,11 @@
               class="w-full"
             />
           </nuxt-link>
-          <div v-else>
-            <nuxt-picture
-              loading="lazy"
-              fit="cover"
-              width="640"
-              height="480"
-              quality="70"
-              :src="`/images/modules/${item.imagePath}`"
-              :alt="`${item.theme} ${item.element} ${item.name}`"
-              sizes="xs:100vw sm:300px"
-              class="w-full"
-            />
-          </div>
           <div class="flex items-center justify-around w-full">
             <button
               @click="removeModule(item)"
-              class="p-3 text-gray-900 transition rounded bg-primary-500 lg:p-1 bg-opacity-90 hover:bg-opacity-100"
+              title="Decrease amount of modules by 1"
+              class="p-3 text-gray-900 transition transform rounded bg-primary-500 lg:p-1 hover:bg-primary-400 hover:scale-105 active:scale-95"
             >
               <svg
                 class="w-4 h-4"
@@ -190,7 +185,8 @@
             <div>{{ item.total }}</div>
             <button
               @click="addModule(item)"
-              class="p-3 text-gray-900 transition rounded bg-primary-500 lg:p-1 bg-opacity-90 hover:bg-opacity-100"
+              title="Increase amount of modules by 1"
+              class="p-3 text-gray-900 transition transform rounded bg-primary-500 lg:p-1 hover:bg-primary-400 hover:scale-105 active:scale-95"
             >
               <svg
                 class="w-4 h-4"
@@ -211,14 +207,16 @@
         </li>
       </transition-group>
       <div v-if="wantedList.length > 0">
-        <div class="flex divide-x divide-gray-700/80">
+        <div
+          class="flex divide-x divide-primary-100/20 dark:divide-gray-700/80"
+        >
           <button
             @click="copyToClipboard('wanted')"
-            class="flex-1 p-3 transition ease-out bg-gray-800/80 hover:bg-gray-800/60"
+            class="flex-1 p-3 text-gray-100 transition ease-out lg:p-1 bg-gray-800/80 hover:bg-gray-800/60"
           >
             <div
               v-if="copied"
-              class="flex items-center justify-center space-x-1 text-green-300"
+              class="flex items-center justify-center space-x-1 text-green-200"
             >
               <svg
                 class="w-5 h-5"
@@ -236,7 +234,7 @@
             </div>
             <div v-else class="flex items-center justify-center space-x-1">
               <svg
-                class="w-5 h-5 text-gray-400"
+                class="w-5 h-5 opacity-50"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +273,7 @@
           </button>
         </div>
         <div
-          class="h-48 p-2 overflow-y-auto text-xs font-bold text-blue-400 bg-gray-800 bg-opacity-25"
+          class="h-48 p-2 overflow-y-auto text-xs font-bold text-blue-700 bg-opacity-25 dark:text-blue-400 bg-white/20 dark:bg-gray-800"
           :class="showXML ? '' : 'sr-only'"
           id="wanted"
         >
@@ -283,21 +281,21 @@
           <div v-for="part in getPartList" :key="part.id" class="ml-4">
             &lt;ITEM&gt;<br />
             <div class="ml-4">
-              &lt;ITEMTYPE&gt;<span class="font-normal text-gray-300">{{
+              &lt;ITEMTYPE&gt;<span class="font-normal dark:text-gray-300">{{
                 part.itemType
               }}</span
               >&lt;/ITEMTYPE&gt;<br />
-              &lt;ITEMID&gt;<span class="font-normal text-gray-300">{{
+              &lt;ITEMID&gt;<span class="font-normal dark:text-gray-300">{{
                 part.itemId
               }}</span
               >&lt;/ITEMID&gt;<br />
               <div v-if="part.color">
-                &lt;COLOR&gt;<span class="font-normal text-gray-300">{{
+                &lt;COLOR&gt;<span class="font-normal dark:text-gray-300">{{
                   part.color
                 }}</span
                 >&lt;/COLOR&gt;<br />
               </div>
-              &lt;MINQTY&gt;<span class="font-normal text-gray-300">{{
+              &lt;MINQTY&gt;<span class="font-normal dark:text-gray-300">{{
                 part.minQty
               }}</span
               >&lt;/MINQTY&gt;<br />
@@ -314,7 +312,7 @@
               href="https://www.bricklink.com/v2/wanted/upload.page?utm_content=subnav"
               class="text-blue-300 underline transition hover:text-blue-200"
               >bricklink</a
-            >. For instructions click on the thumbnails.
+            >.
           </p>
         </div>
       </div>
@@ -373,6 +371,13 @@ export default {
       "toggleXML",
       "closeWantedList"
     ]),
+    getType(type) {
+      if (type === "microfig" || type === "monster" || type === "minifig") {
+        return "creatures";
+      } else if (type === "wall" || type === "item") {
+        return "modules";
+      }
+    },
     saveUserWantedList() {
       localStorage.setItem("userWantedList", JSON.stringify(this.wantedList));
       this.saveWantedList(null);

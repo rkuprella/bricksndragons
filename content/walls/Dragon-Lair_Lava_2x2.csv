@@ -1,0 +1,7 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3022,302226,3022,Plate 2 x 2,11,0,Black,Solid Colors,1,0.64
+3070b,6254252,3070b,Tile 1 x 1 with Groove (3070),98,57,Trans-Orange,Transparent Colors,3,0.146
+98138,6274747,98138,"Tile, Round 1 x 1",98,57,Trans-Orange,Transparent Colors,1,0.11
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+5,1.188,,,,,,,,
