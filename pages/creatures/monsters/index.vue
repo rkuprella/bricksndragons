@@ -27,6 +27,7 @@ export default {
   },
   async asyncData({ $content }) {
     let monsters = await $content("monsters")
+      .only(["slug", "body"])
       .sortBy("slug")
       .fetch();
 
@@ -50,43 +51,18 @@ export default {
     ...mapState(["themeCreatures", "moduleSearch"]),
     getSearchResults() {
       return new Set(
-        this.filteredItems(this.monsters)
-          .filter(
-            item =>
-              item.name
-                .toLowerCase()
-                .includes(this.moduleSearch.toLowerCase()) ||
-              item.element
-                .toLowerCase()
-                .includes(this.moduleSearch.toLowerCase())
-          )
-          .map(item =>
-            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase())
-              ? item.name
-              : item.element
-          )
+        this.monsters.filter(
+          item =>
+            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase()) ||
+            item.element.toLowerCase().includes(this.moduleSearch.toLowerCase())
+        )
       );
     }
   },
   methods: {
     filteredItems(items) {
       return items.filter(item => {
-        if (this.moduleSearch.length > 1 && this.themeCreatures) {
-          return (
-            item.theme === this.themeCreatures &&
-            (item.element
-              .toLowerCase()
-              .includes(this.moduleSearch.toLowerCase()) ||
-              item.name.toLowerCase().includes(this.moduleSearch.toLowerCase()))
-          );
-        } else if (this.moduleSearch.length > 1) {
-          return (
-            item.element
-              .toLowerCase()
-              .includes(this.moduleSearch.toLowerCase()) ||
-            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase())
-          );
-        } else if (this.themeCreatures) {
+        if (this.themeCreatures && this.themeCreatures != "Microfigure") {
           return item.theme === this.themeCreatures;
         } else {
           return item;

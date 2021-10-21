@@ -22,7 +22,7 @@
           tag="nav"
           :style="{ '--total': topNav.length }"
           class="absolute right-0 z-40 flex flex-col items-end gap-4 pl-8 overflow-hidden text-primary-900/80 top-32 lg:hidden dark:text-gray-400"
-          enter-active-class="transition transform duration-300 ease-[cubic-bezier(0.2,0.5,0.1,1)] delay-[calc(0.12s*var(--i))]"
+          enter-active-class="transition transform duration-300 ease-[cubic-bezier(0.2,0.5,0.1,1)] delay-[calc(0.1s*var(--i))]"
           enter-class="-translate-x-8 opacity-0"
           enter-to-class="translate-x-0"
           leave-active-class="transition transform ease-[cubic-bezier(0.5,0,0.7,0.4)] delay-[calc(0.12s*(var(--total)-var(--i)))]"
@@ -292,7 +292,7 @@
               key="link"
               v-if="getCurrentPage.linkTo"
               :to="getCurrentPage.linkTo"
-              class="flex items-center gap-1 px-4 py-2 mt-8 text-lg text-gray-700 transition rounded-full bg-primary-100/90 hover:bg-primary-100/100"
+              class="flex items-center gap-1 px-4 py-2 mt-8 text-lg transition rounded-full bg-blue-600/80 text-primary-50 hover:bg-blue-600/100"
             >
               <span>{{ getCurrentPage.linkTitle }}</span
               ><svg
@@ -377,11 +377,10 @@
                   About
                 </h4>
                 <p>
-                  This web app,
-                  <em>which is currently in beta</em>, provides custom built
-                  brick modules for a modular micro-scale LEGO® dungeon system.
-                  Each module can be added to a wanted list in XML format. All
-                  LEGO® parts can then be ordered on
+                  This web app provides custom built brick modules for a modular
+                  micro-scale LEGO® dungeon system. Each module can be added to
+                  a wanted list in XML format. All LEGO® parts can then be
+                  ordered on
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -389,16 +388,17 @@
                     >bricklink</a
                   >
                   by pasting the XML data into the form field provided (requires
-                  a registration on bricklink).
+                  a bricklink account).
                 </p>
+                <div class="flex items-center gap-2 mt-4">
+                  <nuxt-link
+                    v-for="link in bottomNav"
+                    :key="link.name"
+                    :to="link.to"
+                    >{{ link.name }}</nuxt-link
+                  >
+                </div>
               </div>
-              <ul class="flex items-center gap-2 mt-4">
-                <li v-for="link in bottomNav" :key="link.name">
-                  <nuxt-link :to="link.to" class="underline">{{
-                    link.name
-                  }}</nuxt-link>
-                </li>
-              </ul>
             </div>
             <div>
               <div class="prose dark:prose-dark">
@@ -455,8 +455,10 @@ export default {
           name: "Dungeons",
           slogan: "Inspiration for your campaign",
           // tags: ["quickly assembled", "fully customizable"],
-          bgImage: "/images/header-dungeons.png",
-          bgImageAlt: "A modular LEGO® dungeon"
+          bgImage: "/images/header-microfigs.png",
+          bgImageAlt: "LEGO® Microfig Heads"
+          // bgImage: "/images/header-dungeons.png",
+          // bgImageAlt: "A modular LEGO® dungeon"
         },
         {
           to: "/modules",
@@ -464,8 +466,10 @@ export default {
           name: "Modules",
           slogan: "Build any dungeon for your RPG",
           // tags: ["everything is possible"],
-          bgImage: "/images/header-modules.png",
-          bgImageAlt: "Bricks & Dragons modules"
+          bgImage: "/images/header-microfigs.png",
+          bgImageAlt: "LEGO® Microfig Heads"
+          // bgImage: "/images/header-modules.png",
+          // bgImageAlt: "Bricks & Dragons modules"
         },
         {
           to: "/creatures",

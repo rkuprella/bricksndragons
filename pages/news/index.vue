@@ -1,9 +1,9 @@
 <template>
   <main class="flex-1 py-12">
-    <article class="container mx-auto prose max-w-prose">
+    <ContentProse>
       <h1>News &amp; updates</h1>
       <p>No content yet.</p>
-    </article>
+    </ContentProse>
   </main>
 </template>
 

@@ -51,43 +51,18 @@ export default {
     ...mapState(["themeModules", "moduleSearch"]),
     getSearchResults() {
       return new Set(
-        this.filteredItems(this.items)
-          .filter(
-            item =>
-              item.name
-                .toLowerCase()
-                .includes(this.moduleSearch.toLowerCase()) ||
-              item.element
-                .toLowerCase()
-                .includes(this.moduleSearch.toLowerCase())
-          )
-          .map(item =>
-            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase())
-              ? item.name
-              : item.element
-          )
+        this.items.filter(
+          item =>
+            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase()) ||
+            item.element.toLowerCase().includes(this.moduleSearch.toLowerCase())
+        )
       );
     }
   },
   methods: {
     filteredItems(items) {
       return items.filter(item => {
-        if (this.moduleSearch.length > 1 && this.themeModules) {
-          return (
-            item.theme === this.themeModules &&
-            (item.element
-              .toLowerCase()
-              .includes(this.moduleSearch.toLowerCase()) ||
-              item.name.toLowerCase().includes(this.moduleSearch.toLowerCase()))
-          );
-        } else if (this.moduleSearch.length > 1) {
-          return (
-            item.element
-              .toLowerCase()
-              .includes(this.moduleSearch.toLowerCase()) ||
-            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase())
-          );
-        } else if (this.themeModules) {
+        if (this.themeModules) {
           return item.theme === this.themeModules;
         } else {
           return item;

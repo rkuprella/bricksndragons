@@ -3,10 +3,9 @@
     <ContentProse>
       <h2>About Bricks &amp; Dragons</h2>
       <p>
-        This web app, <em>which is currently in beta</em>, provides custom built
-        brick modules for a modular micro-scale LEGO® dungeon system. Each
-        module can be added to a wanted list in XML format. All LEGO® parts can
-        then be ordered on
+        This web app provides custom built brick modules for a modular
+        micro-scale LEGO® dungeon system. Each module can be added to a wanted
+        list in XML format. All LEGO® parts can then be ordered on
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -14,7 +13,7 @@
           >bricklink</a
         >
         by pasting the XML data into the form field provided (requires a
-        registration on bricklink).
+        bricklink account).
       </p>
       <p>
         I maintain this project as a hobby. Please note that I cannot guarantee

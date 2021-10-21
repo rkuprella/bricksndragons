@@ -7,7 +7,6 @@
       :type="type"
     />
     <ModuleSection
-      v-if="items"
       :items="items"
       :title="
         `${items[0].type.slice(0, 1).toUpperCase()}${items[0].type.slice(

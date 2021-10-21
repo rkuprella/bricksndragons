@@ -10,19 +10,35 @@
     />
     <ul
       v-if="hasFocus"
-      class="absolute inset-x-0 z-20 flex flex-col mt-1 bg-gray-700 divide-y divide-gray-600 top-full"
+      class="absolute inset-x-0 z-20 flex flex-col mt-1 overflow-y-auto bg-gray-600 divide-y divide-gray-200 dark:divide-gray-600 top-full max-h-96"
     >
       <li
         v-for="result in showSearchResults"
         :key="result"
         v-click-outside="hide"
       >
-        <button
-          @click="[setModuleSearch(result), (hasFocus = false)]"
-          class="w-full px-2 py-1 text-left bg-gray-700 border-0 hover:bg-gray-600"
+        <nuxt-link
+          :title="result.name"
+          :to="`/${getType(result.type)}/${result.type}s/${result.id}`"
+          @click.native="[(hasFocus = false), setModuleSearch('')]"
+          class="flex items-center w-full gap-1 px-2 py-1 text-left bg-gray-100 border-0 focus:bg-opacity-70 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600"
         >
-          {{ result }}
-        </button>
+          <nuxt-picture
+            width="800"
+            height="600"
+            quality="90"
+            :src="`/images/modules/${result.imagePath}`"
+            :alt="`${result.theme} ${result.name}`"
+            sizes="xs:64px"
+            class="w-16"
+          />
+          <div class="flex flex-col flex-1 overflow-hidden">
+            <span class="text-xs italic text-gray-600/90 dark:text-gray-400">{{
+              result.element
+            }}</span>
+            <span class="truncate">{{ result.name }}</span>
+          </div>
+        </nuxt-link>
       </li>
     </ul>
     <transition
@@ -111,6 +127,13 @@ export default {
     ...mapActions(["setModuleSearch"]),
     hide() {
       this.hasFocus = false;
+    },
+    getType(type) {
+      if (type === "microfig" || type === "monster" || type === "minifig") {
+        return "creatures";
+      } else if (type === "wall" || type === "item") {
+        return "modules";
+      }
     }
   },
 
