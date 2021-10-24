@@ -4,7 +4,7 @@
       :item="item"
       :type="type"
       deep
-      :title="`${item.theme} ${item.element} ${item.name}`"
+      :title="`${item.theme} - ${item.element} - ${item.name}`"
     />
     <div class="flex flex-col items-center gap-8 py-8">
       <section class="flex flex-col items-center gap-4">

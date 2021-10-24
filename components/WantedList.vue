@@ -152,12 +152,12 @@
             <nuxt-picture
               loading="lazy"
               fit="cover"
-              width="640"
-              height="480"
+              width="800"
+              height="600"
               quality="70"
               :src="`/images/modules/${item.imagePath}`"
               :alt="`${item.theme} ${item.element} ${item.name}`"
-              sizes="xs:100vw sm:300px"
+              sizes="xs:300px sm:200px md:170px xl:160px 2xl:175px"
               class="w-full"
             />
           </nuxt-link>
