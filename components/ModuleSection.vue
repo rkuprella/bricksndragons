@@ -50,21 +50,20 @@
         <nuxt-link
           :title="item.name"
           :to="`/${type}/${item.type}s/${item.id}`"
-          class="transition hover:opacity-80"
+          class="transition transform hover:scale-110"
           :class="
             $nuxt.$route.path === `/${type}/${item.type}s/${item.id}` &&
               'disabled'
           "
         >
           <nuxt-picture
-            loading="lazy"
             fit="cover"
             width="800"
             height="600"
-            quality="70"
+            quality="80"
             :src="`/images/modules/${item.imagePath}`"
             :alt="`${item.theme} ${item.element} ${item.name}`"
-            sizes="xs:300px sm:200px md:170px xl:160px 2xl:175px"
+            sizes="xs:300px sm:200px md:180px"
             class="w-full"
           />
         </nuxt-link>

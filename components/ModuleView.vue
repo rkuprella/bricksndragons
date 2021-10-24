@@ -14,7 +14,7 @@
           quality="90"
           :src="`/images/modules/${item.imagePath}`"
           :alt="`${item.theme} ${item.element} ${item.name}`"
-          sizes="xs:640px"
+          sizes="xs:640px sm:800px"
         />
         <div v-if="isExpensive(item.id)" class="flex items-center gap-2">
           <svg
