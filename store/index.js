@@ -2,7 +2,7 @@ export const state = () => ({
   darkMode: true,
   themeModules: "Dungeon",
   themeDungeons: "Dungeon",
-  themeCreatures: "Microfigure",
+  themeCreatures: "Adventurer",
   wantedList: [],
   userWantedList: [],
   showWalls: true,
@@ -28,7 +28,10 @@ export const state = () => ({
     "Dragon Lair",
     "Mage Tower",
     "Sewers",
-    "Pyramids"
+    "Pyramids",
+    "Construct",
+    "Goblin",
+    "Undead"
   ]
 });
 

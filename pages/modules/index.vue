@@ -63,7 +63,7 @@ export default {
 
     const modules = [...walls, ...items];
 
-    const themes = [...new Set(modules.map(item => item.theme))];
+    const themes = [...new Set(modules.map(item => item.theme))].sort();
 
     return {
       walls,

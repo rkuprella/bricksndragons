@@ -504,7 +504,7 @@ export default {
         this.topNav.find(
           link =>
             link.to === this.$nuxt.$route.path ||
-            link.aliases.find(alias => alias === this.$nuxt.$route.path)
+            link.aliases.find(alias => this.$nuxt.$route.path.includes(alias))
         ) || this.topNav[0]
       );
     }

@@ -2,111 +2,133 @@
     "list": [
         {
             "BLItemNo": "85863pb093",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "King"
         },
         {
             "BLItemNo": "85863pb090",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Sage"
         },
         {
             "BLItemNo": "85863pb059",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Druid"
         },
         {
             "BLItemNo": "85863pb070",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Thief"
         },
         {
             "BLItemNo": "85863pb057",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Knight"
         },
         {
             "BLItemNo": "85863pb089",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Prince"
         },
         {
             "BLItemNo": "85863pb069",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Ranger"
         },
         {
             "BLItemNo": "85863pb060",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Wizard"
         },
         {
             "BLItemNo": "85863pb091",
+            "theme": "Undead",
             "element": "Heroica",
             "name": "Zombie"
         },
         {
             "BLItemNo": "85863pb066",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Werewolf"
         },
         {
             "BLItemNo": "85863pb058",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Barbarian"
         },
         {
             "BLItemNo": "85863pb067",
+            "theme": "Adventurer",
             "element": "Heroica",
             "name": "Dark Druid"
         },
         {
             "BLItemNo": "85863pb064",
+            "theme": "Construct",
             "element": "Heroica",
             "name": "Golem Lord"
         },
         {
             "BLItemNo": "85863pb063",
+            "theme": "Goblin",
             "element": "Heroica",
             "name": "Goblin King"
         },
         {
             "BLItemNo": "85863pb092",
+            "theme": "Undead",
             "element": "Heroica",
             "name": "Vampire Lord"
         },
         {
             "BLItemNo": "85863pb005",
+            "theme": "Undead",
             "element": "Ramses",
             "name": "Pyramid Mummy"
         },
         {
             "BLItemNo": "85863pb068",
+            "theme": "Goblin",
             "element": "Heroica",
             "name": "Goblin General"
         },
         {
             "BLItemNo": "85863pb061",
+            "theme": "Goblin",
             "element": "Heroica",
             "name": "Goblin Warrior"
         },
         {
             "BLItemNo": "85863pb065",
+            "theme": "Construct",
             "element": "Heroica",
             "name": "Golem Guardian"
         },
         {
             "BLItemNo": "85863pb062",
+            "theme": "Goblin",
             "element": "Heroica",
             "name": "Goblin Guardian"
         },
         {
             "BLItemNo": "85863pb010b",
+            "theme": "Undead",
             "element": "Ramses",
             "name": "Pyramid King Ramses"
         },
         {
             "BLItemNo": "85863pb052",
+            "theme": "Undead",
             "element": "Ninjago",
             "name": "Skeleton Dark Purple"
         }

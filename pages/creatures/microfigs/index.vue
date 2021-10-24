@@ -1,15 +1,8 @@
 <template>
-  <ModuleListView
-    :items="filteredItems(microfigs)"
-    :themes="themes"
-    :searchResults="getSearchResults"
-    type="creatures"
-  />
+  <ModuleListView :items="microfigs" type="creatures" />
 </template>
 
 <script>
-import { mapState } from "vuex";
-
 export default {
   head() {
     return {
@@ -32,7 +25,7 @@ export default {
       return {
         id: microfig.BLItemNo,
         type: "microfig",
-        theme: "Microfigure",
+        theme: microfig.theme,
         element: microfig.element,
         name: microfig.name,
         imagePath: microfig.BLItemNo + ".png",
@@ -45,32 +38,7 @@ export default {
       };
     });
 
-    const themes = [...new Set(microfigs.map(item => item.theme))];
-
-    return { microfigs, themes };
-  },
-  computed: {
-    ...mapState(["themeCreatures", "moduleSearch"]),
-    getSearchResults() {
-      return new Set(
-        this.microfigs.filter(
-          item =>
-            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase()) ||
-            item.element.toLowerCase().includes(this.moduleSearch.toLowerCase())
-        )
-      );
-    }
-  },
-  methods: {
-    filteredItems(items) {
-      return items.filter(item => {
-        if (this.themeCreatures) {
-          return item.theme === this.themeCreatures;
-        } else {
-          return item;
-        }
-      });
-    }
+    return { microfigs };
   }
 };
 </script>

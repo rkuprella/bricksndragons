@@ -1,11 +1,6 @@
 <template>
   <main class="flex-1">
-    <BreadCrumbs :type="type" :item="items[0]" />
-    <ThemeSwitcher
-      :themes="themes"
-      :searchResults="searchResults"
-      :type="type"
-    />
+    <BreadCrumbs :type="type" :item="items[0]" :length="items.length" />
     <ModuleSection
       :items="items"
       :title="
@@ -27,14 +22,6 @@ export default {
     items: {
       type: Array,
       required: false
-    },
-    themes: {
-      type: Array,
-      required: true
-    },
-    searchResults: {
-      type: Set,
-      required: true
     },
     type: {
       type: String,

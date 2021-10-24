@@ -1,7 +1,14 @@
 <template>
   <section class="w-full py-4" v-if="items.length > 0">
-    <div class="flex items-center justify-between w-full">
-      <nuxt-link :to="`/${type}/${to}`" class="px-1 py-3 group" v-if="to">
+    <div
+      class="flex items-center justify-between w-full"
+      v-if="to || title === 'Related modules'"
+    >
+      <nuxt-link
+        :to="`/${type}/${to}`"
+        class="px-1 py-3 group"
+        :title="`All ${title}`"
+      >
         <h2 class="text-sm text-gray-600 dark:text-gray-400">
           <span class="group-hover:underline">{{ title }}</span>
           (<span class="font-bold text-gray-600 dark:text-gray-200">{{
@@ -10,13 +17,6 @@
           >)
         </h2>
       </nuxt-link>
-      <h2 v-else class="text-sm text-gray-600 dark:text-gray-400">
-        <span class="group-hover:underline">{{ title }}</span>
-        (<span class="font-bold text-gray-600 dark:text-gray-200">{{
-          items.length
-        }}</span
-        >)
-      </h2>
       <button
         type="button"
         role="button"
@@ -50,12 +50,31 @@
         <nuxt-link
           :title="item.name"
           :to="`/${type}/${item.type}s/${item.id}`"
-          class="transition transform hover:scale-110"
+          class="relative transition transform hover:scale-105 active:scale-100"
           :class="
             $nuxt.$route.path === `/${type}/${item.type}s/${item.id}` &&
               'disabled'
           "
         >
+          <div
+            class="absolute inset-0 pointer-events-none"
+            :class="
+              animateItem === item.id && !isPremium(item.theme)
+                ? 'transition transform duration-300 translate-y-16 lg:translate-y-0 lg:translate-x-16 opacity-0'
+                : 'invisible opacity-50'
+            "
+          >
+            <nuxt-picture
+              fit="cover"
+              width="800"
+              height="600"
+              quality="80"
+              :src="`/images/modules/${item.imagePath}`"
+              :alt="`${item.theme} ${item.element} ${item.name}`"
+              sizes="xs:300px sm:200px md:180px"
+              class="w-full"
+            />
+          </div>
           <nuxt-picture
             fit="cover"
             width="800"
@@ -64,18 +83,18 @@
             :src="`/images/modules/${item.imagePath}`"
             :alt="`${item.theme} ${item.element} ${item.name}`"
             sizes="xs:300px sm:200px md:180px"
-            class="w-full"
+            class="relative w-full"
           />
         </nuxt-link>
         <div class="relative flex items-center gap-2 py-1 pl-3">
           <button
-            @click="addModule(item)"
+            @click="add(item)"
             :title="
               isPremium(item.theme)
                 ? 'Requires pro membership'
                 : `Add ${item.name} to your wanted list`
             "
-            class="p-3 text-gray-900 transition transform rounded bg-primary-500 lg:p-1 hover:bg-primary-400 hover:scale-105 active:scale-95"
+            class="p-3 text-gray-900 transition transform rounded bg-primary-500 lg:p-1 hover:bg-primary-400 hover:scale-110 active:scale-100"
           >
             <svg
               v-if="isPremium(item.theme)"
@@ -150,6 +169,12 @@ export default {
       required: true
     }
   },
+  data() {
+    return {
+      animateItem: null,
+      animateTimer: null
+    };
+  },
   computed: {
     ...mapState([
       "showWalls",
@@ -172,7 +197,18 @@ export default {
     }
   },
   methods: {
-    ...mapActions(["addModule", "toggleModuleSection"])
+    ...mapActions(["addModule", "toggleModuleSection"]),
+    add(item) {
+      this.addModule(item);
+      clearTimeout(this.animateTimer);
+      this.animateItem = null;
+      this.animateTimer = setTimeout(() => {
+        this.animateItem = item.id;
+      }, 5);
+      this.animateTimer = setTimeout(() => {
+        this.animateItem = null;
+      }, 300);
+    }
   }
 };
 </script>

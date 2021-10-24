@@ -29,7 +29,7 @@ export default {
       return {
         id: microfig.BLItemNo,
         type: "microfig",
-        theme: "Microfigure",
+        theme: microfig.theme,
         element: microfig.element,
         name: microfig.name,
         imagePath: microfig.BLItemNo + ".png",

@@ -1,15 +1,8 @@
 <template>
-  <ModuleListView
-    :items="filteredItems(items)"
-    :themes="themes"
-    :searchResults="getSearchResults"
-    type="modules"
-  />
+  <ModuleListView :items="items" type="modules" />
 </template>
 
 <script>
-import { mapState } from "vuex";
-
 export default {
   head() {
     return {
@@ -43,32 +36,7 @@ export default {
       };
     });
 
-    const themes = [...new Set(items.map(item => item.theme))];
-
-    return { items, themes };
-  },
-  computed: {
-    ...mapState(["themeModules", "moduleSearch"]),
-    getSearchResults() {
-      return new Set(
-        this.items.filter(
-          item =>
-            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase()) ||
-            item.element.toLowerCase().includes(this.moduleSearch.toLowerCase())
-        )
-      );
-    }
-  },
-  methods: {
-    filteredItems(items) {
-      return items.filter(item => {
-        if (this.themeModules) {
-          return item.theme === this.themeModules;
-        } else {
-          return item;
-        }
-      });
-    }
+    return { items };
   }
 };
 </script>

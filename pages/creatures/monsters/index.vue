@@ -1,15 +1,8 @@
 <template>
-  <ModuleListView
-    :items="filteredItems(monsters)"
-    :themes="themes"
-    :searchResults="getSearchResults"
-    type="creatures"
-  />
+  <ModuleListView :items="monsters" type="creatures" />
 </template>
 
 <script>
-import { mapState } from "vuex";
-
 export default {
   head() {
     return {
@@ -43,32 +36,7 @@ export default {
       };
     });
 
-    const themes = [...new Set(monsters.map(item => item.theme))];
-
-    return { monsters, themes };
-  },
-  computed: {
-    ...mapState(["themeCreatures", "moduleSearch"]),
-    getSearchResults() {
-      return new Set(
-        this.monsters.filter(
-          item =>
-            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase()) ||
-            item.element.toLowerCase().includes(this.moduleSearch.toLowerCase())
-        )
-      );
-    }
-  },
-  methods: {
-    filteredItems(items) {
-      return items.filter(item => {
-        if (this.themeCreatures && this.themeCreatures != "Microfigure") {
-          return item.theme === this.themeCreatures;
-        } else {
-          return item;
-        }
-      });
-    }
+    return { monsters };
   }
 };
 </script>

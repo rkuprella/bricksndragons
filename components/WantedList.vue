@@ -10,7 +10,7 @@
     <div
       class="fixed inset-x-0 bottom-0 z-30 flex items-center justify-between px-4 py-1 border-t border-primary-200 dark:border-gray-600 bg-primary-50 dark:bg-gray-800 lg:border-t-0 lg:p-0 lg:bg-transparent lg:dark:bg-transparent lg:inset-x-auto lg:static lg:bottom-auto"
     >
-      <h2 class="dark:text-gray-400">
+      <h2 class="text-sm dark:text-gray-400">
         <span class="text-lg font-bold text-primary-800 dark:text-blue-300"
           >Wanted list</span
         >
@@ -143,7 +143,7 @@
             :title="item.name"
             @click.native="closeWantedList"
             :to="`/${getType(item.type)}/${item.type}s/${item.id}`"
-            class="transition hover:opacity-80"
+            class="transition transform hover:scale-105 active:scale-100"
             :class="
               $nuxt.$route.path ===
                 `/${getType(item.type)}/${item.type}s/${item.id}` && 'disabled'
@@ -164,7 +164,7 @@
             <button
               @click="removeModule(item)"
               title="Decrease amount of modules by 1"
-              class="p-3 text-gray-900 transition transform rounded bg-primary-500 lg:p-1 hover:bg-primary-400 hover:scale-105 active:scale-95"
+              class="p-3 text-gray-900 transition transform rounded bg-primary-500 lg:p-1 hover:bg-primary-400 hover:scale-110 active:scale-100"
             >
               <svg
                 class="w-4 h-4"
@@ -185,7 +185,7 @@
             <button
               @click="addModule(item)"
               title="Increase amount of modules by 1"
-              class="p-3 text-gray-900 transition transform rounded bg-primary-500 lg:p-1 hover:bg-primary-400 hover:scale-105 active:scale-95"
+              class="p-3 text-gray-900 transition transform rounded bg-primary-500 lg:p-1 hover:bg-primary-400 hover:scale-110 active:scale-100"
             >
               <svg
                 class="w-4 h-4"
@@ -417,6 +417,13 @@ export default {
       this.copyTimer = setTimeout(() => {
         this.copied = false;
       }, 1000);
+    },
+    drop(event) {
+      const item_id = event.dataTransfer.getData("item_id");
+
+      const item = document.getElementById(item_id);
+
+      event.target.appendChild(item);
     }
   },
   mounted() {

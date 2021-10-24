@@ -80,6 +80,7 @@
         <h3 class="text-sm text-gray-600 dark:text-gray-400">
           Instructions
         </h3>
+
         <nuxt-picture
           loading="lazy"
           width="1684"
@@ -88,6 +89,7 @@
           :src="`/images/instructions/${item.imagePath}`"
           :alt="`${item.theme} ${item.element} ${item.name}`"
           sizes="xs:640px xl:1200px"
+          class="mix-blend-multiply dark:mix-blend-normal"
         />
       </section>
     </div>

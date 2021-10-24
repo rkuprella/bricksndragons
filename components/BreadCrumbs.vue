@@ -45,12 +45,16 @@
       }}</span>
     </nuxt-link>
     <h2 v-if="!deep" class="text-sm">
-      {{
+      <span class="group-hover:underline">{{
         `${item.type.slice(0, 1).toUpperCase()}${item.type.slice(
           1,
           item.type.length
         )}s`
-      }}
+      }}</span>
+      (<span class="font-bold text-gray-600 dark:text-gray-200">{{
+        length
+      }}</span
+      >)
     </h2>
     <h2 v-else class="text-sm">{{ title }}</h2>
   </div>
@@ -73,6 +77,10 @@ export default {
     },
     title: {
       type: String,
+      required: false
+    },
+    length: {
+      type: Number,
       required: false
     }
   }

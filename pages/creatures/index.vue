@@ -49,7 +49,7 @@ export default {
       return {
         id: microfig.BLItemNo,
         type: "microfig",
-        theme: "Microfigure",
+        theme: microfig.theme,
         element: microfig.element,
         name: microfig.name,
         imagePath: microfig.BLItemNo + ".png",
@@ -64,7 +64,7 @@ export default {
 
     const modules = [...monsters, ...microfigs];
 
-    const themes = [...new Set(modules.map(item => item.theme))];
+    const themes = [...new Set(modules.map(item => item.theme))].sort();
 
     return {
       monsters,
