@@ -1,5 +1,25 @@
 <template>
-  <div class="text-sm sm:text-base" :class="darkMode && 'dark'">
+  <div class="lg:text-lg" :class="darkMode && 'dark'">
+    <transition
+      enter-active-class="transition ease-out"
+      enter-class="opacity-0"
+      enter-to-class="opacity-100"
+      leave-active-class="transition ease-in"
+      leave-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <button
+        type="button"
+        role="button"
+        aria-label="Hide wanted list"
+        v-if="showWantedList || showLogin || showMenu"
+        @click="hideModals"
+        class="fixed inset-0 z-30 w-full h-full bg-black/40 focus:outline-none"
+        :class="!showLogin && 'lg:hidden'"
+        style="-webkit-tap-highlight-color: transparent;"
+      ></button>
+    </transition>
+    <UserLogin />
     <div
       class="flex flex-col min-h-screen antialiased text-gray-800 bg-primary-50 dark:text-gray-200 dark:bg-gray-900"
     >
@@ -12,16 +32,11 @@
           leave-class="opacity-100"
           leave-to-class="opacity-0"
         >
-          <div
-            v-if="showMenu"
-            @click="setMenu(false)"
-            class="absolute inset-0 z-20 w-full h-full bg-black/20 lg:hidden"
-          ></div>
         </transition>
         <transition-group
           tag="nav"
           :style="{ '--total': topNav.length }"
-          class="absolute right-0 z-40 flex flex-col items-end gap-4 pl-8 overflow-hidden text-primary-900/80 top-32 lg:hidden dark:text-gray-400"
+          class="absolute right-0 z-40 flex flex-col items-end gap-4 pl-8 overflow-hidden pointer-events-none text-primary-900/80 top-32 lg:hidden dark:text-gray-400"
           enter-active-class="transition transform duration-300 ease-[cubic-bezier(0.2,0.5,0.1,1)] delay-[calc(0.1s*var(--i))]"
           enter-class="-translate-x-8 opacity-0"
           enter-to-class="translate-x-0"
@@ -36,7 +51,7 @@
               :key="link.name"
               :style="{ '--i': i }"
               @click.native="setMenu(false)"
-              class="px-6 py-2 text-lg uppercase border-r-8 border-transparent bg-primary-100 dark:bg-gray-800"
+              class="px-6 py-2 text-lg uppercase border-r-8 border-transparent pointer-events-auto bg-primary-100 dark:bg-gray-800"
               exact-active-class="!border-gray-900 dark:!border-primary-500 text-gray-900 dark:text-primary-500 font-bold"
               :class="
                 hasAlias(link) &&
@@ -59,7 +74,7 @@
           />
         </div>
 
-        <div class="absolute inset-x-0 bottom-0 z-30 pointer-events-none">
+        <div class="absolute inset-x-0 bottom-0 z-10 pointer-events-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -95,7 +110,7 @@
             <nuxt-link
               to="/"
               @click.native="setMenu(false)"
-              class="relative z-30 transition duration-150 ease-in-out w-36"
+              class="relative transition duration-150 ease-in-out w-36"
             >
               <nuxt-picture
                 fill="cover"
@@ -112,7 +127,7 @@
                 >Under construction</span
               >
             </nuxt-link>
-            <div class="items-center hidden gap-1 lg:flex">
+            <div class="items-center hidden gap-1 ml-auto lg:flex">
               <nuxt-link
                 v-for="link in topNav"
                 :key="link.name"
@@ -131,7 +146,7 @@
                 role="button"
                 aria-label="Toggle dark mode"
                 title="Toggle dark mode"
-                class="relative flex items-center justify-center w-12 h-12 ml-8 transition transform text-primary-50 hover:scale-110 active:scale-125"
+                class="relative flex items-center justify-center w-12 h-12 ml-8 transition transform text-primary-50 hover:scale-110 active:scale-100"
                 style="-webkit-tap-highlight-color: transparent;"
               >
                 <transition
@@ -171,79 +186,103 @@
                 </transition>
               </button>
             </div>
-            <button
-              type="button"
-              role="button"
-              aria-label="Toggle menu"
-              class="relative z-30 w-12 h-12 text-primary-50 lg:hidden"
-              @click="setMenu(showMenu ? false : true)"
-            >
-              <div
-                class="absolute inset-x-0 -mt-1 text-sm tracking-wider uppercase top-full text-primary-50"
+            <div class="flex items-center gap-1">
+              <button
+                type="button"
+                role="button"
+                aria-label="Toggle login"
+                class="grid w-12 h-12 place-items-center"
+                @click="setLogin(showLogin ? false : true)"
               >
-                Menu
-              </div>
-              <div
-                class="absolute inset-0 flex flex-col items-center gap-1 transition"
+                <div v-if="user">{{ user.uid.slice(0, 3) }}</div>
+                <svg
+                  v-else
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                type="button"
+                role="button"
+                aria-label="Toggle menu"
+                class="relative w-12 h-12 text-primary-50 lg:hidden"
+                @click="setMenu(showMenu ? false : true)"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 720.000000 216.000000"
-                  preserveAspectRatio="xMidYMid meet"
-                  class="w-12 h-3 transition duration-75 ease-in transform"
-                  :class="!showMenu && 'translate-y-2'"
+                <div
+                  class="absolute inset-x-0 -mt-1 text-sm tracking-wider uppercase top-full text-primary-50"
                 >
-                  <g
-                    transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
-                    fill="currentColor"
-                    stroke="none"
+                  Menu
+                </div>
+                <div
+                  class="absolute inset-0 flex flex-col items-center gap-1 transition"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 720.000000 216.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                    class="w-12 h-3 transition duration-75 ease-in transform"
+                    :class="!showMenu && 'translate-y-2'"
                   >
-                    <path
-                      d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
+                    <g
+                      transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
+                      fill="currentColor"
+                      stroke="none"
+                    >
+                      <path
+                        d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
 0 720 -360 0 -360 0 0 360 0 360 -1080 0 -1080 0 0 -360 0 -360 -720 0 -720 0
 0 360 0 360 -1080 0 -1080 0 0 -360z"
-                    />
-                  </g>
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 720.000000 216.000000"
-                  preserveAspectRatio="xMidYMid meet"
-                  class="w-12 h-3"
-                >
-                  <g
-                    transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
-                    fill="currentColor"
-                    stroke="none"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 720.000000 216.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                    class="w-12 h-3"
                   >
-                    <path
-                      d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
+                    <g
+                      transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
+                      fill="currentColor"
+                      stroke="none"
+                    >
+                      <path
+                        d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
 0 720 -360 0 -360 0 0 360 0 360 -1080 0 -1080 0 0 -360 0 -360 -720 0 -720 0
 0 360 0 360 -1080 0 -1080 0 0 -360z"
-                    />
-                  </g>
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 720.000000 216.000000"
-                  preserveAspectRatio="xMidYMid meet"
-                  class="w-12 h-3 transition duration-75 ease-in transform"
-                  :class="!showMenu && '-translate-y-2'"
-                >
-                  <g
-                    transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
-                    fill="currentColor"
-                    stroke="none"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 720.000000 216.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                    class="w-12 h-3 transition duration-75 ease-in transform"
+                    :class="!showMenu && '-translate-y-2'"
                   >
-                    <path
-                      d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
+                    <g
+                      transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
+                      fill="currentColor"
+                      stroke="none"
+                    >
+                      <path
+                        d="M720 1800 l0 -360 -360 0 -360 0 0 -720 0 -720 3600 0 3600 0 0 720
 0 720 -360 0 -360 0 0 360 0 360 -1080 0 -1080 0 0 -360 0 -360 -720 0 -720 0
 0 360 0 360 -1080 0 -1080 0 0 -360z"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </button>
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </button>
+            </div>
           </nav>
           <transition-group
             tag="div"
@@ -337,24 +376,6 @@
         class="container relative flex flex-wrap items-start flex-1 w-full gap-8 px-4 py-8 mx-auto md:px-8"
       >
         <transition
-          enter-active-class="transition ease-out"
-          enter-class="opacity-0"
-          enter-to-class="opacity-100"
-          leave-active-class="transition ease-in"
-          leave-class="opacity-100"
-          leave-to-class="opacity-0"
-        >
-          <button
-            type="button"
-            role="button"
-            aria-label="Hide wanted list"
-            v-show="showWantedList"
-            @click="toggleWantedList"
-            class="fixed inset-0 z-30 w-full h-full bg-black/50 lg:hidden focus:outline-none"
-            style="-webkit-tap-highlight-color: transparent;"
-          ></button>
-        </transition>
-        <transition
           mode="out-in"
           enter-active-class="transition ease-out transform"
           enter-class="-translate-x-16 opacity-0"
@@ -373,9 +394,9 @@
           <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <div class="prose dark:prose-dark">
-                <h4>
+                <h3>
                   About
-                </h4>
+                </h3>
                 <p>
                   This web app provides custom built brick modules for a modular
                   micro-scale LEGO® dungeon system. Each module can be added to
@@ -402,9 +423,9 @@
             </div>
             <div>
               <div class="prose dark:prose-dark">
-                <h4>
+                <h3>
                   Disclaimer
-                </h4>
+                </h3>
                 <p>
                   Bricks &amp; Dragons is not affiliated with The LEGO Group.
                   LEGO® is a trademark of The LEGO Group of companies which does
@@ -498,7 +519,13 @@ export default {
     };
   },
   computed: {
-    ...mapState(["showWantedList", "showMenu", "darkMode"]),
+    ...mapState([
+      "showWantedList",
+      "showMenu",
+      "showLogin",
+      "darkMode",
+      "user"
+    ]),
     getCurrentPage() {
       return (
         this.topNav.find(
@@ -510,12 +537,17 @@ export default {
     }
   },
   methods: {
-    ...mapActions(["toggleWantedList", "setMenu", "toggleDarkMode"]),
+    ...mapActions(["setWantedList", "setMenu", "setLogin", "toggleDarkMode"]),
     hasAlias(link) {
       return (
         this.$nuxt.$route.path.length > 1 &&
         link.aliases.find(alias => this.$nuxt.$route.path.includes(alias))
       );
+    },
+    hideModals() {
+      this.setMenu(false);
+      this.setLogin(false);
+      this.setWantedList(false);
     }
   }
 };

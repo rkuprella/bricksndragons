@@ -1,4 +1,5 @@
 export const state = () => ({
+  user: null,
   darkMode: true,
   themeModules: "Dungeon",
   themeDungeons: "Dungeon",
@@ -14,6 +15,7 @@ export const state = () => ({
   showXML: false,
   moduleSearch: "",
   showMenu: false,
+  showLogin: false,
   currentPage: null,
   showPremiumPopup: null,
   expensive: [
@@ -183,11 +185,8 @@ export const mutations = {
       state.showMonsters = !state.showMonsters;
     }
   },
-  TOGGLE_WANTEDLIST(state) {
-    state.showWantedList = !state.showWantedList;
-  },
-  CLOSE_WANTEDLIST(state) {
-    state.showWantedList = false;
+  SET_WANTEDLIST(state, payload) {
+    state.showWantedList = payload;
   },
   TOGGLE_XML(state) {
     state.showXML = !state.showXML;
@@ -198,6 +197,9 @@ export const mutations = {
   SET_MENU(state, payload) {
     state.showMenu = payload;
   },
+  SET_LOGIN(state, payload) {
+    state.showLogin = payload;
+  },
   SET_CURRENT_PAGE(state, payload) {
     state.currentPage = payload;
   },
@@ -206,6 +208,9 @@ export const mutations = {
   },
   CLOSE_PREMIUM_POPUP(state) {
     state.showPremiumPopup = false;
+  },
+  SET_USER(state, payload) {
+    state.user = payload;
   }
 };
 
@@ -234,11 +239,8 @@ export const actions = {
   toggleModuleSection({ commit }, payload) {
     commit("TOGGLE_MODULE_SECTION", payload);
   },
-  toggleWantedList({ commit }) {
-    commit("TOGGLE_WANTEDLIST");
-  },
-  closeWantedList({ commit }) {
-    commit("CLOSE_WANTEDLIST");
+  setWantedList({ commit }, payload) {
+    commit("SET_WANTEDLIST", payload);
   },
   toggleXML({ commit }) {
     commit("TOGGLE_XML");
@@ -249,6 +251,9 @@ export const actions = {
   setMenu({ commit }, payload) {
     commit("SET_MENU", payload);
   },
+  setLogin({ commit }, payload) {
+    commit("SET_LOGIN", payload);
+  },
   setCurrentPage({ commit }, payload) {
     commit("SET_CURRENT_PAGE", payload);
   },
@@ -257,5 +262,16 @@ export const actions = {
   },
   closePremiumPopup({ commit }) {
     commit("CLOSE_PREMIUM_POPUP");
+  },
+  async onAuthStateChangedAction(state, { authUser, claims }) {
+    if (!authUser) {
+      state.commit("SET_USER", null);
+    } else {
+      const { uid, email } = authUser;
+      state.commit("SET_USER", {
+        uid,
+        email
+      });
+    }
   }
 };

@@ -71,7 +71,7 @@
               quality="80"
               :src="`/images/modules/${item.imagePath}`"
               :alt="`${item.theme} ${item.element} ${item.name}`"
-              sizes="xs:300px sm:200px md:180px"
+              sizes="xs:300px sm:200px"
               class="w-full"
             />
           </div>
@@ -82,7 +82,7 @@
             quality="80"
             :src="`/images/modules/${item.imagePath}`"
             :alt="`${item.theme} ${item.element} ${item.name}`"
-            sizes="xs:300px sm:200px md:180px"
+            sizes="xs:300px sm:200px"
             class="relative w-full"
           />
         </nuxt-link>

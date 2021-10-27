@@ -63,13 +63,16 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
-    // https://go.nuxtjs.dev/content
     "@nuxt/content",
     "@nuxt/image",
-    "@nuxtjs/gtm"
+    "@nuxtjs/gtm",
+    "@nuxtjs/firebase"
   ],
+
+  router: {
+    middleware: ["auth"]
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -93,6 +96,29 @@ export default {
           type: "image/png"
         }
       ]
+    }
+  },
+
+  firebase: {
+    config: {
+      apiKey: "AIzaSyBY94fZQyEGmdRJRSIpSQ62LAdKW5Zy9wM",
+      authDomain: "slotenmaker-cms.firebaseapp.com",
+      projectId: "slotenmaker-cms",
+      storageBucket: "slotenmaker-cms.appspot.com",
+      messagingSenderId: "1096841434520",
+      appId: "1:1096841434520:web:8e523ec66f4cd388a3c7ed"
+    },
+    services: {
+      auth: {
+        persistence: "local", // default
+        initialize: {
+          onAuthStateChangedAction: "onAuthStateChangedAction",
+          subscribeManually: false
+        },
+        ssr: false // default
+      },
+      firestore: true,
+      storage: true
     }
   },
 

@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="fixed inset-x-0 bottom-0 z-30 px-4 py-1 lg:bg-primary-800/20 bg-primary-50 dark:bg-gray-700 lg:py-6 lg:sticky rounded-3xl lg:w-[340px] lg:bottom-auto lg:top-8 lg:inset-x-auto"
+    class="fixed inset-x-0 bottom-0 z-30 px-4 py-1 lg:bg-primary-800/20 bg-primary-50 dark:bg-gray-700 lg:py-6 lg:sticky rounded lg:w-[340px] lg:bottom-auto lg:top-8 lg:inset-x-auto"
     :class="
       showWantedList
         ? 'top-64 lg:top-8 h-full pb-52 overflow-y-auto lg:overflow-y-visible'
@@ -30,7 +30,7 @@
         role="button"
         title="Hide/Show wanted list"
         aria-label="Hide/Show wanted list"
-        @click="toggleWantedList"
+        @click="setWantedList(showWantedList ? false : true)"
         class="p-3 text-gray-400 transition duration-150 hover:text-gray-300 lg:hidden"
       >
         <svg
@@ -141,22 +141,18 @@
         >
           <nuxt-link
             :title="item.name"
-            @click.native="closeWantedList"
+            @click.native="setWantedList(false)"
             :to="`/${getType(item.type)}/${item.type}s/${item.id}`"
             class="transition transform hover:scale-105 active:scale-100"
-            :class="
-              $nuxt.$route.path ===
-                `/${getType(item.type)}/${item.type}s/${item.id}` && 'disabled'
-            "
           >
             <nuxt-picture
               fit="cover"
               width="800"
               height="600"
-              quality="70"
+              quality="80"
               :src="`/images/modules/${item.imagePath}`"
               :alt="`${item.theme} ${item.element} ${item.name}`"
-              sizes="xs:300px sm:200px md:180px"
+              sizes="xs:300px sm:200px"
               class="w-full"
             />
           </nuxt-link>
@@ -366,9 +362,8 @@ export default {
       "resetWantedList",
       "saveWantedList",
       "loadWantedList",
-      "toggleWantedList",
-      "toggleXML",
-      "closeWantedList"
+      "setWantedList",
+      "toggleXML"
     ]),
     getType(type) {
       if (type === "microfig" || type === "monster" || type === "minifig") {
@@ -417,13 +412,6 @@ export default {
       this.copyTimer = setTimeout(() => {
         this.copied = false;
       }, 1000);
-    },
-    drop(event) {
-      const item_id = event.dataTransfer.getData("item_id");
-
-      const item = document.getElementById(item_id);
-
-      event.target.appendChild(item);
     }
   },
   mounted() {
