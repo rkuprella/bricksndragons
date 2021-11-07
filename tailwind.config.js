@@ -50,6 +50,15 @@ module.exports = {
             },
             strong: {
               color: "#222"
+            },
+            "ul > li::before": {
+              width: "0",
+              height: "0",
+              top: "auto",
+              left: "auto"
+            },
+            "ul > li": {
+              paddingLeft: "0"
             }
           }
         },
