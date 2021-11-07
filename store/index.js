@@ -18,22 +18,26 @@ export const state = () => ({
   showLogin: false,
   currentPage: null,
   showPremiumPopup: null,
+  animateItem: null,
+  animateTimer: null,
   expensive: [
     "Cave_Subterranean_Mushrooms-1",
     "Cave_Subterranean_Mushrooms-2",
-    "Pyramids_Decorative_Scarab-puzzle"
+    "Pyramids_Decorative_Scarab-puzzle",
+    "Basics_Misc_Enemy-plates",
+    "Aberration_Beholder_4"
   ],
   premium: [
-    "Castle",
-    "Mansion",
-    "Crypt",
-    "Dragon Lair",
-    "Mage Tower",
-    "Sewers",
-    "Pyramids",
-    "Construct",
-    "Goblin",
-    "Undead"
+    // "Castle",
+    // "Mansion",
+    // "Crypt",
+    // "Dragon Lair",
+    // "Mage Tower",
+    // "Sewers",
+    // "Pyramids",
+    // "Construct",
+    // "Goblin",
+    // "Undead"
   ]
 });
 
@@ -197,7 +201,7 @@ export const mutations = {
   SET_MENU(state, payload) {
     state.showMenu = payload;
   },
-  SET_LOGIN(state, payload) {
+  SET_USER_LOGIN(state, payload) {
     state.showLogin = payload;
   },
   SET_CURRENT_PAGE(state, payload) {
@@ -211,6 +215,12 @@ export const mutations = {
   },
   SET_USER(state, payload) {
     state.user = payload;
+  },
+  SET_ANIMATE_TIMER(state, payload) {
+    state.animateTimer = payload;
+  },
+  SET_ANIMATE_ITEM(state, payload) {
+    state.animateItem = payload;
   }
 };
 
@@ -251,8 +261,8 @@ export const actions = {
   setMenu({ commit }, payload) {
     commit("SET_MENU", payload);
   },
-  setLogin({ commit }, payload) {
-    commit("SET_LOGIN", payload);
+  setUserLogin({ commit }, payload) {
+    commit("SET_USER_LOGIN", payload);
   },
   setCurrentPage({ commit }, payload) {
     commit("SET_CURRENT_PAGE", payload);
@@ -273,5 +283,11 @@ export const actions = {
         email
       });
     }
+  },
+  setAnimateTimer({ commit }, payload) {
+    commit("SET_ANIMATE_TIMER", payload);
+  },
+  setAnimateItem({ commit }, payload) {
+    commit("SET_ANIMATE_ITEM", payload);
   }
 };

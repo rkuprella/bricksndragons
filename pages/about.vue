@@ -3,9 +3,9 @@
     <ContentProse>
       <h2>About Bricks &amp; Dragons</h2>
       <p>
-        This web app provides custom built brick modules for a modular
-        micro-scale LEGO® dungeon system. Each module can be added to a wanted
-        list in XML format. All LEGO® parts can then be ordered on
+        This web app provides instructions of custom built brick modules for a
+        modular micro-scale LEGO® dungeon system. Each module can be added to a
+        wanted list in XML format. All LEGO® parts can then be ordered on
         <a
           target="_blank"
           rel="noopener noreferrer"

@@ -9,7 +9,7 @@
   >
     <div
       v-if="showLogin"
-      class="absolute inset-x-0 z-40 grid text-gray-200 pointer-events-none top-24 sm:top-64 place-items-center"
+      class="absolute z-40 grid text-gray-200 pointer-events-none inset-x-6 sm:inset-x-0 top-24 sm:top-64 place-items-center"
     >
       <div
         class="relative grid grid-cols-1 mx-auto overflow-hidden bg-gray-800 rounded shadow-xl pointer-events-auto sm:grid-cols-2"
@@ -18,11 +18,11 @@
           role="button"
           type="button"
           aria-label="Close login"
-          @click="setLogin(false)"
-          class="absolute p-3 top-1 right-1"
+          @click="setUserLogin(false)"
+          class="absolute p-2 transition transform top-1 right-1 hover:scale-110 active:scale-90 hover:rotate-12"
         >
           <svg
-            class="w-6 h-6"
+            class="w-8 h-8"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@
           </svg>
         </button>
         <div
-          class="flex flex-col items-center w-full gap-3 px-4 py-4 bg-gray-900 sm:w-64 lg:w-96"
+          class="flex flex-col items-center w-full gap-3 px-4 py-4 sm:w-64 lg:w-96 bg-gray-700/10"
         >
           <div class="flex flex-col items-center justify-center flex-1 gap-3">
             <nuxt-picture
@@ -48,17 +48,17 @@
               sizes="xs:288px"
               class="w-48"
             />
-            <p class="text-xl text-center">
+            <p class="mt-3 text-xl text-center">
               Become a <strong>Brick Dungeon Master</strong>!
             </p>
           </div>
           <button class="w-full px-4 py-2 text-white bg-purple-500 rounded">
-            Not registered yet?
+            Not registered? Signup!
           </button>
         </div>
         <div class="flex flex-col w-full px-4 py-4 sm:w-64 lg:w-96">
           <div class="flex flex-col flex-1 gap-3">
-            <h2>Title</h2>
+            <h2>Login</h2>
 
             <ul>
               <li><button>Login with Facebook</button></li>
@@ -81,13 +81,13 @@
             </form>
             <p v-show="error">{{ error }}</p>
           </div>
+          <button @click.once="forgotPassword">Forgot password</button>
           <button
             class="w-full px-4 py-2 text-white bg-green-500 rounded"
             @click="login"
           >
             Submit
           </button>
-          <button @click.once="forgotPassword">Forgot password</button>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ export default {
     ...mapState(["user", "showLogin"])
   },
   methods: {
-    ...mapActions(["setLogin"]),
+    ...mapActions(["setUserLogin"]),
     login() {
       this.$fire.auth
         .signInWithEmailAndPassword(this.auth.email, this.auth.password)
