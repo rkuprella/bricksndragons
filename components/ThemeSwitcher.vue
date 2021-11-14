@@ -28,7 +28,7 @@
       </svg>
       <span>{{ theme }}</span>
     </button>
-    <ModuleSearch :searchResults="searchResults" />
+    <ModuleSearch :searchResults="searchResults" v-if="searchResults" />
   </div>
 </template>
 
@@ -43,7 +43,7 @@ export default {
     },
     searchResults: {
       type: Set,
-      required: true
+      required: false
     },
     type: {
       type: String,

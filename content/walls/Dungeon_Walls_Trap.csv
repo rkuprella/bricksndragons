@@ -1,13 +1,14 @@
 BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,2,0.3
 2431,4211356,2431,Tile 1 x 4,86,71,Light Bluish Gray,Solid Colors,1,0.54
-3005,4211389,3005,Brick 1 x 1,86,71,Light Bluish Gray,Solid Colors,2,0.44
+2570,6268844,2570,"Minifigure, Weapon Crossbow",77,148,Pearl Dark Gray,Pearl Colors,1,0.46
 3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
-3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
-3710,4211001,3710,Plate 1 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.71
-50018g,,50018g,"Minifigure, Weapon Circular Saw",77,148,Pearl Dark Gray,Pearl Colors,2,0.41
+3024,4210719,3024,Plate 1 x 1,85,72,Dark Bluish Gray,Solid Colors,2,0.2
+3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,2,0.16
+35480,6248944,35480,"Plate, Round 1 x 2 with Two Open Studs",88,70,Reddish Brown,Solid Colors,2,0.26
+3659,4211435,3659,Arch 1 x 4,86,71,Light Bluish Gray,Solid Colors,1,1.25
 6541,4211535,6541,"Technic, Brick 1 x 1 with Hole",86,71,Light Bluish Gray,Solid Colors,1,0.38
-87087,4558953,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",86,71,Light Bluish Gray,Solid Colors,3,0.45
-98283,6000066,98283,"Brick, Modified 1 x 2 with Masonry Profile",86,71,Light Bluish Gray,Solid Colors,1,0.77
+87087,4558953,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",86,71,Light Bluish Gray,Solid Colors,1,0.45
 ,,,,,,,,,
 Total qty,Total Weight,,,,,,,,
-14,7.17,,,,,,,,
+14,6.12,,,,,,,,

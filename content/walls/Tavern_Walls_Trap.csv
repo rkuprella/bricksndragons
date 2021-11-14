@@ -1,17 +1,15 @@
 BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
 2431,4211194,2431,Tile 1 x 4,88,70,Reddish Brown,Solid Colors,1,0.54
-30153,6247798,30153,Rock 1 x 1 Jewel 24 Facet,12,47,Trans-Clear,Transparent Colors,1,0.22
+3005,4113915,3005,Brick 1 x 1,2,19,Tan,Solid Colors,2,0.44
 3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
-3062b,6223655,3062b,"Brick, Round 1 x 1 Open Stud",12,47,Trans-Clear,Transparent Colors,1,0.28
+3023,4113917,3023,Plate 1 x 2,2,19,Tan,Solid Colors,2,0.36
 3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
-34103,6251470,34103,"Plate, Modified 1 x 3 with 2 Studs (Double Jumper)",88,70,Reddish Brown,Solid Colors,1,0.43
-3660,4118866,3660,"Slope, Inverted 45 2 x 2",2,19,Tan,Solid Colors,1,1.25
 3710,4211001,3710,Plate 1 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.71
-4589b,4567333,4589b,Cone 1 x 1 with Top Groove,20,34,Trans-Green,Transparent Colors,1,0.25
+61409,6214443,61409,Slope 18 2 x 1 x 2/3 with 4 Slots,88,70,Reddish Brown,Solid Colors,2,0.3
 6541,4179771,6541,"Technic, Brick 1 x 1 with Hole",2,19,Tan,Solid Colors,1,0.38
 87087,4579260,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",2,19,Tan,Solid Colors,1,0.45
-98138,4649422,98138,"Tile, Round 1 x 1",115,297,Pearl Gold,Pearl Colors,1,0.11
-98283,6148262,98283,"Brick, Modified 1 x 2 with Masonry Profile",2,19,Tan,Solid Colors,2,0.77
+98283,6148262,98283,"Brick, Modified 1 x 2 with Masonry Profile",2,19,Tan,Solid Colors,1,0.77
+99207,6174925,99207,Bracket 1 x 2 - 2 x 2 Inverted,2,19,Tan,Solid Colors,1,0.8
 ,,,,,,,,,
 Total qty,Total Weight,,,,,,,,
-15,7.88,,,,,,,,
+15,7.57,,,,,,,,

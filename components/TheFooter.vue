@@ -45,10 +45,12 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-between mt-8 text-xs text-gray-400">
+      <div
+        class="flex items-center justify-between mt-8 text-xs text-gray-600 dark:text-gray-400"
+      >
         <p class="flex-1">
           Bricks &amp; Dragons ©{{ new Date().getFullYear() }} by
-          <span class="text-primary-500">Quabbe</span>
+          <span class="text-primary-800 dark:text-primary-400">Quabbe</span>
         </p>
 
         <SocialMedia />

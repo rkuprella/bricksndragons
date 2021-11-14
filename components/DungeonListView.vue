@@ -1,38 +1,36 @@
 <template>
   <main class="flex-1">
-    <ThemeSwitcher
-      :themes="themes"
-      :searchResults="searchResults"
-      type="dungeons"
-    />
+    <ThemeSwitcher :themes="themes" type="dungeons" />
     <div class="py-8">
-      <ul class="grid grid-cols-1 mt-8 2xl:grid-cols-2">
+      <ul class="grid grid-cols-1 gap-2 mt-8 xl:grid-cols-2">
         <li
           v-for="dungeon in dungeons"
           :key="dungeon.id"
-          class="flex flex-col items-center gap-4"
+          class="flex flex-col items-center gap-4 pb-6"
         >
           <nuxt-picture
             loading="lazy"
             fit="cover"
             width="1600"
             height="1200"
-            quality="70"
+            quality="80"
             :src="`/images/dungeons/${dungeon.imagePath}`"
             :alt="`${dungeon.theme} ${dungeon.element} ${dungeon.name}`"
-            sizes="xs:100vw lg:1720"
+            sizes="xs:704px lg:844px xl:550px"
             class="w-full"
           />
           <div class="flex flex-col items-center">
-            <h2 class="text-2xl font-bold text-primary-50">
+            <h2
+              class="text-2xl font-bold text-primary-900 dark:text-primary-50"
+            >
               {{ dungeon.element }}
             </h2>
             <div>
-              (<span class="font-bold text-gray-100">{{
+              (<span class="font-bold text-primary-700 dark:text-gray-100">{{
                 getTotalModulesInDungeon(dungeon)
               }}</span>
               modules,
-              <span class="font-bold text-gray-100">{{
+              <span class="font-bold text-primary-700 dark:text-gray-100">{{
                 getTotalPartsInDungeon(dungeon)
               }}</span>
               parts)
@@ -78,10 +76,6 @@ export default {
     },
     themes: {
       type: Array,
-      required: true
-    },
-    searchResults: {
-      type: Set,
       required: true
     }
   },

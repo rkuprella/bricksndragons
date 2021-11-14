@@ -1,21 +1,21 @@
 BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
 15470,6060795,15470,"Plate, Round 1 x 1 with Vertical Swirl / Twist",104,29,Bright Pink,Solid Colors,2,0.15
-15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,6,0.3
-2343,4505990,2343,"Minifigure, Utensil Goblet",115,297,Pearl Gold,Pearl Colors,2,0.26
+15573,6092590,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",88,70,Reddish Brown,Solid Colors,2,0.3
+3021,4211189,3021,Plate 2 x 3,88,70,Reddish Brown,Solid Colors,3,0.93
 3023,4211063,3023,Plate 1 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.36
-3034,4211211,3034,Plate 2 x 8,88,70,Reddish Brown,Solid Colors,1,2.27
 3035,4211061,3035,Plate 4 x 8,85,72,Dark Bluish Gray,Solid Colors,1,4.7
-3068b,4211055,3068b,Tile 2 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,4,0.48
-3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.26
-3069b,4211151,3069b,Tile 1 x 2 with Groove,88,70,Reddish Brown,Solid Colors,6,0.26
-3460,4216945,3460,Plate 1 x 8,88,70,Reddish Brown,Solid Colors,1,1.36
+3069b,4211151,3069b,Tile 1 x 2 with Groove,88,70,Reddish Brown,Solid Colors,2,0.26
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,4,0.26
+3070b,4211288,3070b,Tile 1 x 1 with Groove (3070),88,70,Reddish Brown,Solid Colors,1,0.16
+3623,4211152,3623,Plate 1 x 3,88,70,Reddish Brown,Solid Colors,1,0.53
+3623,4211133,3623,Plate 1 x 3,85,72,Dark Bluish Gray,Solid Colors,1,0.53
 4032,4211159,4032,"Plate, Round 2 x 2 with Axle Hole",88,70,Reddish Brown,Solid Colors,2,0.37
-41740,6257604,41740,"Plate, Modified 1 x 4 with 2 Studs with Groove",88,70,Reddish Brown,Solid Colors,1,0
 53119,6292800,53119,"Plate, Round 1 x 1 with Horizontal Swirl / Twist",1,15,White,Solid Colors,2,0
-4073,4216581,4073,"Plate, Round 1 x 1",88,70,Reddish Brown,Solid Colors,4,0.12
-87580,4565394,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",88,70,Reddish Brown,Solid Colors,2,0.5
+4073,4216581,4073,"Plate, Round 1 x 1",88,70,Reddish Brown,Solid Colors,2,0.12
+6636,4211204,6636,Tile 1 x 6,88,70,Reddish Brown,Solid Colors,2,0.83
+87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,6,0.5
 98138pb014,6287854,98138pb014,"Tile, Round 1 x 1 with Cookie Tan Frosting and Chocolate Sprinkles Pattern",150,84,Medium Nougat,Solid Colors,2,0.11
 98138pb091,,98138pb091,"Tile, Round 1 x 1 with Cinnamon Roll Pattern",150,84,Medium Nougat,Solid Colors,2,0.12
 ,,,,,,,,,
 Total qty,Total Weight,,,,,,,,
-41,17.99,,,,,,,,
+36,17.63,,,,,,,,

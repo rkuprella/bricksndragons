@@ -21,7 +21,7 @@
     </transition>
     <UserLogin />
     <div
-      class="flex flex-col min-h-screen antialiased text-gray-800 bg-primary-50 dark:text-gray-200 dark:bg-gray-900"
+      class="flex flex-col min-h-screen antialiased text-gray-800 bg-gray-50 dark:text-gray-200 dark:bg-gray-900"
     >
       <TheHeader />
 
@@ -40,7 +40,7 @@
           <Nuxt />
         </transition>
         <div
-          class="bg-primary-50 dark:bg-gray-700 rounded w-[340px] hidden lg:block"
+          class="bg-gray-200 dark:bg-gray-700 rounded w-[340px] hidden lg:block sticky top-8"
         >
           <WantedList />
         </div>

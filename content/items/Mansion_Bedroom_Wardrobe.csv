@@ -1,23 +1,17 @@
 BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
-14719,6247784,14719,Tile 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,2,0.43
-2420,4211257,2420,Plate 2 x 2 Corner,88,70,Reddish Brown,Solid Colors,1,0.54
-24866,6209691,24866,"Plate, Round 1 x 1 with Flower Edge (5 Petals)",115,297,Pearl Gold,Pearl Colors,1,0.089
-25269,6294879,25269,"Tile, Round 1 x 1 Quarter",67,80,Metallic Silver,Metallic Colors,4,0
-2921,6170570,2921,"Brick, Modified 1 x 1 with Bar Handle",88,70,Reddish Brown,Solid Colors,4,0.61
+15068,6146858,15068,"Slope, Curved 2 x 2",88,70,Reddish Brown,Solid Colors,2,0.57
+2420,4210635,2420,Plate 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,2,0.54
+25269,6294879,25269,"Tile, Round 1 x 1 Quarter",67,80,Metallic Silver,Metallic Colors,2,0
+3004,4211149,3004,Brick 1 x 2,88,70,Reddish Brown,Solid Colors,1,0.8
 30136,4211180,30136,"Brick, Modified 1 x 2 Log",88,70,Reddish Brown,Solid Colors,4,0.69
-3020,4211186,3020,Plate 2 x 4,88,70,Reddish Brown,Solid Colors,1,1.2
-3022,4216695,3022,Plate 2 x 2,88,70,Reddish Brown,Solid Colors,2,0.64
-3024,4221744,3024,Plate 1 x 1,88,70,Reddish Brown,Solid Colors,2,0.2
-3024,6186012,3024,Plate 1 x 1,68,484,Dark Orange,Solid Colors,1,0.2
-3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
-3068b,4211055,3068b,Tile 2 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,1,0.48
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3021,4211189,3021,Plate 2 x 3,88,70,Reddish Brown,Solid Colors,1,0.93
+3023,4211150,3023,Plate 1 x 2,88,70,Reddish Brown,Solid Colors,3,0.36
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,1,0.26
 3069b,6217492,3069b,Tile 1 x 2 with Groove,67,80,Metallic Silver,Metallic Colors,2,0.26
-3070b,6055172,3070b,Tile 1 x 1 with Groove (3070),69,28,Dark Tan,Solid Colors,2,0.16
-34103,,34103,"Plate, Modified 1 x 3 with 2 Studs (Double Jumper)",85,72,Dark Bluish Gray,Solid Colors,2,0.43
-3710,4211190,3710,Plate 1 x 4,88,70,Reddish Brown,Solid Colors,1,0.71
-60470b,6167941,60470b,"Plate, Modified 1 x 2 with 2 Open O Clips (Horizontal Grip)",120,308,Dark Brown,Solid Colors,4,0.55
+44728,6117976,44728,Bracket 1 x 2 - 2 x 2,88,70,Reddish Brown,Solid Colors,1,0.8
 4073,4216581,4073,"Plate, Round 1 x 1",88,70,Reddish Brown,Solid Colors,4,0.12
-93273,4658005,93273,"Slope, Curved 4 x 1 Double",88,70,Reddish Brown,Solid Colors,2,0.6
+99780,6174856,99780,Bracket 1 x 2 - 1 x 2 Inverted,88,70,Reddish Brown,Solid Colors,1,0.55
 ,,,,,,,,,
 Total qty,Total Weight,,,,,,,,
-41,18.759,,,,,,,,
+25,11.6,,,,,,,,

@@ -2,7 +2,6 @@
   <DungeonListView
     :dungeons="filteredItems(dungeons)"
     :themes="themes"
-    :searchResults="getSearchResults"
     type="dungeons"
   />
 </template>
@@ -128,41 +127,22 @@ export default {
       "wantedList",
       "userWantedList",
       "moduleSearch"
-    ]),
-    getSearchResults() {
-      return new Set(
-        this.filteredItems(this.dungeons)
-          .filter(
-            item =>
-              item.name
-                .toLowerCase()
-                .includes(this.moduleSearch.toLowerCase()) ||
-              item.element
-                .toLowerCase()
-                .includes(this.moduleSearch.toLowerCase())
-          )
-          .map(item =>
-            item.name.toLowerCase().includes(this.moduleSearch.toLowerCase())
-              ? item.name
-              : item.element
-          )
-      );
-    }
+    ])
+    // getSearchResults() {
+    //   return new Set(
+    //     this.dungeons.filter(
+    //       item =>
+    //         item.name.toLowerCase().includes(this.moduleSearch.toLowerCase()) ||
+    //         item.element.toLowerCase().includes(this.moduleSearch.toLowerCase())
+    //     )
+    //   );
+    // }
   },
   methods: {
     ...mapActions(["setTheme", "setModuleSearch"]),
     filteredItems(items) {
       return items.filter(item => {
-        if (this.moduleSearch.length > 0 && this.themeDungeons) {
-          return (
-            item.theme === this.themeDungeons &&
-            item.element.toLowerCase().includes(this.moduleSearch.toLowerCase())
-          );
-        } else if (this.moduleSearch.length > 0) {
-          return item.element
-            .toLowerCase()
-            .includes(this.moduleSearch.toLowerCase());
-        } else if (this.themeDungeons) {
+        if (this.themeDungeons) {
           return item.theme === this.themeDungeons;
         } else {
           return item;

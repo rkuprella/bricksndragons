@@ -7,14 +7,14 @@ BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCatego
 3040,4121966,3040,Slope 45 2 x 1,11,0,Black,Solid Colors,1,0.69
 3068b,4211055,3068b,Tile 2 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,2,0.48
 3070b,4210848,3070b,Tile 1 x 1 with Groove (3070),85,72,Dark Bluish Gray,Solid Colors,1,0.16
-3308,4218982,3308,Arch 1 x 8 x 2,11,0,Black,Solid Colors,1,3.83
-3710,371026,3710,Plate 1 x 4,11,0,Black,Solid Colors,1,0.71
-61678,6037746,61678,"Slope, Curved 4 x 1",11,0,Black,Solid Colors,2,0.8
+3308,4220973,3308,Arch 1 x 8 x 2,85,72,Dark Bluish Gray,Solid Colors,1,3.83
+3710,4211001,3710,Plate 1 x 4,85,72,Dark Bluish Gray,Solid Colors,1,0.71
+61678,6042955,61678,"Slope, Curved 4 x 1",85,72,Dark Bluish Gray,Solid Colors,2,0.8
 6541,654126,6541,"Technic, Brick 1 x 1 with Hole",11,0,Black,Solid Colors,1,0.38
 85984,4548180,85984,Slope 30 1 x 2 x 2/3,11,0,Black,Solid Colors,1,0.34
 87087,4558954,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",11,0,Black,Solid Colors,1,0.45
 92946,6069000,92946,Slope 45 2 x 1 with 2/3 Cutout,11,0,Black,Solid Colors,2,0.42
-99207,6000650,99207,Bracket 1 x 2 - 2 x 2 Inverted,11,0,Black,Solid Colors,1,0.8
+99207,6308045,99207,Bracket 1 x 2 - 2 x 2 Inverted,85,72,Dark Bluish Gray,Solid Colors,1,0
 ,,,,,,,,,
 Total qty,Total Weight,,,,,,,,
-19,15.25,,,,,,,,
+19,14.45,,,,,,,,

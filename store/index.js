@@ -25,7 +25,8 @@ export const state = () => ({
     "Cave_Subterranean_Mushrooms-2",
     "Pyramids_Decorative_Scarab-puzzle",
     "Basics_Misc_Enemy-plates",
-    "Aberration_Beholder_4"
+    "Aberration_Beholder_4",
+    "Castle_Throne-Room_Heraldic-shield"
   ],
   premium: [
     // "Castle",

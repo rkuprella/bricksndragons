@@ -1,14 +1,22 @@
 BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
-3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,2,1.2
-3020,4211395,3020,Plate 2 x 4,86,71,Light Bluish Gray,Solid Colors,2,1.2
-3021,4211396,3021,Plate 2 x 3,86,71,Light Bluish Gray,Solid Colors,2,0.93
-3022,4211397,3022,Plate 2 x 2,86,71,Light Bluish Gray,Solid Colors,4,0.64
-3023,4211398,3023,Plate 1 x 2,86,71,Light Bluish Gray,Solid Colors,2,0.36
+25269,6149677,25269,"Tile, Round 1 x 1 Quarter",88,70,Reddish Brown,Solid Colors,1,0.1
+27925,,27925,"Tile, Round Corner 2 x 2 Macaroni",88,70,Reddish Brown,Solid Colors,1,0.3
+3004,4211388,3004,Brick 1 x 2,86,71,Light Bluish Gray,Solid Colors,1,0.8
+3005,4211389,3005,Brick 1 x 1,86,71,Light Bluish Gray,Solid Colors,3,0.44
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3021,4211043,3021,Plate 2 x 3,85,72,Dark Bluish Gray,Solid Colors,1,0.93
+3022,4211397,3022,Plate 2 x 2,86,71,Light Bluish Gray,Solid Colors,1,0.64
+3023,4211398,3023,Plate 1 x 2,86,71,Light Bluish Gray,Solid Colors,6,0.36
 3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
-3069b,4211151,3069b,Tile 1 x 2 with Groove,88,70,Reddish Brown,Solid Colors,8,0.26
+3068b,4211413,3068b,Tile 2 x 2 with Groove,86,71,Light Bluish Gray,Solid Colors,1,0.48
+3069b,4211151,3069b,Tile 1 x 2 with Groove,88,70,Reddish Brown,Solid Colors,3,0.26
+3069b,4211052,3069b,Tile 1 x 2 with Groove,85,72,Dark Bluish Gray,Solid Colors,1,0.26
 3710,4211445,3710,Plate 1 x 4,86,71,Light Bluish Gray,Solid Colors,1,0.71
+4073,6315780,4073,"Plate, Round 1 x 1",120,308,Dark Brown,Solid Colors,1,0
+64644,4538950,64644,"Minifigure, Utensil Telescope",120,308,Dark Brown,Solid Colors,1,0.22
 6541,4211535,6541,"Technic, Brick 1 x 1 with Hole",86,71,Light Bluish Gray,Solid Colors,2,0.38
 87087,4558953,87087,"Brick, Modified 1 x 1 with Stud on 1 Side",86,71,Light Bluish Gray,Solid Colors,2,0.45
+87620,4651063,87620,"Brick, Modified Facet 2 x 2",86,71,Light Bluish Gray,Solid Colors,1,1.0
 ,,,,,,,,,
 Total qty,Total Weight,,,,,,,,
-26,16.61,,,,,,,,
+29,14.78,,,,,,,,

@@ -1,0 +1,10 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+2412b,4124456,2412b,"Tile, Modified 1 x 2 Grille with Bottom Groove / Lip",2,19,Tan,Solid Colors,4,0.23
+2420,4210635,2420,Plate 2 x 2 Corner,85,72,Dark Bluish Gray,Solid Colors,1,0.54
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3023,4211063,3023,Plate 1 x 2,85,72,Dark Bluish Gray,Solid Colors,1,0.36
+3024,4159553,3024,Plate 1 x 1,2,19,Tan,Solid Colors,1,0.2
+34103,,34103,"Plate, Modified 1 x 3 with 2 Studs (Double Jumper)",85,72,Dark Bluish Gray,Solid Colors,1,0.43
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+9,3.65,,,,,,,,

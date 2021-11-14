@@ -1,17 +1,16 @@
 BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
 15535,6143850,15535,"Tile, Round 2 x 2 with Hole",11,0,Black,Solid Colors,1,0.32
-15573,6092587,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",2,19,Tan,Solid Colors,1,0.3
+15573,6092572,15573,"Plate, Modified 1 x 2 with 1 Stud with Groove and Bottom Stud Holder (Jumper)",85,72,Dark Bluish Gray,Solid Colors,4,0.3
 15712,6252969,15712,"Tile, Modified 1 x 1 with Open O Clip",2,19,Tan,Solid Colors,1,0.2
 26047,6212377,26047,"Plate, Round 1 x 1 with Bar Handle on Side",115,297,Pearl Gold,Pearl Colors,1,0.3
-3021,4118790,3021,Plate 2 x 3,2,19,Tan,Solid Colors,1,0.93
-3024,4159553,3024,Plate 1 x 1,2,19,Tan,Solid Colors,2,0.2
-3031,4243831,3031,Plate 4 x 4,85,72,Dark Bluish Gray,Solid Colors,1,2.22
-35480,6221607,35480,"Plate, Round 1 x 2 with Two Open Studs",85,72,Dark Bluish Gray,Solid Colors,1,0.26
+3020,4211065,3020,Plate 2 x 4,85,72,Dark Bluish Gray,Solid Colors,1,1.2
+3023,4113917,3023,Plate 1 x 2,2,19,Tan,Solid Colors,1,0.36
+3070b,4125253,3070b,Tile 1 x 1 with Groove (3070),2,19,Tan,Solid Colors,1,0.16
+3623,4121921,3623,Plate 1 x 3,2,19,Tan,Solid Colors,1,0.53
 4740,6078236,4740,Dish 2 x 2 Inverted (Radar),65,82,Metallic Gold,Metallic Colors,1,0.28
 4589b,4529247,4589b,Cone 1 x 1 with Top Groove,115,297,Pearl Gold,Pearl Colors,1,0.25
 4073,4216581,4073,"Plate, Round 1 x 1",88,70,Reddish Brown,Solid Colors,4,0.12
-63864,6131896,63864,Tile 1 x 3,2,19,Tan,Solid Colors,2,0.39
-87580,6126083,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",85,72,Dark Bluish Gray,Solid Colors,4,0.5
+87580,4565387,87580,"Plate, Modified 2 x 2 with Groove and 1 Stud in Center (Jumper)",2,19,Tan,Solid Colors,1,0.5
 ,,,,,,,,,
 Total qty,Total Weight,,,,,,,,
-21,8.72,,,,,,,,
+18,5.78,,,,,,,,

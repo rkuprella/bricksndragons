@@ -2,19 +2,21 @@
   <main class="flex-1 py-12">
     <ContentProse>
       <h2>Hello world</h2>
-      <p>The website is currently under construction.</p>
+      <p>This website is currently under construction.</p>
       <h3>Micro-scale</h3>
       <p>
-        The dungeon system and all modules are built around a 2x2 studs grid
-        (15.8mm). Common battle map tile size is 1" or 25.4mm, which would
-        correspond closer to a 3x3 or 4x4 grid. So why micro-scale?
+        The system is built around a 2x2 studs grid (15.8mm). Common battle map
+        tile size is 1" or 25.4mm, which would correspond closer to a 3x3 or 4x4
+        grid. For standard RPG miniatures or LEGO® minifigures this is not
+        suitable, unless the grid size is extended (which is possible). So why
+        micro-scale?
       </p>
       <ul>
         <li>
-          + Allows for larger dungeons on smaller tables
+          + Larger dungeons on smaller tables
         </li>
         <li>
-          + Less parts required, thus cheaper in price (in terms of LEGO®)
+          + Less parts required, cheaper in price
         </li>
         <li>
           + Compatible with LEGO® heroica sets and microfigures
@@ -25,13 +27,6 @@
         <li>
           + Easily customizable
         </li>
-        <li>
-          - Not suitable for standard RPG miniatures or LEGO® minifigures
-          (unless the grid size is extended, which is possible)
-        </li>
-        <li>
-          - Can be fiddly with lots of microfigures
-        </li>
       </ul>
       <h3>Durable</h3>
       <p>
@@ -40,16 +35,14 @@
 
       <h3>Connectable</h3>
       <p>
-        Wall modules can be plugged together via technic bricks. When the wall
-        modules are rejoined in any figure, there won't be any gaps when using
-        the provided corner pieces.
+        Wall modules can be plugged together via technic bricks. When
+        reconnected in any figure, base plates are kept in place.
       </p>
 
       <h3>Common parts</h3>
       <p>
-        Most bricks used are common LEGO® bricks, that are usually available on
-        bricklink. Some modules use more rare parts, that can be sometimes very
-        expensive or not available at all. Those modules are marked with a
+        Most parts used are common LEGO® bricks. Modules that contain rare or
+        expensive parts are marked with
         <svg
           class="inline w-5 h-5 text-red-600"
           fill="currentColor"
@@ -63,24 +56,11 @@
           ></path></svg
         >.
       </p>
-      <h3>Price</h3>
-      <p>
-        The price for LEGO® bricks is not neccessarily cheap. All modules come
-        in themes and sets, where certain parts are often reused on purpose
-        within the set or theme, helping to further reduce shipping cost on
-        bricklink.
-      </p>
       <h3>Customizable</h3>
       <p>
-        The beauty of LEGO® bricks is, it doesn't limit our creativity. All
-        modules can be modified or rebuilt into whatever your dungeon has to
-        offer!
-      </p>
-      <h3>Stackable</h3>
-      <p>
-        When the session is over, all wall modules can be put away safely,
-        fitting next to each other, without having to fiddle with loose parts
-        the next session.
+        Any module can easily be rebuild or modified. Base plates used in all
+        modules are always of the same type and color - to display the grid -,
+        but can be customized into a more detailled and colorful floor pattern.
       </p>
     </ContentProse>
   </main>
