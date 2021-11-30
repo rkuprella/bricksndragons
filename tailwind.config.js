@@ -12,7 +12,8 @@ module.exports = {
       },
       colors: {
         primary: colors.amber,
-        gray: colors.warmGray
+        gray: colors.warmGray,
+        secondary: colors.orange
       },
       typography: theme => ({
         DEFAULT: {
@@ -39,7 +40,7 @@ module.exports = {
             h4: {
               color: theme("colors.yellow.700"),
               fontWeight: "400",
-              fontFamily: "Bangers",
+              // fontFamily: "Bangers",
               fontSize: "2rem"
             },
             h5: {

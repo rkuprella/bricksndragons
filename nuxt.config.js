@@ -123,8 +123,8 @@ export default {
   },
 
   gtm: {
-    id: "GTM-5NS2SQL"
-    // autoInit: false
+    id: "GTM-5NS2SQL",
+    autoInit: false
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

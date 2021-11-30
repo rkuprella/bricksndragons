@@ -36,9 +36,7 @@ export const state = () => ({
     // "Mage Tower",
     // "Sewers",
     // "Pyramids",
-    // "Construct",
-    // "Goblin",
-    // "Undead"
+    // "Tavern"
   ]
 });
 

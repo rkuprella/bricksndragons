@@ -1,5 +1,5 @@
 <template>
-  <header class="relative text-primary-50 bg-primary-600 h-[420px]">
+  <header class="relative text-primary-50 bg-primary-600 h-[360px]">
     <transition
       enter-active-class="transition ease-out"
       enter-class="opacity-0"
@@ -86,7 +86,7 @@
         <nuxt-link
           to="/"
           @click.native="setMenu(false)"
-          class="relative transition duration-150 ease-in-out w-36"
+          class="transition duration-150 ease-in-out w-36 lg:w-56"
         >
           <nuxt-picture
             fill="cover"
@@ -95,13 +95,9 @@
             quality="70"
             src="/images/logo-bricksanddragons.png"
             alt="Bricks and Dragons Logo"
-            sizes="xs:288px"
+            sizes="xs:288px lg:448px"
             class="w-full"
           />
-          <span
-            class="absolute bottom-0 inline-block px-3 py-1 text-xs text-red-100 transform bg-red-700 rounded-full -right-8 -rotate-12"
-            >Under construction</span
-          >
         </nuxt-link>
         <div class="items-center hidden gap-1 ml-auto lg:flex">
           <nuxt-link
@@ -116,6 +112,8 @@
             "
             >{{ link.name }}</nuxt-link
           >
+        </div>
+        <div class="flex items-center gap-1">
           <button
             @click="toggleDarkMode"
             type="button"
@@ -161,9 +159,7 @@
               </div>
             </transition>
           </button>
-        </div>
-        <div class="flex items-center gap-1">
-          <button
+          <!-- <button
             type="button"
             role="button"
             aria-label="Toggle login"
@@ -184,7 +180,7 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-          </button>
+          </button> -->
           <button
             type="button"
             role="button"
@@ -198,7 +194,7 @@
               Menu
             </div>
             <div
-              class="absolute inset-0 flex flex-col items-center gap-1 transition"
+              class="absolute inset-0 flex flex-col items-center space-y-1 transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +265,7 @@
         leave-active-class="absolute transition duration-150 ease-linear transform"
         leave-class="opacity-100"
         leave-to-class="translate-y-32 opacity-0"
-        class="flex flex-col items-start justify-center flex-1 py-16 lg:items-center"
+        class="flex flex-col items-start justify-center flex-1 lg:items-center"
       >
         <h1
           key="slogan"
@@ -307,7 +303,7 @@
           key="link"
           v-if="getCurrentPage.linkTo"
           :to="getCurrentPage.linkTo"
-          class="flex items-center gap-1 px-4 py-2 mt-6 text-lg transition border-4 rounded-full lg:gap-2 lg:px-6 lg:py-3 lg:text-2xl border-primary-50 text-primary-50"
+          class="flex items-center gap-1 px-4 py-2 mt-6 text-lg uppercase transition border-4 rounded-full lg:gap-2 lg:px-6 lg:py-3 lg:text-2xl border-primary-50 text-primary-50 hover:bg-white hover:text-primary-800"
         >
           <span>{{ getCurrentPage.linkTitle }}</span
           ><svg
@@ -362,8 +358,8 @@ export default {
           name: "Home",
           slogan: "A Modular LEGO® Dungeon System",
           // tags: ["micro-scale", "durable", "connectible"],
-          linkTitle: "Explore all dungeons",
-          linkTo: "/dungeons",
+          // linkTitle: "Explore all dungeons",
+          // linkTo: "/dungeons",
           bgImage: "/images/header-microfigs.png",
           bgImageAlt: "LEGO® Microfig Heads"
         },
@@ -407,6 +403,14 @@ export default {
           bgImageAlt: "LEGO® Microfig Heads",
           linkTitle: "Join us on Discord",
           linkHref: "https://discord.gg/pGQundu7QT"
+        },
+        {
+          to: "/blog",
+          aliases: [],
+          name: "Blog",
+          slogan: "Stuff to talk about",
+          bgImage: "/images/header-microfigs.png",
+          bgImageAlt: "LEGO® Microfig Heads"
         }
       ]
     };

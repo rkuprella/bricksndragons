@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
           <div class="prose dark:prose-dark">
-            <h3 class="font-display">
+            <h3>
               About
             </h3>
             <p>
@@ -20,19 +20,19 @@
               by pasting the XML data into the form field provided (requires a
               bricklink account).
             </p>
-            <div class="flex items-center gap-2 mt-4">
+            <!-- <div class="flex items-center gap-2 mt-4">
               <nuxt-link
                 v-for="link in bottomNav"
                 :key="link.name"
                 :to="link.to"
                 >{{ link.name }}</nuxt-link
               >
-            </div>
+            </div> -->
           </div>
         </div>
         <div>
           <div class="prose dark:prose-dark">
-            <h3 class="font-display">
+            <h3>
               Disclaimer
             </h3>
             <p>
@@ -65,7 +65,7 @@ export default {
     return {
       bottomNav: [
         { to: "/about", name: "About" },
-        { to: "/news", name: "News" }
+        { to: "/blog", name: "Blog" }
       ]
     };
   }

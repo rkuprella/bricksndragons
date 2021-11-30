@@ -29,16 +29,9 @@
         alt="Bricks &amp; Dragons themes"
         sizes="xs:100vw lg:1200"
       />
-      <p>
-        Lots of modules and themes will be added in the future. Join the
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://discord.gg/pGQundu7QT"
-          >Discord</a
-        >
-        to not miss new releases.
-      </p>
+      <small class="block -mt-16 text-center opacity-75"
+        >An earlier version of the modules</small
+      >
 
       <h3>Disclaimer</h3>
       <p>

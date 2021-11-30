@@ -10,7 +10,7 @@ export default function(to, from, savedPosition) {
     // scroll below the header when going to a sub route
     aliases.some(alias => to.name.includes(alias) || from.name.includes(alias))
   ) {
-    return { x: 0, y: 420, behavior: "smooth" };
+    return { x: 0, y: 360, behavior: "smooth" };
   } else {
     return { x: 0, y: 0, behavior: "smooth" };
   }

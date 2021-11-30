@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed inset-x-0 bottom-0 z-40 flex flex-col pointer-events-none top-12 lg:hidden"
+    class="fixed inset-x-0 bottom-0 z-40 flex flex-col max-h-full pointer-events-none lg:hidden"
   >
     <transition
       enter-active-class="transition ease-out transform"
@@ -12,7 +12,7 @@
     >
       <div
         v-if="showWantedList"
-        class="relative flex-1 mx-4 overflow-y-auto bg-gray-700 pointer-events-auto rounded-tl-2xl rounded-tr-2xl"
+        class="relative flex-1 mx-4 mt-8 overflow-y-auto bg-gray-200 pointer-events-auto dark:bg-gray-700 rounded-tl-2xl rounded-tr-2xl"
       >
         <WantedList />
         <button
@@ -20,7 +20,7 @@
           type="button"
           aria-label="Close login"
           @click="setWantedList(false)"
-          class="absolute p-2 text-gray-200 transition transform top-1 right-1 hover:scale-110 active:scale-90 hover:rotate-12"
+          class="absolute p-2 text-gray-200 transition transform top-1 right-1 hover:scale-110 active:scale-90"
         >
           <svg
             class="w-8 h-8"
@@ -54,8 +54,26 @@
             setMenu(false)
           ]
         "
-        class="p-3 text-gray-400 transition hover:text-gray-300"
+        class="flex items-center justify-between w-full gap-3 p-3 text-gray-400 transition hover:text-gray-300"
       >
+        <div class="text-sm dark:text-gray-400">
+          <span class="text-lg font-bold text-primary-800 dark:text-blue-300"
+            >Wanted list</span
+          >
+          <span v-show="getTotalModulesInWantedList"
+            >(<span
+              class="inline-block font-bold transition duration-300 transform dark:text-gray-100"
+              :class="animateItem ? 'scale-[2]' : 'scale-100'"
+              >{{ getTotalModulesInWantedList }}</span
+            >
+            {{ getTotalModulesInWantedList == 1 ? "module" : "modules" }},
+            <span class="font-bold dark:text-gray-100">{{
+              getTotalPartsInWantedList
+            }}</span>
+            {{ getTotalPartsInWantedList == 1 ? "part" : "parts" }})</span
+          >
+        </div>
+
         <svg
           class="w-5 h-5 transition-transform transform"
           :class="showWantedList ? '-rotate-180' : '-rotate-90'"
@@ -72,7 +90,7 @@
           ></path>
         </svg>
       </button>
-      <button
+      <!-- <button
         type="button"
         role="button"
         aria-label="Toggle login"
@@ -93,7 +111,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-      </button>
+      </button> -->
     </div>
     <!-- // button group -->
   </div>

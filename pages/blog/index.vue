@@ -1,7 +1,7 @@
 <template>
   <main class="flex-1 py-12">
     <ContentProse>
-      <h1>News &amp; updates</h1>
+      <h1>Blog</h1>
       <p>No content yet.</p>
     </ContentProse>
   </main>

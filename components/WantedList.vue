@@ -2,7 +2,7 @@
   <aside class="flex flex-col flex-1 px-4 py-6 dark:text-gray-100">
     <!-- title -->
     <div class="flex items-center justify-between">
-      <h2 class="text-sm dark:text-gray-400">
+      <div class="text-sm dark:text-gray-400">
         <span class="text-lg font-bold text-primary-800 dark:text-blue-300"
           >Wanted list</span
         >
@@ -18,7 +18,7 @@
           }}</span>
           {{ getTotalPartsInWantedList == 1 ? "part" : "parts" }})</span
         >
-      </h2>
+      </div>
     </div>
     <!-- // title -->
     <!-- button group -->
@@ -265,8 +265,8 @@
         </button>
       </div>
       <div
-        class="h-48 p-2 overflow-y-auto text-xs font-bold text-blue-700 bg-opacity-25 dark:text-blue-400 bg-white/20 dark:bg-gray-800"
-        :class="showXML ? '' : 'sr-only'"
+        class="p-2 overflow-y-auto text-xs font-bold text-blue-700 bg-opacity-25 dark:text-blue-400 bg-white/20 dark:bg-gray-800"
+        :class="showXML ? 'h-48' : 'sr-only'"
         id="wanted"
       >
         &lt;INVENTORY&gt;<br />
@@ -315,7 +315,7 @@
       class="flex flex-col items-center justify-center flex-1 space-y-6"
     >
       <p class="text-center">
-        Start adding modules to your wanted list.
+        Your wanted list is empty.
       </p>
       <button
         @click="loadWantedList"

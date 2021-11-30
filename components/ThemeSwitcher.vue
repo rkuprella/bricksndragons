@@ -1,18 +1,18 @@
 <template>
   <div class="flex flex-wrap gap-2">
     <button
-      v-for="theme in themes"
+      v-for="theme in sortedThemes"
       :key="theme"
       @click="setTheme({ type: type, theme: theme })"
       class="flex items-center gap-1 px-4 py-2 font-bold transition rounded-full"
       :class="
         theme === getTheme
-          ? theme === 'Creatures'
-            ? 'theme__creatures--active'
-            : 'bg-primary-800/90 text-primary-50 dark:bg-primary-500 dark:text-gray-900'
-          : theme === 'Creatures'
-          ? 'theme__creatures'
-          : 'bg-primary-800/10 hover:bg-primary-600/10 text-primary-800 dark:bg-gray-700 dark:bg-opacity-30 dark:hover:bg-opacity-50 dark:text-primary-500'
+          ? isPremium(theme)
+            ? 'bg-secondary-700 text-secondary-50 dark:bg-secondary-500 dark:text-gray-900'
+            : 'bg-primary-800 text-gray-100 dark:bg-primary-500 dark:text-gray-900'
+          : isPremium(theme)
+          ? 'bg-secondary-500/20 text-secondary-700 dark:bg-gray-500/10 dark:text-secondary-500'
+          : 'bg-primary-800/5 text-primary-800 dark:bg-gray-500/10 dark:text-primary-500'
       "
     >
       <svg
@@ -51,7 +51,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(["themeModules", "themeDungeons", "themeCreatures"]),
+    ...mapState(["themeModules", "themeDungeons", "themeCreatures", "premium"]),
     getTheme() {
       if (this.type === "modules") {
         return this.themeModules;
@@ -61,7 +61,16 @@ export default {
         return this.themeCreatures;
       }
     },
-    ...mapGetters(["isPremium"])
+    ...mapGetters(["isPremium"]),
+    sortedThemes() {
+      return this.themes.sort((a, b) =>
+        this.isPremium(a) && !this.isPremium(b)
+          ? 1
+          : !this.isPremium(a) && this.isPremium(b)
+          ? -1
+          : 0
+      );
+    }
   },
   methods: {
     ...mapActions(["setTheme"])
