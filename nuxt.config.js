@@ -65,9 +65,9 @@ export default {
   modules: [
     "@nuxtjs/pwa",
     "@nuxt/content",
-    "@nuxt/image",
-    "@nuxtjs/gtm",
-    "@nuxtjs/firebase"
+    "@nuxt/image"
+    // "@nuxtjs/gtm",
+    // "@nuxtjs/firebase"
   ],
 
   router: {
