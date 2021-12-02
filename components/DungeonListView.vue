@@ -8,8 +8,7 @@
           :key="dungeon.id"
           class="flex flex-col items-center gap-4 pb-6"
         >
-          <nuxt-picture
-            loading="lazy"
+          <nuxt-img
             fit="cover"
             width="1600"
             height="1200"

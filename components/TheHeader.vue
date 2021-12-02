@@ -88,7 +88,7 @@
           @click.native="setMenu(false)"
           class="transition duration-150 ease-in-out w-36 lg:w-56"
         >
-          <nuxt-picture
+          <nuxt-img
             fill="cover"
             width="840"
             height="453"

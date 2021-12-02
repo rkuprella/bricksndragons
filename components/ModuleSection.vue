@@ -64,7 +64,7 @@
                 : 'invisible opacity-50'
             "
           >
-            <nuxt-picture
+            <nuxt-img
               fit="cover"
               width="800"
               height="600"
@@ -75,7 +75,7 @@
               class="w-full"
             />
           </div>
-          <nuxt-picture
+          <nuxt-img
             fit="cover"
             width="800"
             height="600"
