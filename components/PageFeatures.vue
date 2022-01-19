@@ -3,7 +3,7 @@
     <div
       v-for="(item, i) in features"
       :key="i"
-      class="flex flex-col items-center gap-6"
+      class="flex flex-col items-center gap-6 odd:bg-gray-400/10"
     >
       <div class="p-3 mx-auto space-y-4">
         <div class="flex items-center gap-3 md:flex-col">
@@ -19,13 +19,13 @@
             />
           </div>
           <h4
-            class="self-start text-2xl font-bold text-gray-700 dark:text-gray-300 md:text-3xl xl:text-4xl"
+            class="self-center text-xl font-bold text-gray-700 md:self-start dark:text-gray-300 md:text-2xl xl:text-3xl"
           >
             {{ item.title }}
           </h4>
         </div>
         <p
-          class="text-lg leading-7 text-gray-600 dark:text-gray-400 md:text-xl md:leading-8"
+          class="text-base leading-7 text-gray-600 dark:text-gray-400 md:text-lg md:leading-8"
         >
           {{ item.text }}
         </p>

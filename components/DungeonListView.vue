@@ -61,6 +61,12 @@
         </li>
       </ul>
     </div>
+    <div class="p-8">
+      <p>
+        <strong class="text-primary-800 dark:text-yellow-500">Info:</strong>
+        floor tiles are not included in dungeon rooms.
+      </p>
+    </div>
   </main>
 </template>
 

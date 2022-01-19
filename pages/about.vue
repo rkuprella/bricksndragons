@@ -13,7 +13,7 @@
           >bricklink</a
         >
         by pasting the XML data into the form field provided (requires a
-        bricklink account).
+        bricklink account). This service is free of charge.
       </p>
       <p>
         I maintain this project as a hobby. Please note that I cannot guarantee
@@ -110,9 +110,9 @@
         </li>
       </ul>
       <p>
-        <em>
-          This website was built with Nuxt and Tailwind CSS
-        </em>
+        <small>
+          Built with Nuxt and Tailwind CSS
+        </small>
         <svg
           class="inline w-4 h-4 text-red-600"
           fill="currentColor"

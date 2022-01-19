@@ -18,7 +18,7 @@
                 >bricklink</a
               >
               by pasting the XML data into the form field provided (requires a
-              bricklink account).
+              bricklink account). This service is free of charge.
             </p>
             <!-- <div class="flex items-center gap-2 mt-4">
               <nuxt-link

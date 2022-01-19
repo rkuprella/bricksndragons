@@ -38,7 +38,7 @@ export default {
         {
           title: "2x2 grid",
           text:
-            "Floor plates used in all modules are always of the same type and color - to display the 2x2 grid.",
+            "Floor plates used in all modules are always of the same type and color - to display the 2x2 grid. Feel free to customize!",
           imgUrl: "/images/grid.png"
         },
         {
@@ -52,7 +52,7 @@ export default {
         {
           title: "Welcome to Bricks & Dragons",
           text:
-            "This web app provides instructions and part lists for custom built LEGO® dungeon modules and generates XML data to easily order the LEGO® bricks you need on bricklink."
+            "This web app provides instructions and part lists for custom built LEGO® dungeon modules. By copying the XML data of your wanted list, you can easily order the needed LEGO® bricks from bricklink."
         },
         {
           imgUrl: "/images/dungeon2.png",
@@ -78,7 +78,7 @@ export default {
           imgUrl: "/images/beholders.png",
           title: "Monsters & Heroes",
           text:
-            "Instructions for brickbuilt microscale monsters and other creatures. Fully compatible with microfig adventurers from LEGO® Heroica sets.",
+            "Brickbuilt microscale monsters and buyable LEGO® Heroica microfigures.",
           link: {
             title: "All creatures",
             to: "/creatures"
@@ -90,7 +90,7 @@ export default {
           // imgUrl: "/images/allmodules.png",
           title: "Become a Brick Dungeon Master",
           text:
-            "I maintain this project as a hobby. The service is free of charge and no data is collected. Feel free to hop onto our Discord server to talk about LEGO® D&D or to provide some feedback.",
+            "More content to come in the future. Feel free to join our Discord to share your thoughts, ideas and feedback!",
           outro: true
         }
       ]

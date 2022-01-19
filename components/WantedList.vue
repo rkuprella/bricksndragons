@@ -386,36 +386,8 @@ export default {
       localStorage.setItem("userWantedList", JSON.stringify(this.wantedList));
       this.saveWantedList(null);
     },
-    copyToClipboard(containerId) {
-      if (window.getSelection) {
-        if (window.getSelection().empty) {
-          // Chrome
-          window.getSelection().empty();
-        } else if (window.getSelection().removeAllRanges) {
-          // Firefox
-          window.getSelection().removeAllRanges();
-        }
-      } else if (document.selection) {
-        // IE?
-        document.selection.empty();
-      }
-
-      if (document.selection) {
-        var range = document.body.createTextRange();
-        range.moveToElementText(document.getElementById(containerId));
-        range.select().createTextRange();
-        document.execCommand("copy");
-      } else if (window.getSelection) {
-        var range = document.createRange();
-        range.selectNode(document.getElementById(containerId));
-        window.getSelection().addRange(range);
-        document.execCommand("copy");
-      }
-      if (window.getSelection) {
-        window.getSelection().removeAllRanges();
-      } else if (document.selection) {
-        document.selection.empty();
-      }
+    copyToClipboard(id) {
+      navigator.clipboard.writeText(document.getElementById(id).textContent);
 
       this.copied = true;
       clearTimeout(this.copyTimer);
