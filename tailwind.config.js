@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         primary: colors.amber,
-        gray: colors.warmGray,
+        gray: colors.stone,
         secondary: colors.orange
       },
       typography: theme => ({
