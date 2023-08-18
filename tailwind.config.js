@@ -20,34 +20,34 @@ module.exports = {
           css: {
             color: "#333",
             a: {
-              color: theme("colors.blue.700"),
+              color: "#1d4ed8",
               "&:hover": {
-                color: theme("colors.blue.600")
+                color: "#2563eb"
               }
             },
             h1: {
-              color: theme("colors.blue.700")
+              color: "#1d4ed8"
             },
             h2: {
-              color: theme("colors.blue.700"),
+              color: "#1d4ed8",
               fontSize: "2.5rem"
             },
             h3: {
-              color: theme("colors.blue.700"),
+              color: "#1d4ed8",
               fontWeight: "400",
               fontSize: "2rem"
             },
             h4: {
-              color: theme("colors.yellow.700"),
+              color: "#a16207",
               fontWeight: "400",
               // fontFamily: "Bangers",
               fontSize: "2rem"
             },
             h5: {
-              color: theme("colors.yellow.700")
+              color: "#a16207"
             },
             h6: {
-              color: theme("colors.yellow.700")
+              color: "#a16207"
             },
             strong: {
               color: "#222"
@@ -67,30 +67,30 @@ module.exports = {
           css: {
             color: "#bbb",
             a: {
-              color: theme("colors.blue.300"),
+              color: "#93c5fd",
               "&:hover": {
-                color: theme("colors.blue.200")
+                color: "#bfdbfe"
               }
             },
             h1: {
-              color: theme("colors.blue.400")
+              color: "#60a5fa"
             },
             h2: {
-              color: theme("colors.blue.400")
+              color: "#60a5fa"
             },
             h3: {
-              color: theme("colors.blue.400"),
+              color: "#60a5fa",
               fontWeight: "400",
               fontSize: "2rem"
             },
             h4: {
-              color: theme("colors.yellow.500")
+              color: "#eab308"
             },
             h5: {
-              color: theme("colors.yellow.500")
+              color: "#eab308"
             },
             h6: {
-              color: theme("colors.yellow.500")
+              color: "#eab308"
             },
             strong: {
               color: "#ddd"
